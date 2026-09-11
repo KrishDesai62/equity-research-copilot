@@ -1,0 +1,3 @@
+# Phase 6 universe. Leave empty until MVP is validated (see README).
+# Narrow this to the niche defined in settings.yaml, not "all small caps."
+tickers: []

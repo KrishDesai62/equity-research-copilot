@@ -1,0 +1,4 @@
+# MVP universe: ~20-30 S&P 500 names to start with.
+# Fill in via src/data_layer/point_in_time_universe.py output — do not
+# hand-copy today's S&P 500 list, see README suggestion #1 (survivorship bias).
+tickers: []

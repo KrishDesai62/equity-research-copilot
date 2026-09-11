@@ -1,0 +1,32 @@
+# Central config. Nothing should be hardcoded in src/ that belongs here.
+
+# Which universe to run against. Toggle between "sp500" and "smallcap" —
+# do not build a second code path for each, the pipeline should be
+# universe-agnostic and just read this file.
+active_universe: sp500
+
+# Fill this in before Phase 6 (see README suggestion #5). Broad
+# "small/micro-cap coverage" is not a differentiator on its own — pick one.
+# e.g. "otc_pink_sheet", "small_cap_biotech", "post_spac_microcap"
+niche: ""
+
+paths:
+  raw_filings: data/raw/filings
+  raw_xbrl: data/raw/xbrl
+  processed_features: data/processed/features
+  chroma_store: data/processed/chroma
+
+edgar:
+  base_url: "https://www.sec.gov"
+  full_text_search_url: "https://efts.sec.gov/LATEST/search-index"
+  rate_limit_per_sec: 8   # stay under SEC's 10/sec cap, leave headroom
+
+rag:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  chunk_by: "section"     # not fixed-token windows — see rag/chunking.py
+  default_k: 5
+
+ml:
+  distress_horizon_years: [1, 3]   # predict Chapter 11 within 1-3 years
+  walk_forward_min_train_years: 5
+  class_weight: "balanced"          # both tracks are imbalanced, don't skip this

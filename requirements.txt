@@ -1,0 +1,29 @@
+# core
+requests>=2.31
+pandas>=2.1
+numpy>=1.26
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# data sources
+yfinance>=0.2.40
+lxml>=5.0          # parsing EDGAR XML (Form 4, XBRL)
+beautifulsoup4>=4.12
+
+# RAG
+sentence-transformers>=2.7
+chromadb>=0.5
+
+# ML
+scikit-learn>=1.4
+xgboost>=2.0
+torch>=2.2          # only needed for the NN comparison in Phase 3
+
+# MCP (Phase 1+, once retrieval backbone is stable)
+mcp>=1.0
+
+# testing
+pytest>=8.0
+
+# optional: only if you actually wire up S3 (Section 6 of the spec)
+# boto3>=1.34
