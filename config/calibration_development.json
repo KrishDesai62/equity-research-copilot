@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "seed": "development-calibration-20261017-v1",
+  "company_assignment": "SHA256(seed:zero-padded-CIK) modulo 4; 0/1 training, 2 calibration, 3 threshold tuning",
+  "training_end": "2016-01-01",
+  "calibration_end": "2018-01-01",
+  "tuning_end": "2020-01-01",
+  "min_positive_companies_per_stage": 3,
+  "min_negative_companies_per_stage": 3,
+  "min_precision": 0.5,
+  "min_recall": 0.5,
+  "purpose": "Development feasibility and candidate fitting only. Never rescore or adapt to the exposed final cohort. Do not change assignments to obtain favorable class counts."
+}

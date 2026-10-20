@@ -1,0 +1,22 @@
+{
+  "template_only": true,
+  "cik": "REPLACE_WITH_TEN_DIGIT_CIK",
+  "prediction_date": "2024-12-31",
+  "target": null,
+  "reviewers": [],
+  "reviewed_on": "REPLACE_WITH_ACTUAL_REVIEW_DATE",
+  "identity_verified": false,
+  "prior_bankruptcy_excluded": false,
+  "coverage_through": "2025-12-31",
+  "complete_event_coverage": false,
+  "coverage_method": "Document the actual legal-entity and complete one-year event search here; absence from an incomplete registry is insufficient.",
+  "evidence": [
+    {
+      "kind": "complete_outcome_coverage",
+      "url": "https://REPLACE_WITH_PRIMARY_SOURCE",
+      "path": "REPLACE_WITH_DOWNLOADED_EVIDENCE_PATH",
+      "sha256": "REPLACE_WITH_EXACT_DOWNLOADED_FILE_HASH",
+      "retrieved_on": "REPLACE_WITH_ACTUAL_RETRIEVAL_DATE"
+    }
+  ]
+}

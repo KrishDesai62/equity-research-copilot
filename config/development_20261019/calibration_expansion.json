@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "seed": "recent-sec-development-complement-20261019-v1",
+  "background_probability": 0.1,
+  "anchor": "2022-12-31",
+  "scope": "Development only, public SEC-disclosed issuer Chapter 7/11 outcome. Original final and historical training reservations excluded. Missing outcomes never become negatives.",
+  "sampling": "Sample all primary 2023/early-2024 SEC Item 1.03 proxies and an independent fixed 10% background among remaining 2022 nonfinancial annual filers. Marginal inclusion accounts for original sampling, complementary final selection and historical selection. Reweight original development rows by the same union formula."
+}

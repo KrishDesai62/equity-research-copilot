@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "years": [
+    2023,
+    2024
+  ],
+  "last_date": "2024-07-18",
+  "endpoint": "https://efts.sec.gov/LATEST/search-index",
+  "page_size": 100,
+  "forms": "8-K",
+  "item": "1.03",
+  "purpose": "Primary discovery for a separately frozen expanded recent DEVELOPMENT cohort; final reservation is excluded."
+}

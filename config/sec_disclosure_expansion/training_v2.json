@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "anchors": ["2014-12-31", "2015-12-31", "2016-12-31", "2017-12-31", "2018-12-31", "2019-12-31", "2020-12-31"],
+  "reporting_grace_days": 200,
+  "max_feature_age_days": 180,
+  "max_feature_missing_fraction": 0.25,
+  "target": "target_sec_disclosed_petition_1yr",
+  "source_population": "All 915 previously sampled historical V3 company IDs; reuse sealed raw public sources, not old model predictions. Retire old final companies into development for this separate study; exclude all recent calibration/final reservations.",
+  "labels": "Reconstruct the SEC-disclosure target directly with primary event statements and continued reporting. Do not use absence in BRD to assign a negative. BRD is only a sampling-stratum and known-prior-event exclusion source.",
+  "sampling_weights": "Original inverse company inclusion probability on every training snapshot, regardless of label. No old role weighting: all historical roles are now training for the separate recent-target study.",
+  "evaluation": "Recent 2023 outcomes are calibration/model-development only. Recent final cohorts are never used for fitting, threshold selection or hyperparameters. No promise of reaching a performance floor."
+}

@@ -1,0 +1,779 @@
+{
+  "version": 1,
+  "seed": "natural-sample-calibration-v1-20261017",
+  "companies": [
+    {
+      "cik": "0001653247",
+      "ticker": "CIK0001653247",
+      "company_name": "WAITR HOLDINGS INC."
+    },
+    {
+      "cik": "0000046080",
+      "ticker": "CIK0000046080",
+      "company_name": "HASBRO INC"
+    },
+    {
+      "cik": "0001366527",
+      "ticker": "CIK0001366527",
+      "company_name": "CARBON BLACK, INC."
+    },
+    {
+      "cik": "0001061069",
+      "ticker": "CIK0001061069",
+      "company_name": "AVALON HOLDINGS CORP"
+    },
+    {
+      "cik": "0000862692",
+      "ticker": "CIK0000862692",
+      "company_name": "CRYO CELL INTERNATIONAL INC"
+    },
+    {
+      "cik": "0000773840",
+      "ticker": "CIK0000773840",
+      "company_name": "HONEYWELL INTERNATIONAL INC"
+    },
+    {
+      "cik": "0000056047",
+      "ticker": "CIK0000056047",
+      "company_name": "KIRBY CORP"
+    },
+    {
+      "cik": "0001092699",
+      "ticker": "CIK0001092699",
+      "company_name": "SPS COMMERCE INC"
+    },
+    {
+      "cik": "0001161728",
+      "ticker": "CIK0001161728",
+      "company_name": "MGE ENERGY INC"
+    },
+    {
+      "cik": "0001024725",
+      "ticker": "CIK0001024725",
+      "company_name": "TENNECO INC"
+    },
+    {
+      "cik": "0000019411",
+      "ticker": "CIK0000019411",
+      "company_name": "MAGELLAN HEALTH INC"
+    },
+    {
+      "cik": "0000007623",
+      "ticker": "CIK0000007623",
+      "company_name": "ARTS WAY MANUFACTURING CO INC"
+    },
+    {
+      "cik": "0000061398",
+      "ticker": "CIK0000061398",
+      "company_name": "TELLURIAN INC. /DE/"
+    },
+    {
+      "cik": "0001539029",
+      "ticker": "CIK0001539029",
+      "company_name": "CLEARSIDE BIOMEDICAL, INC."
+    },
+    {
+      "cik": "0001173489",
+      "ticker": "CIK0001173489",
+      "company_name": "CEVA INC"
+    },
+    {
+      "cik": "0001107843",
+      "ticker": "CIK0001107843",
+      "company_name": "QUALYS, INC."
+    },
+    {
+      "cik": "0001401257",
+      "ticker": "CIK0001401257",
+      "company_name": "FORUM ENERGY TECHNOLOGIES, INC."
+    },
+    {
+      "cik": "0001656328",
+      "ticker": "CIK0001656328",
+      "company_name": "SIENNA BIOPHARMACEUTICALS, INC."
+    },
+    {
+      "cik": "0001029831",
+      "ticker": "CIK0001029831",
+      "company_name": "HILLMAN COMPANIES INC"
+    },
+    {
+      "cik": "0001038357",
+      "ticker": "CIK0001038357",
+      "company_name": "PIONEER NATURAL RESOURCES CO"
+    },
+    {
+      "cik": "0001179060",
+      "ticker": "CIK0001179060",
+      "company_name": "ENLINK MIDSTREAM PARTNERS, LP"
+    },
+    {
+      "cik": "0000712034",
+      "ticker": "CIK0000712034",
+      "company_name": "ACCO BRANDS CORP"
+    },
+    {
+      "cik": "0000355811",
+      "ticker": "CIK0000355811",
+      "company_name": "GENTEX CORP"
+    },
+    {
+      "cik": "0001042418",
+      "ticker": "CIK0001042418",
+      "company_name": "HEDGEPATH PHARMACEUTICALS, INC."
+    },
+    {
+      "cik": "0001311241",
+      "ticker": "CIK0001311241",
+      "company_name": "INTERMOLECULAR INC"
+    },
+    {
+      "cik": "0000891293",
+      "ticker": "CIK0000891293",
+      "company_name": "CTI BIOPHARMA CORP"
+    },
+    {
+      "cik": "0001136352",
+      "ticker": "CIK0001136352",
+      "company_name": "CRESTWOOD EQUITY PARTNERS LP"
+    },
+    {
+      "cik": "0001436229",
+      "ticker": "CIK0001436229",
+      "company_name": "BTCS INC."
+    },
+    {
+      "cik": "0000895665",
+      "ticker": "CIK0000895665",
+      "company_name": "SUPERCONDUCTOR TECHNOLOGIES INC"
+    },
+    {
+      "cik": "0001653710",
+      "ticker": "CIK0001653710",
+      "company_name": "APEX RESOURCES INC/NV"
+    },
+    {
+      "cik": "0000878927",
+      "ticker": "CIK0000878927",
+      "company_name": "OLD DOMINION FREIGHT LINE INC/VA"
+    },
+    {
+      "cik": "0000018172",
+      "ticker": "CIK0000018172",
+      "company_name": "CASTLE A M & CO"
+    },
+    {
+      "cik": "0001266806",
+      "ticker": "CIK0001266806",
+      "company_name": "SECOND SIGHT MEDICAL PRODUCTS INC"
+    },
+    {
+      "cik": "0001708301",
+      "ticker": "CIK0001708301",
+      "company_name": "BP MIDSTREAM PARTNERS LP"
+    },
+    {
+      "cik": "0000822663",
+      "ticker": "CIK0000822663",
+      "company_name": "INTER PARFUMS INC"
+    },
+    {
+      "cik": "0001631650",
+      "ticker": "CIK0001631650",
+      "company_name": "AIMMUNE THERAPEUTICS, INC."
+    },
+    {
+      "cik": "0001680048",
+      "ticker": "CIK0001680048",
+      "company_name": "MUSTANG BIO, INC."
+    },
+    {
+      "cik": "0000205402",
+      "ticker": "CIK0000205402",
+      "company_name": "GRAYBAR ELECTRIC CO INC"
+    },
+    {
+      "cik": "0000040533",
+      "ticker": "CIK0000040533",
+      "company_name": "GENERAL DYNAMICS CORP"
+    },
+    {
+      "cik": "0000778164",
+      "ticker": "CIK0000778164",
+      "company_name": "PACIFIC ETHANOL, INC."
+    },
+    {
+      "cik": "0001545061",
+      "ticker": "CIK0001545061",
+      "company_name": "SIGNAL ADVANCE INC"
+    },
+    {
+      "cik": "0001346980",
+      "ticker": "CIK0001346980",
+      "company_name": "CHAPARRAL ENERGY, INC."
+    },
+    {
+      "cik": "0001385799",
+      "ticker": "CIK0001385799",
+      "company_name": "ADVANCED BIOMEDICAL TECHNOLOGIES INC."
+    },
+    {
+      "cik": "0001320414",
+      "ticker": "CIK0001320414",
+      "company_name": "SELECT MEDICAL HOLDINGS CORP"
+    },
+    {
+      "cik": "0000719209",
+      "ticker": "CIK0000719209",
+      "company_name": "ISRAMCO INC"
+    },
+    {
+      "cik": "0001714899",
+      "ticker": "CIK0001714899",
+      "company_name": "DENALI THERAPEUTICS INC."
+    },
+    {
+      "cik": "0000821189",
+      "ticker": "CIK0000821189",
+      "company_name": "EOG RESOURCES INC"
+    },
+    {
+      "cik": "0000075252",
+      "ticker": "CIK0000075252",
+      "company_name": "OWENS & MINOR INC/VA/"
+    },
+    {
+      "cik": "0001727815",
+      "ticker": "CIK0001727815",
+      "company_name": "AFRIKA4U"
+    },
+    {
+      "cik": "0000868780",
+      "ticker": "CIK0000868780",
+      "company_name": "DORMAN PRODUCTS, INC."
+    },
+    {
+      "cik": "0001162112",
+      "ticker": "CIK0001162112",
+      "company_name": "RIGNET, INC."
+    },
+    {
+      "cik": "0001647088",
+      "ticker": "CIK0001647088",
+      "company_name": "WILLSCOT CORP"
+    },
+    {
+      "cik": "0001705843",
+      "ticker": "CIK0001705843",
+      "company_name": "CALYXT, INC."
+    },
+    {
+      "cik": "0000926282",
+      "ticker": "CIK0000926282",
+      "company_name": "ADTRAN INC"
+    },
+    {
+      "cik": "0001434728",
+      "ticker": "CIK0001434728",
+      "company_name": "GLOBAL WATER RESOURCES, INC."
+    },
+    {
+      "cik": "0001528849",
+      "ticker": "CIK0001528849",
+      "company_name": "RH"
+    },
+    {
+      "cik": "0000093389",
+      "ticker": "CIK0000093389",
+      "company_name": "STANDARD MOTOR PRODUCTS, INC."
+    },
+    {
+      "cik": "0000073756",
+      "ticker": "CIK0000073756",
+      "company_name": "OCEANEERING INTERNATIONAL INC"
+    },
+    {
+      "cik": "0001441849",
+      "ticker": "CIK0001441849",
+      "company_name": "CLOUD PEAK ENERGY INC."
+    },
+    {
+      "cik": "0001535955",
+      "ticker": "CIK0001535955",
+      "company_name": "LIPOCINE INC."
+    },
+    {
+      "cik": "0001236275",
+      "ticker": "CIK0001236275",
+      "company_name": "SILVERSUN TECHNOLOGIES, INC."
+    },
+    {
+      "cik": "0001133869",
+      "ticker": "CIK0001133869",
+      "company_name": "CAPRICOR THERAPEUTICS, INC."
+    },
+    {
+      "cik": "0001358403",
+      "ticker": "CIK0001358403",
+      "company_name": "BELLICUM PHARMACEUTICALS, INC"
+    },
+    {
+      "cik": "0000894627",
+      "ticker": "CIK0000894627",
+      "company_name": "VAALCO ENERGY INC /DE/"
+    },
+    {
+      "cik": "0001637761",
+      "ticker": "CIK0001637761",
+      "company_name": "SEASPINE HOLDINGS CORP"
+    },
+    {
+      "cik": "0000054480",
+      "ticker": "CIK0000054480",
+      "company_name": "KANSAS CITY SOUTHERN"
+    },
+    {
+      "cik": "0001468666",
+      "ticker": "CIK0001468666",
+      "company_name": "SECUREWORKS CORP"
+    },
+    {
+      "cik": "0001749704",
+      "ticker": "CIK0001749704",
+      "company_name": "AGILITI, INC. DE"
+    },
+    {
+      "cik": "0000063754",
+      "ticker": "CIK0000063754",
+      "company_name": "MCCORMICK & CO INC"
+    },
+    {
+      "cik": "0000821130",
+      "ticker": "CIK0000821130",
+      "company_name": "UNITED STATES CELLULAR CORP"
+    },
+    {
+      "cik": "0001087294",
+      "ticker": "CIK0001087294",
+      "company_name": "CUMBERLAND PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0001652130",
+      "ticker": "CIK0001652130",
+      "company_name": "INTELLIA THERAPEUTICS, INC."
+    },
+    {
+      "cik": "0001350653",
+      "ticker": "CIK0001350653",
+      "company_name": "ALPHATEC HOLDINGS, INC."
+    },
+    {
+      "cik": "0001473654",
+      "ticker": "CIK0001473654",
+      "company_name": "LEVELBLOX, INC."
+    },
+    {
+      "cik": "0001482541",
+      "ticker": "CIK0001482541",
+      "company_name": "SURNA INC."
+    },
+    {
+      "cik": "0001551887",
+      "ticker": "CIK0001551887",
+      "company_name": "VGRAB COMMUNICATIONS INC."
+    },
+    {
+      "cik": "0001274792",
+      "ticker": "CIK0001274792",
+      "company_name": "MERRIMACK PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0001655008",
+      "ticker": "CIK0001655008",
+      "company_name": "HAHA GENERATION CORP."
+    },
+    {
+      "cik": "0001171486",
+      "ticker": "CIK0001171486",
+      "company_name": "NATURAL RESOURCE PARTNERS LP"
+    },
+    {
+      "cik": "0001661998",
+      "ticker": "CIK0001661998",
+      "company_name": "HOMOLOGY MEDICINES, INC."
+    },
+    {
+      "cik": "0001304421",
+      "ticker": "CIK0001304421",
+      "company_name": "CONSOLIDATED COMMUNICATIONS HOLDINGS, INC."
+    },
+    {
+      "cik": "0000004904",
+      "ticker": "CIK0000004904",
+      "company_name": "AMERICAN ELECTRIC POWER CO INC"
+    },
+    {
+      "cik": "0001022671",
+      "ticker": "CIK0001022671",
+      "company_name": "STEEL DYNAMICS INC"
+    },
+    {
+      "cik": "0001659617",
+      "ticker": "CIK0001659617",
+      "company_name": "MOLECULIN BIOTECH, INC."
+    },
+    {
+      "cik": "0000746838",
+      "ticker": "CIK0000746838",
+      "company_name": "UNISYS CORP"
+    },
+    {
+      "cik": "0001131227",
+      "ticker": "CIK0001131227",
+      "company_name": "HORNBECK OFFSHORE SERVICES INC /LA"
+    },
+    {
+      "cik": "0001501989",
+      "ticker": "CIK0001501989",
+      "company_name": "CYTOMX THERAPEUTICS, INC."
+    },
+    {
+      "cik": "0000708781",
+      "ticker": "CIK0000708781",
+      "company_name": "CASS INFORMATION SYSTEMS INC"
+    },
+    {
+      "cik": "0001560241",
+      "ticker": "CIK0001560241",
+      "company_name": "G1 THERAPEUTICS, INC."
+    },
+    {
+      "cik": "0000024491",
+      "ticker": "CIK0000024491",
+      "company_name": "COOPER TIRE & RUBBER CO"
+    },
+    {
+      "cik": "0000895456",
+      "ticker": "CIK0000895456",
+      "company_name": "ROCKY BRANDS, INC."
+    },
+    {
+      "cik": "0001419554",
+      "ticker": "CIK0001419554",
+      "company_name": "BONE BIOLOGICS CORP"
+    },
+    {
+      "cik": "0001501585",
+      "ticker": "CIK0001501585",
+      "company_name": "HUNTINGTON INGALLS INDUSTRIES, INC."
+    },
+    {
+      "cik": "0000320017",
+      "ticker": "CIK0000320017",
+      "company_name": "CALADRIUS BIOSCIENCES, INC."
+    },
+    {
+      "cik": "0001731348",
+      "ticker": "CIK0001731348",
+      "company_name": "TILRAY, INC."
+    },
+    {
+      "cik": "0001477009",
+      "ticker": "CIK0001477009",
+      "company_name": "GENERAL CANNABIS CORP"
+    },
+    {
+      "cik": "0001708055",
+      "ticker": "CIK0001708055",
+      "company_name": "RIBBON COMMUNICATIONS INC."
+    },
+    {
+      "cik": "0001313275",
+      "ticker": "CIK0001313275",
+      "company_name": "BRIGHTCOVE INC"
+    },
+    {
+      "cik": "0001285819",
+      "ticker": "CIK0001285819",
+      "company_name": "OMEROS CORP"
+    },
+    {
+      "cik": "0001638381",
+      "ticker": "CIK0001638381",
+      "company_name": "INTEC PHARMA LTD."
+    },
+    {
+      "cik": "0000885639",
+      "ticker": "CIK0000885639",
+      "company_name": "KOHLS CORP"
+    },
+    {
+      "cik": "0001090012",
+      "ticker": "CIK0001090012",
+      "company_name": "DEVON ENERGY CORP/DE"
+    },
+    {
+      "cik": "0001392449",
+      "ticker": "CIK0001392449",
+      "company_name": "GREEN PLANET BIO ENGINEERING CO. LTD."
+    },
+    {
+      "cik": "0000920465",
+      "ticker": "CIK0000920465",
+      "company_name": "LA JOLLA PHARMACEUTICAL CO"
+    },
+    {
+      "cik": "0000909724",
+      "ticker": "CIK0000909724",
+      "company_name": "TANDY LEATHER FACTORY INC"
+    },
+    {
+      "cik": "0001645666",
+      "ticker": "CIK0001645666",
+      "company_name": "KEZAR LIFE SCIENCES, INC."
+    },
+    {
+      "cik": "0001016125",
+      "ticker": "CIK0001016125",
+      "company_name": "ULTIMATE SOFTWARE GROUP INC"
+    },
+    {
+      "cik": "0001011570",
+      "ticker": "CIK0001011570",
+      "company_name": "KNOLL INC"
+    },
+    {
+      "cik": "0000768710",
+      "ticker": "CIK0000768710",
+      "company_name": "RELIV INTERNATIONAL INC"
+    },
+    {
+      "cik": "0001441683",
+      "ticker": "CIK0001441683",
+      "company_name": "APPIAN CORP"
+    },
+    {
+      "cik": "0001493212",
+      "ticker": "CIK0001493212",
+      "company_name": "PHOENIX LIFE SCIENCES INTERNATIONAL LIMITED."
+    },
+    {
+      "cik": "0001604821",
+      "ticker": "CIK0001604821",
+      "company_name": "NATERA, INC."
+    },
+    {
+      "cik": "0001297667",
+      "ticker": "CIK0001297667",
+      "company_name": "ATEL CAPITAL EQUIPMENT FUND XI, LLC"
+    },
+    {
+      "cik": "0001502152",
+      "ticker": "CIK0001502152",
+      "company_name": "ANGIOSOMA, INC."
+    },
+    {
+      "cik": "0001083301",
+      "ticker": "CIK0001083301",
+      "company_name": "IKONICS CORP"
+    },
+    {
+      "cik": "0001159167",
+      "ticker": "CIK0001159167",
+      "company_name": "IROBOT CORP"
+    },
+    {
+      "cik": "0001637207",
+      "ticker": "CIK0001637207",
+      "company_name": "PLANET FITNESS, INC."
+    },
+    {
+      "cik": "0001325879",
+      "ticker": "CIK0001325879",
+      "company_name": "AVEO PHARMACEUTICALS INC"
+    },
+    {
+      "cik": "0000098362",
+      "ticker": "CIK0000098362",
+      "company_name": "TIMKEN CO"
+    },
+    {
+      "cik": "0001124140",
+      "ticker": "CIK0001124140",
+      "company_name": "EXACT SCIENCES CORP"
+    }
+  ],
+  "excluded_exposed_companies": [
+    "0000003116",
+    "0000014195",
+    "0000018230",
+    "0000020520",
+    "0000021344",
+    "0000027419",
+    "0000029534",
+    "0000034088",
+    "0000049728",
+    "0000056873",
+    "0000060667",
+    "0000064803",
+    "0000067887",
+    "0000072331",
+    "0000077281",
+    "0000077476",
+    "0000080424",
+    "0000084129",
+    "0000096289",
+    "0000104169",
+    "0000109198",
+    "0000200406",
+    "0000278130",
+    "0000314808",
+    "0000315189",
+    "0000316253",
+    "0000320187",
+    "0000320193",
+    "0000320575",
+    "0000350403",
+    "0000354950",
+    "0000708819",
+    "0000745732",
+    "0000764401",
+    "0000764478",
+    "0000768835",
+    "0000775057",
+    "0000785786",
+    "0000786110",
+    "0000789019",
+    "0000794367",
+    "0000798949",
+    "0000813920",
+    "0000836690",
+    "0000844143",
+    "0000858655",
+    "0000866706",
+    "0000866787",
+    "0000874499",
+    "0000878726",
+    "0000884217",
+    "0000884940",
+    "0000885639",
+    "0000886158",
+    "0000886835",
+    "0000887921",
+    "0000895126",
+    "0000897723",
+    "0000902274",
+    "0000909832",
+    "0000910612",
+    "0000922358",
+    "0000924717",
+    "0000931336",
+    "0000935703",
+    "0000936395",
+    "0000939930",
+    "0000945764",
+    "0000949039",
+    "0001005414",
+    "0001018724",
+    "0001040719",
+    "0001045810",
+    "0001048911",
+    "0001051251",
+    "0001051514",
+    "0001056087",
+    "0001056386",
+    "0001074828",
+    "0001090727",
+    "0001096752",
+    "0001103833",
+    "0001121783",
+    "0001126294",
+    "0001127475",
+    "0001131227",
+    "0001140859",
+    "0001166126",
+    "0001168213",
+    "0001211351",
+    "0001235468",
+    "0001255474",
+    "0001265107",
+    "0001281774",
+    "0001282266",
+    "0001297720",
+    "0001301063",
+    "0001310067",
+    "0001315255",
+    "0001326089",
+    "0001326801",
+    "0001336545",
+    "0001341726",
+    "0001358651",
+    "0001378125",
+    "0001396838",
+    "0001403161",
+    "0001404079",
+    "0001405073",
+    "0001409197",
+    "0001434842",
+    "0001441567",
+    "0001458891",
+    "0001467373",
+    "0001486159",
+    "0001498301",
+    "0001498710",
+    "0001500198",
+    "0001502034",
+    "0001509589",
+    "0001512077",
+    "0001517342",
+    "0001522690",
+    "0001525773",
+    "0001529463",
+    "0001535635",
+    "0001540729",
+    "0001547638",
+    "0001549848",
+    "0001567892",
+    "0001576873",
+    "0001579252",
+    "0001580185",
+    "0001583077",
+    "0001592058",
+    "0001594686",
+    "0001603345",
+    "0001603923",
+    "0001604627",
+    "0001606180",
+    "0001609253",
+    "0001617351",
+    "0001637459",
+    "0001644378",
+    "0001648428",
+    "0001650445",
+    "0001652044",
+    "0001655020",
+    "0001657853",
+    "0001659122",
+    "0001661920",
+    "0001669812",
+    "0001681622",
+    "0001685237",
+    "0001702744",
+    "0001715611",
+    "0001722287",
+    "0001725526",
+    "0001731289",
+    "0001750398"
+  ],
+  "sample_size": 120,
+  "universe_sha256": "49f6f0a00b6f1792d22893a3e261f7a329377048eb826079f1a16c7895b76d9d",
+  "registry_sha256": "03a17b10802b26eefce1d30a4dd45e774b3a252a16ad8fae60116185d97dfe70",
+  "candidate_artifact_sha256": "98a3f52459f2ced7a4d2371c1871d7c0126846b0bc00908bf9b151012e96d204",
+  "threshold": 0.15601644123520086,
+  "selection": "Uniform identifier-hash sample from SEC 2019 Q1 nonfinancial original annual issuers, before outcome lookup. No case/control balancing.",
+  "anchor": "First extracted original public financial filing during 2020, selected before coverage/label filtering; one observation per company.",
+  "overlap_policy": "Record sampled exposed companies as exclusions, without scoring or replacement. This exclusion and coverage attrition can bias the result.",
+  "observation_end": "2022-12-31",
+  "production_ready": false,
+  "limitations": "Historical one-quarter annual-issuer frame only, BRD large-public-company eligibility, complete-source/coverage attrition and prior-exposure exclusion. Not all issuers or current market prevalence."
+}

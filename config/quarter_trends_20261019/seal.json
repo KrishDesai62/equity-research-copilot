@@ -1,0 +1,6 @@
+{
+  "config/quarter_trends_20261019/models.json": "9c8f5eaeca49f536e7a4b5cfa53abe0a7c02c307050cf0076cf3cba0e8fde103",
+  "src/validation/quarter_trend_models.py": "64be349a4ba0dbf22d724d8d6d67f230efc492f82a990501552d54a6b3721eb1",
+  "src/ml/quarter_trends.py": "a7f5677dc7e69fb31ecb0bed7252e2d1eb4f1ba5b226c98a7c91f0a66ed5edb1",
+  "src/validation/quarter_trend_data.py": "2dc2e6b308d4bfbbf0c1eb28ba1d69ecab8382df5182bbd138b046f5ec9d61fc"
+}

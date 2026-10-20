@@ -1,3 +1,4 @@
+from datetime import date
 import hashlib
 import logging
 from pathlib import Path
@@ -61,7 +62,7 @@ class VectorStore:
                 fiscal_period = chunk.get("fiscal_period", "UNKNOWN")
 
             # Deterministic unique hash string based on immutable business identifiers and index
-            unique_string = f"{ticker}_{filing_date}_{section}_{idx}_{hash(text[:50])}"
+            unique_string = f"{ticker}_{filing_type}_{filing_date}_{section}_{text}"
             chunk_id = hashlib.md5(unique_string.encode("utf-8")).hexdigest()
 
             ids.append(chunk_id)
@@ -73,11 +74,17 @@ class VectorStore:
                 "filing_type": str(filing_type),
                 "fiscal_period": str(fiscal_period),
                 "filing_date": str(filing_date),
+                "filing_date_ordinal": date.fromisoformat(str(filing_date)[:10]).toordinal(),
+                "has_table": bool(getattr(chunk, "has_table", False) if hasattr(chunk, "ticker") else chunk.get("has_table", False)),
                 "section_title": str(section)  # Aligns with retrieval.py mapping expectation
             })
+            for field in ("cik", "accession_number", "source_url", "chunk_id", "document_sha256"):
+                value = getattr(chunk, field, None) if hasattr(chunk, "ticker") else chunk.get(field)
+                if value is not None:
+                    metadatas[-1][field] = str(value)
 
         try:
-            self.collection.add(
+            self.collection.upsert(
                 ids=ids,
                 embeddings=embeddings,
                 documents=documents,

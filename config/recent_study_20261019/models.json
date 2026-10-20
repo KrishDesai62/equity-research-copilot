@@ -1,0 +1,12 @@
+{
+  "seed": "newer-matured-company-partitions-20261019",
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "regularization_candidates": [0.01, 0.1, 1.0, 10.0],
+  "fallback_regularization": 0.1,
+  "sensitivity_suffixes": ["", ":sensitivity-1", ":sensitivity-2", ":sensitivity-3", ":sensitivity-4"],
+  "models": ["frozen_probability", "frozen_detection", "native_company_balanced", "native_balanced", "xgb_native_sqrt"],
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "selection": "Lowest median design-weighted nested outer-fold log loss across all five partitions among monotonic candidates; all are research only. Compare controls and refits on this same newer cohort. No final scoring."
+}

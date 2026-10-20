@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "seed": "sec-disclosure-complement-20261018-v2",
+  "prediction_date": "2024-12-31",
+  "horizon_end": "2025-12-31",
+  "reporting_grace_days": 200,
+  "extension_background_probability": 0.1,
+  "minimum_final_positive_companies": 20,
+  "minimum_final_companies": 50,
+  "target": "target_sec_disclosed_petition_1yr",
+  "selection": "Complement of all V1 selected companies in the original eligible 2024 annual frame. All primary SEC inventory candidate CIKs in this complement plus a fixed independent 10% sample of remaining companies. Never replace unavailable companies.",
+  "combined_weighting": "For original non-proxy companies, union inclusion = V1 sampling*pi(final role) + (1-V1 sampling)*extension sampling. For V1 certainty proxies, union inclusion = V1 final-role probability. Apply this same marginal union weight irrespective of acquisition phase or actual label. V1 calibration/model-study companies remain excluded.",
+  "evaluation": "No final prediction until development model/threshold is frozen, both precision and recall meet .5 on development, sources are audited and final class support meets the unchanged minimum. Outcome acquisition is not model selection. No AWS deployment.",
+  "scope": "Automated issuer petition disclosure coverage, not exhaustive court bankruptcies or first-ever events. Search-index candidates are proxies, not labels. Follow-up selection remains a limitation."
+}

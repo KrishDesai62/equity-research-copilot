@@ -1,0 +1,699 @@
+{
+  "seed": "independent-candidate-20261017-v1",
+  "companies": [
+    {
+      "cik": "0001650445",
+      "ticker": "CIK0001650445",
+      "company_name": "Quorum Health Corporation",
+      "event_date": "2020-04-07",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001326089",
+      "ticker": "CIK0001326089",
+      "company_name": "Sundance Energy Inc.",
+      "event_date": "2021-03-09",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000910612",
+      "ticker": "CIK0000910612",
+      "company_name": "CBL & Associates Properties Inc. (CBL & Associates LP)",
+      "event_date": "2020-11-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001567892",
+      "ticker": "CIK0001567892",
+      "company_name": "Mallinckrodt plc",
+      "event_date": "2020-10-12",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000945764",
+      "ticker": "CIK0000945764",
+      "company_name": "Denbury Resources Inc.",
+      "event_date": "2020-07-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001661920",
+      "ticker": "CIK0001661920",
+      "company_name": "Lonestar Resources US Inc.",
+      "event_date": "2020-09-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000939930",
+      "ticker": "CIK0000939930",
+      "company_name": "Pyxus International, Inc.",
+      "event_date": "2020-06-15",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001594686",
+      "ticker": "CIK0001594686",
+      "company_name": "Washington Prime Group Inc. (Washington Prime Group, L.P.)",
+      "event_date": "2021-06-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001722287",
+      "ticker": "CIK0001722287",
+      "company_name": "Covia Holdings Corporation",
+      "event_date": "2020-06-29",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001606180",
+      "ticker": "CIK0001606180",
+      "company_name": "AAC Holdings, Inc.",
+      "event_date": "2020-06-20",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000874499",
+      "ticker": "CIK0000874499",
+      "company_name": "Gulfport Energy Corporation",
+      "event_date": "2020-11-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001659122",
+      "ticker": "CIK0001659122",
+      "company_name": "Rosehill Resources Inc.",
+      "event_date": "2020-07-26",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001051251",
+      "ticker": "CIK0001051251",
+      "company_name": "J. Crew Group, Inc.",
+      "event_date": "2020-05-04",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001211351",
+      "ticker": "CIK0001211351",
+      "company_name": "RTW Retailwinds, Inc.",
+      "event_date": "2020-07-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001458891",
+      "ticker": "CIK0001458891",
+      "company_name": "Noble Corporation plc",
+      "event_date": "2020-07-31",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000798949",
+      "ticker": "CIK0000798949",
+      "company_name": "Unit Corporation",
+      "event_date": "2020-05-22",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001315255",
+      "ticker": "CIK0001315255",
+      "company_name": "GTT Communications, Inc.",
+      "event_date": "2021-10-31",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000884217",
+      "ticker": "CIK0000884217",
+      "company_name": "Tailored Brands, Inc.",
+      "event_date": "2020-08-02",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000014195",
+      "ticker": "CIK0000014195",
+      "company_name": "Briggs & Stratton Corporation",
+      "event_date": "2020-07-20",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001281774",
+      "ticker": "CIK0001281774",
+      "company_name": "Town Sports International Holdings, Inc. (TSI, LLC only)",
+      "event_date": "2020-09-14",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001540729",
+      "ticker": "CIK0001540729",
+      "company_name": "Foresight Energy LP",
+      "event_date": "2020-03-10",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000003116",
+      "ticker": "CIK0000003116",
+      "company_name": "Akorn, Inc.",
+      "event_date": "2020-05-20",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000314808",
+      "ticker": "CIK0000314808",
+      "company_name": "Valaris plc",
+      "event_date": "2020-08-19",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001648428",
+      "ticker": "CIK0001648428",
+      "company_name": "Sequential Brands Group, Inc.",
+      "event_date": "2021-08-31",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001512077",
+      "ticker": "CIK0001512077",
+      "company_name": "Global Eagle Entertainment Inc.",
+      "event_date": "2020-07-22",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001669812",
+      "ticker": "CIK0001669812",
+      "company_name": "LSC Communications, Inc.",
+      "event_date": "2020-04-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000813920",
+      "ticker": "CIK0000813920",
+      "company_name": "CEC Entertainment, Inc.",
+      "event_date": "2020-06-24",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001131227",
+      "ticker": "CIK0001131227",
+      "company_name": "Hornbeck Offshore Services, Inc.",
+      "event_date": "2020-05-19",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001579252",
+      "ticker": "CIK0001579252",
+      "company_name": "Jason Industries, Inc.",
+      "event_date": "2020-06-24",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001525773",
+      "ticker": "CIK0001525773",
+      "company_name": "Intelsat S.A.",
+      "event_date": "2020-05-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001583077",
+      "ticker": "CIK0001583077",
+      "company_name": "Hospitality Investors Trust, Inc.",
+      "event_date": "2021-05-19",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001358651",
+      "ticker": "CIK0001358651",
+      "company_name": "Neiman Marcus Group LTD LLC",
+      "event_date": "2020-05-07",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000077281",
+      "ticker": "CIK0000077281",
+      "company_name": "Pennsylvania Real Estate Investment Trust",
+      "event_date": "2020-11-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001517342",
+      "ticker": "CIK0001517342",
+      "company_name": "Pacific Drilling S.A. (2020)",
+      "event_date": "2020-10-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001549848",
+      "ticker": "CIK0001549848",
+      "company_name": "Hi-Crush Inc.",
+      "event_date": "2020-07-12",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000886835",
+      "ticker": "CIK0000886835",
+      "company_name": "Superior Energy Services, Inc.",
+      "event_date": "2020-12-07",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000844143",
+      "ticker": "CIK0000844143",
+      "company_name": "Centric Brands Inc.",
+      "event_date": "2020-05-18",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001056386",
+      "ticker": "CIK0001056386",
+      "company_name": "Internap Corporation",
+      "event_date": "2020-03-16",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001486159",
+      "ticker": "CIK0001486159",
+      "company_name": "Oasis Petroleum Inc.",
+      "event_date": "2020-09-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0001529463",
+      "ticker": "CIK0001529463",
+      "company_name": "FTS International, Inc.",
+      "event_date": "2020-09-22",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "sampling_role": "case"
+    },
+    {
+      "cik": "0000858655",
+      "ticker": "CIK0000858655",
+      "company_name": "HAYNES INTERNATIONAL INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001140859",
+      "ticker": "CIK0001140859",
+      "company_name": "AMERISOURCEBERGEN CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001644378",
+      "ticker": "CIK0001644378",
+      "company_name": "RMR GROUP INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000924717",
+      "ticker": "CIK0000924717",
+      "company_name": "SURMODICS INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001096752",
+      "ticker": "CIK0001096752",
+      "company_name": "EDGEWELL PERSONAL CARE CO",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001051514",
+      "ticker": "CIK0001051514",
+      "company_name": "STRATA SKIN SCIENCES, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001750398",
+      "ticker": "CIK0001750398",
+      "company_name": "YUMBA RECORDS STORAGE, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001603345",
+      "ticker": "CIK0001603345",
+      "company_name": "AGENTIX CORP.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001103833",
+      "ticker": "CIK0001103833",
+      "company_name": "CROWN EQUITY HOLDINGS, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000866787",
+      "ticker": "CIK0000866787",
+      "company_name": "AUTOZONE INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001685237",
+      "ticker": "CIK0001685237",
+      "company_name": "TEMIR CORP.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000764401",
+      "ticker": "CIK0000764401",
+      "company_name": "INSTEEL INDUSTRIES INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001500198",
+      "ticker": "CIK0001500198",
+      "company_name": "NEUROONE MEDICAL TECHNOLOGIES CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000936395",
+      "ticker": "CIK0000936395",
+      "company_name": "CIENA CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000316253",
+      "ticker": "CIK0000316253",
+      "company_name": "ENZO BIOCHEM INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001617351",
+      "ticker": "CIK0001617351",
+      "company_name": "LEPOTA INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000072331",
+      "ticker": "CIK0000072331",
+      "company_name": "NORDSON CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001604627",
+      "ticker": "CIK0001604627",
+      "company_name": "KUSHCO HOLDINGS, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001341726",
+      "ticker": "CIK0001341726",
+      "company_name": "GULFSLOPE ENERGY, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001715611",
+      "ticker": "CIK0001715611",
+      "company_name": "BODY & MIND INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001404079",
+      "ticker": "CIK0001404079",
+      "company_name": "SAMSON OIL & GAS LTD",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001467373",
+      "ticker": "CIK0001467373",
+      "company_name": "ACCENTURE PLC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001409197",
+      "ticker": "CIK0001409197",
+      "company_name": "BESPOKE EXTRACTS, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001378125",
+      "ticker": "CIK0001378125",
+      "company_name": "TOGA LTD",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000866706",
+      "ticker": "CIK0000866706",
+      "company_name": "ESCO TECHNOLOGIES INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000836690",
+      "ticker": "CIK0000836690",
+      "company_name": "INNOVATIVE SOLUTIONS & SUPPORT INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000049728",
+      "ticker": "CIK0000049728",
+      "company_name": "IEC ELECTRONICS CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000897723",
+      "ticker": "CIK0000897723",
+      "company_name": "SANMINA CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000785786",
+      "ticker": "CIK0000785786",
+      "company_name": "PLEXUS CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001535635",
+      "ticker": "CIK0001535635",
+      "company_name": "SERVICE TEAM INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000775057",
+      "ticker": "CIK0000775057",
+      "company_name": "ALTEX INDUSTRIES INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001702744",
+      "ticker": "CIK0001702744",
+      "company_name": "SIMPLY GOOD FOODS CO",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001681622",
+      "ticker": "CIK0001681622",
+      "company_name": "VAREX IMAGING CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001074828",
+      "ticker": "CIK0001074828",
+      "company_name": "KNOW LABS, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001576873",
+      "ticker": "CIK0001576873",
+      "company_name": "AMERICAN BATTERY METALS CORP",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001235468",
+      "ticker": "CIK0001235468",
+      "company_name": "LIQUIDITY SERVICES INC",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001127475",
+      "ticker": "CIK0001127475",
+      "company_name": "DIGITAL BRAND MEDIA & MARKETING GROUP, INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000067887",
+      "ticker": "CIK0000067887",
+      "company_name": "MOOG INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0001403161",
+      "ticker": "CIK0001403161",
+      "company_name": "VISA INC.",
+      "event_date": null,
+      "sampling_role": "control"
+    },
+    {
+      "cik": "0000315189",
+      "ticker": "CIK0000315189",
+      "company_name": "DEERE & CO",
+      "event_date": null,
+      "sampling_role": "control"
+    }
+  ],
+  "excluded_companies": [
+    "0000018230",
+    "0000020520",
+    "0000021344",
+    "0000027419",
+    "0000029534",
+    "0000034088",
+    "0000056873",
+    "0000060667",
+    "0000064803",
+    "0000077476",
+    "0000080424",
+    "0000084129",
+    "0000096289",
+    "0000104169",
+    "0000109198",
+    "0000200406",
+    "0000278130",
+    "0000320187",
+    "0000320193",
+    "0000320575",
+    "0000350403",
+    "0000354950",
+    "0000708819",
+    "0000745732",
+    "0000764478",
+    "0000768835",
+    "0000786110",
+    "0000789019",
+    "0000794367",
+    "0000878726",
+    "0000884940",
+    "0000885639",
+    "0000886158",
+    "0000887921",
+    "0000895126",
+    "0000902274",
+    "0000909832",
+    "0000922358",
+    "0000931336",
+    "0000935703",
+    "0000949039",
+    "0001005414",
+    "0001018724",
+    "0001040719",
+    "0001045810",
+    "0001048911",
+    "0001056087",
+    "0001090727",
+    "0001121783",
+    "0001126294",
+    "0001166126",
+    "0001168213",
+    "0001255474",
+    "0001265107",
+    "0001282266",
+    "0001297720",
+    "0001301063",
+    "0001310067",
+    "0001326801",
+    "0001336545",
+    "0001396838",
+    "0001405073",
+    "0001434842",
+    "0001441567",
+    "0001498301",
+    "0001498710",
+    "0001502034",
+    "0001509589",
+    "0001522690",
+    "0001547638",
+    "0001580185",
+    "0001592058",
+    "0001603923",
+    "0001609253",
+    "0001637459",
+    "0001652044",
+    "0001655020",
+    "0001657853",
+    "0001725526",
+    "0001731289"
+  ],
+  "candidate_selection_sha256": "1d9e039a1433c2cb7cf76e035482ceed4ee1d0fd39ae21a974970e714cc9a227",
+  "artifact_sha256": "98a3f52459f2ced7a4d2371c1871d7c0126846b0bc00908bf9b151012e96d204",
+  "threshold": 0.15601644123520086,
+  "registry_sha256": "03a17b10802b26eefce1d30a4dd45e774b3a252a16ad8fae60116185d97dfe70",
+  "historical_universe_sha256": "1f997c123b6d2fe892eeca0a5f12687e718ab5ae031f148b4a5d82f2689daec3",
+  "test_start": "2020-01-01",
+  "test_end": "2021-12-31",
+  "observation_end": "2022-12-31",
+  "representative_population": false,
+  "sampling": "Prespecified historical case-control benchmark: up to 40 first BRD cases and 40 nonfinancial issuers from SEC 2019 Q4 original annual filings. Not natural market prevalence.",
+  "attrition_policy": "No substitutions. Report ineligible/missing-feature firms and permanent 404s. Transient source failures block scoring.",
+  "limitations": "Historical scope only; case-control precision and probability calibration do not transfer to current market prevalence."
+}

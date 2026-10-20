@@ -1,0 +1,61 @@
+{
+  "description": "Purposive extraction pilot, NOT a historical S&P 500 universe or representative investment universe.",
+  "observation_end": "2024-12-31",
+  "companies": [
+    {
+      "ticker": "AAPL",
+      "cik": "0000320193",
+      "event_date": null
+    },
+    {
+      "ticker": "MSFT",
+      "cik": "0000789019",
+      "event_date": null
+    },
+    {
+      "ticker": "COST",
+      "cik": "0000909832",
+      "event_date": null
+    },
+    {
+      "ticker": "WMT",
+      "cik": "0000104169",
+      "event_date": null
+    },
+    {
+      "ticker": "TGT",
+      "cik": "0000027419",
+      "event_date": null
+    },
+    {
+      "ticker": "BBBY",
+      "cik": "0000886158",
+      "event_date": "2023-04-23",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247dex991.htm"
+    },
+    {
+      "ticker": "JCP",
+      "cik": "0001166126",
+      "event_date": "2020-05-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1166126/000119312520144411/d813078dex41.htm"
+    },
+    {
+      "ticker": "PRTY",
+      "cik": "0001592058",
+      "event_date": "2023-01-17",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1592058/000119312523009847/d643228dex992.htm"
+    },
+    {
+      "ticker": "HTZ",
+      "cik": "0001657853",
+      "event_date": "2020-05-22",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/47129/000110465920065674/tm2020858d1_ex99-1.htm"
+    },
+    {
+      "ticker": "RAD",
+      "cik": "0000084129",
+      "event_date": "2023-10-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109236/tm2328505d1_8k.htm"
+    }
+  ]
+}

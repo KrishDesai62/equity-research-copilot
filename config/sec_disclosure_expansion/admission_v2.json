@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "maximum_statement_lag_days": 200,
+  "corrections": ["Accept singular case/proceeding as well as plurals", "Allow a later primary filing to explicitly report an earlier petition within 200 days", "Retain action/date binding and explicit issuer-subject checks"],
+  "policy": "Apply uniformly to training, calibration and final sources. Admit only explicitly corroborated positive events; no new zeros. Preserve original labels and files; record all corrections and source proofs. Conflicting prior-event evidence censors rather than inventing a petition date. No final scores or model-based label choices.",
+  "review_status": "Automated source corroboration, not independent human adjudication"
+}

@@ -1,0 +1,2 @@
+cik,issuer_reported_date,chosen_event_date,date_policy,source_url,source_path,source_sha256,reviewed_by,case_number
+0001005414,2017-09-18,2017-09-19,court docket filing date for Chapter 11 target; issuer announcement date retained separately,https://www-a.vaeb.uscourts.gov/servecal/files/megadkt/677269.html,data/raw/curated/toys_court.html,533c568e885facd6c4df895d26cb2d89cfe94908f75393e182d1cd17d2f0223a,primary_source_inspection_2026-10-17,17-34665-KLP

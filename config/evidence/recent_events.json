@@ -1,0 +1,8 @@
+{
+  "description": "Known-positive event evidence selected for development review; never an outcome-blind final sample or recent negative-coverage dataset.",
+  "companies": [
+    {"cik": "0000105319", "company_name": "WW International", "role": "development_evidence", "event_date": "2025-05-06", "date_text": "May 6, 2025", "chapter": "11", "source_url": "https://www.sec.gov/Archives/edgar/data/105319/000119312525114307/d934787d8k.htm"},
+    {"cik": "0001804591", "company_name": "23andMe", "role": "development_evidence", "event_date": "2025-03-23", "date_text": "March 23, 2025", "chapter": "11", "source_url": "https://www.sec.gov/Archives/edgar/data/1804591/000119312525067076/d928462d8k.htm"},
+    {"cik": "0001008654", "company_name": "Tupperware", "role": "development_evidence", "event_date": "2024-09-17", "date_text": "September 17, 2024", "chapter": "11", "source_url": "https://www.sec.gov/Archives/edgar/data/1008654/000100865424000068/exhibit991tupperwarepres.htm"}
+  ]
+}

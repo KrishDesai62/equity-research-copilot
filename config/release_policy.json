@@ -1,0 +1,11 @@
+{
+  "policy_version": 1,
+  "description": "Initial engineering release floor; passing does not establish fitness for autonomous investment decisions.",
+  "min_precision": 0.5,
+  "min_recall": 0.5,
+  "min_test_companies": 50,
+  "min_independent_positive_events": 20,
+  "require_independent_test": true,
+  "require_representative_population": true,
+  "require_validated_calibration": true
+}

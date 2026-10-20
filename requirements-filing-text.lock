@@ -1,0 +1,2 @@
+-r requirements-local.lock
+lxml==6.1.3

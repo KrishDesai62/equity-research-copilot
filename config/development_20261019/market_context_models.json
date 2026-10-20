@@ -1,0 +1,23 @@
+{
+  "version": 4,
+  "seed": "sec-disclosed-issuer-v1-20261018",
+  "models": [
+    "hist_gradient_balanced",
+    "random_forest_balanced",
+    "xgb_sqrt_balance",
+    "frozen_semantic_baseline"
+  ],
+  "calibration_folds": 3,
+  "calibration_regularization": 0.1,
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "minimum_final_companies": 50,
+  "minimum_final_positive_companies": 20,
+  "phases": [
+    "expanded"
+  ],
+  "selection": "Fixed three tree families with pre-prediction exchange, auditor, restructuring and SIC context versus the previous corrected financial/text baseline. Same development companies, labels, weights and calibration folds. No threshold relaxation or final scoring. Context liquidity negation is corrected before fitting: not having sufficient cash remains a warning.",
+  "final_gate": "Require complete source acquisition, frozen model selection, minimum support, feasible development threshold and independently reviewed current final labels before one-use final scoring.",
+  "limits": "Development reuse and model selection are optimistic; source weights do not correct outcome censoring. No automatic production promotion.",
+  "diagnostic_only_models": []
+}

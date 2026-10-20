@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "purpose": "Positive-enriched historical DEVELOPMENT data; not representative and not a final test",
+  "policy_sha256": "58ccea7c8c737f045e43a23e59dbc0b07eae81f9eb3ad83c5d80ef53ea6fb577",
+  "registry_sha256": "03a17b10802b26eefce1d30a4dd45e774b3a252a16ad8fae60116185d97dfe70",
+  "companies": [
+    {
+      "cik": "0001301063",
+      "ticker": "CIK0001301063",
+      "company_name": "Alpha Natural Resources, Inc.",
+      "event_date": "2015-08-03",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001297720",
+      "ticker": "CIK0001297720",
+      "company_name": "James River Coal Company",
+      "event_date": "2014-04-07",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001121783",
+      "ticker": "CIK0001121783",
+      "company_name": "American Spectrum Realty, Inc.",
+      "event_date": "2015-02-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001441567",
+      "ticker": "CIK0001441567",
+      "company_name": "MModal Inc.",
+      "event_date": "2014-03-20",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001336545",
+      "ticker": "CIK0001336545",
+      "company_name": "American Apparel, Inc. (2015)",
+      "event_date": "2015-10-05",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001396838",
+      "ticker": "CIK0001396838",
+      "company_name": "Dolan Company",
+      "event_date": "2014-03-23",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "training"
+    },
+    {
+      "cik": "0001040719",
+      "ticker": "CIK0001040719",
+      "company_name": "Walter Investment Management Corp.",
+      "event_date": "2017-11-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0001126294",
+      "ticker": "CIK0001126294",
+      "company_name": "GenOn Energy, Inc.",
+      "event_date": "2017-06-14",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0001434842",
+      "ticker": "CIK0001434842",
+      "company_name": "Forbes Energy Services Ltd.",
+      "event_date": "2017-01-22",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0001509589",
+      "ticker": "CIK0001509589",
+      "company_name": "Bonanza Creek Energy, Inc.",
+      "event_date": "2017-01-04",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0001580185",
+      "ticker": "CIK0001580185",
+      "company_name": "J.G. Wentworth Company",
+      "event_date": "2017-12-12",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0000786110",
+      "ticker": "CIK0000786110",
+      "company_name": "Gymboree Corporation (2017)",
+      "event_date": "2017-06-11",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "calibration"
+    },
+    {
+      "cik": "0000350403",
+      "ticker": "CIK0000350403",
+      "company_name": "PHI, Inc.",
+      "event_date": "2019-03-14",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    },
+    {
+      "cik": "0000931336",
+      "ticker": "CIK0000931336",
+      "company_name": "Dean Foods Company",
+      "event_date": "2019-11-12",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    },
+    {
+      "cik": "0001547638",
+      "ticker": "CIK0001547638",
+      "company_name": "Southcross Energy Partners, L.P.",
+      "event_date": "2019-04-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    },
+    {
+      "cik": "0001603923",
+      "ticker": "CIK0001603923",
+      "company_name": "Weatherford International plc",
+      "event_date": "2019-07-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    },
+    {
+      "cik": "0001405073",
+      "ticker": "CIK0001405073",
+      "company_name": "Approach Resources Inc.",
+      "event_date": "2019-11-18",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    },
+    {
+      "cik": "0001265107",
+      "ticker": "CIK0001265107",
+      "company_name": "Monitronics International, Inc.",
+      "event_date": "2019-06-30",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php",
+      "planned_stage": "threshold_tuning"
+    }
+  ],
+  "excluded_companies": [
+    "0000018230",
+    "0000020520",
+    "0000021344",
+    "0000027419",
+    "0000029534",
+    "0000034088",
+    "0000056873",
+    "0000060667",
+    "0000064803",
+    "0000077476",
+    "0000080424",
+    "0000084129",
+    "0000096289",
+    "0000104169",
+    "0000109198",
+    "0000200406",
+    "0000278130",
+    "0000320187",
+    "0000320193",
+    "0000320575",
+    "0000354950",
+    "0000708819",
+    "0000745732",
+    "0000764478",
+    "0000768835",
+    "0000789019",
+    "0000794367",
+    "0000878726",
+    "0000884940",
+    "0000885639",
+    "0000886158",
+    "0000887921",
+    "0000895126",
+    "0000902274",
+    "0000909832",
+    "0000922358",
+    "0000935703",
+    "0000949039",
+    "0001005414",
+    "0001018724",
+    "0001045810",
+    "0001048911",
+    "0001056087",
+    "0001090727",
+    "0001166126",
+    "0001168213",
+    "0001255474",
+    "0001282266",
+    "0001310067",
+    "0001326801",
+    "0001498301",
+    "0001498710",
+    "0001502034",
+    "0001522690",
+    "0001592058",
+    "0001609253",
+    "0001637459",
+    "0001652044",
+    "0001655020",
+    "0001657853",
+    "0001725526",
+    "0001731289"
+  ],
+  "missing_source_policy": "Retain failures explicitly; never substitute cases based on scores or observed class counts."
+}

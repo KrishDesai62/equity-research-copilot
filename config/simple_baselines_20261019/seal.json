@@ -1,0 +1,5 @@
+{
+  "config/simple_baselines_20261019/models.json": "7c84adb7d3c237a8c74168ef05a57c300dc29dab3418d65d6919b0c3f6a1d1fb",
+  "src/validation/simple_baseline_development.py": "f35a2a1466025c12203ce8d9218dab9f116df06aac06454a77ae06aea8bf82df",
+  "src/ml/simple_baselines.py": "b0e474646e1d388e6f2dee57646d8b0a6d6b4845892bb7a97e7b1ba831f60ab6"
+}

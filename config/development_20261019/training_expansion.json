@@ -1,0 +1,13 @@
+{
+  "version":1,
+  "seed":"historical-sec-small-issuer-complement-20261019-v1",
+  "anchors":["2014-12-31","2015-12-31","2016-12-31","2017-12-31","2018-12-31","2019-12-31","2020-12-31"],
+  "reporting_grace_days":200,
+  "max_feature_age_days":180,
+  "max_feature_missing_fraction":0.25,
+  "background_probability":0.1,
+  "population":"Nonfinancial original annual filers in 2014-2020 from the historical SEC frame; original excluded IDs and all recent calibration/final reservations excluded.",
+  "sampling":"All newly discovered SEC Item 1.03 proxy companies plus independent 10% background in the complement of the original 915 sampled companies. Original BRD certainty companies retain probability one. Original background companies in the extension frame and new companies use union pi=.1+.9*extension_pi, irrespective of outcome or acquisition phase.",
+  "target":"target_sec_disclosed_petition_1yr",
+  "scope":"Automated issuer Chapter 7/11 disclosure evidence, not exhaustive court outcomes. No missing outcome becomes zero; continued original reporting required for negatives. No final evaluation rows are acquired or scored."
+}

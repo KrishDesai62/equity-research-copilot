@@ -5,3 +5,9 @@ __pycache__/
 data/raw/
 data/processed/
 *.zip
+
+.venv/
+__pycache__/
+.pytest_cache/
+*.joblib
+build/

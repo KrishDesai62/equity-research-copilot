@@ -1,0 +1,1 @@
+{"bootstrap_replicates": 200, "seed": 104729, "threshold_quantile": 0.75, "minimum_feasible_fraction": 0.8, "minimum_precision": 0.5, "minimum_recall": 0.5, "limits": "Fixed research diagnostic on reused development. Bootstrap stability is not a probability guarantee or independent validation. Abstentions must remain visible; no deployment or final scoring."}

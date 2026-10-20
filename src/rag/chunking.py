@@ -94,56 +94,25 @@ def chunk_section(section_text: str, max_tokens: int = 500, overlap: int = 50) -
     Splits section text into token-bounded chunks based on sentence boundaries,
     ensuring proper sliding window overlap without infinite loops.
     """
+    if max_tokens <= 0 or overlap < 0 or overlap >= max_tokens:
+        raise ValueError("Require max_tokens > 0 and 0 <= overlap < max_tokens")
     if not section_text:
         return []
-
-    # Robust sentence splitting regex
-    sentence_splitter = re.compile(r'(?<=[.!?])\s+')
-    sentences = sentence_splitter.split(section_text)
-    
-    chunks = []
-    current_chunk = []
-    current_word_count = 0
-    
-    i = 0
-    while i < len(sentences):
-        sentence = sentences[i].strip()
-        if not sentence:
-            i += 1
-            continue
-            
-        words = sentence.split()
-        word_count = len(words)
-        
-        if current_word_count + word_count > max_tokens and current_chunk:
-            # Finalize current chunk
-            chunks.append(" ".join(current_chunk))
-            
-            # Roll back index for overlap computation
-            overlap_count = 0
-            backtrack_idx = i
-            temp_overlap_sentences = []
-            
-            while backtrack_idx > 0 and overlap_count < overlap:
-                prev_sentence = sentences[backtrack_idx - 1].strip()
-                prev_words = prev_sentence.split()
-                if overlap_count + len(prev_words) <= overlap:
-                    temp_overlap_sentences.insert(0, prev_sentence)
-                    overlap_count += len(prev_words)
-                    backtrack_idx -= 1
-                else:
-                    break
-                    
-            current_chunk = temp_overlap_sentences
-            current_word_count = overlap_count
-        else:
-            current_chunk.append(sentence)
-            current_word_count += word_count
-            i += 1
-            
-    if current_chunk:
-        chunks.append(" ".join(current_chunk))
-        
+    # Word counts approximate tokens, as before. Prefer sentence ends but fall
+    # back to a hard window for long sentences. Every window consumes new words.
+    words = section_text.split()
+    chunks, start = [], 0
+    while start < len(words):
+        end = min(start + max_tokens, len(words))
+        if end < len(words):
+            boundaries = [i + 1 for i in range(start + overlap, end)
+                          if re.search(r"[.!?][\"')]*$", words[i])]
+            if boundaries:
+                end = boundaries[-1]
+        chunks.append(" ".join(words[start:end]))
+        if end == len(words):
+            break
+        start = max(start + 1, end - overlap)
     return chunks
 
 

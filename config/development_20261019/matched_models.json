@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "seed": "sec-disclosed-issuer-v1-20261018",
+  "models": [
+    "logistic_regularized",
+    "logistic_balanced",
+    "xgb_regularized",
+    "xgb_sqrt_balance",
+    "neural_network",
+    "logistic_c1_balanced",
+    "hist_gradient_balanced",
+    "random_forest_balanced",
+    "previous_frozen_reference"
+  ],
+  "calibration_folds": 3,
+  "calibration_regularization": 0.1,
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "minimum_final_companies": 50,
+  "minimum_final_positive_companies": 20,
+  "phases": [
+    "base",
+    "expanded"
+  ],
+  "selection": "Fixed candidate list for both training phases. Prefer converged candidates satisfying both development thresholds, then minimize weighted cross-fitted log loss and Brier. Compare phases only on the same resolved recent calibration units and design weights. No final scores choose features, phase, model or threshold. This version uses the frozen recent-development complement with uniformly recomputed marginal inclusion weights for both phases. The old reference is diagnostic only because its training labels predate the issuer-identity correction; only candidates refitted on corrected labels can be selected.",
+  "final_gate": "Require complete source acquisition, frozen model selection, minimum support, feasible development threshold and independently reviewed current final labels before one-use final scoring.",
+  "limits": "Development reuse and model selection are optimistic; source weights do not correct outcome censoring. No automatic production promotion.",
+  "diagnostic_only_models": [
+    "previous_frozen_reference"
+  ]
+}

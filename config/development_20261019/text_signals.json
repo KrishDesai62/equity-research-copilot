@@ -1,0 +1,7 @@
+{
+  "version":1,
+  "features":["text_going_concern_rate","text_substantial_doubt_rate","text_covenant_breach_rate","text_liquidity_shortfall_rate","text_restructuring_rate","text_auditor_change_rate","text_financing_dependency_rate","text_log_word_count"],
+  "document":"The exact original 10-K/10-Q accession supplying each prediction's financial features. Issuer, form and public date must match, and publication must precede prediction.",
+  "normalization":"Visible filing text only; discard hidden XBRL, scripts/styles/head/noscript and hidden DOM nodes. Frequencies per 10000 words, not assertions of legal distress.",
+  "acquisition":"Resumable document cache shared across the base and precommitted expanded training phases. Missing source/text is never zero. No final documents before frozen development selection."
+}

@@ -137,27 +137,12 @@ def universe_as_of(date: str, membership_history: pd.DataFrame) -> List[str]:
     if pd.isna(target_date):
         raise ValueError(f"Invalid evaluation date format provided: {date}")
         
-    # Active constituents: Added on or before target date, and either never removed or removed after target date
-    active = membership_history[
-        (membership_history['added_date'].notna()) & 
-        (membership_history['added_date'] <= target_date)
-    ]
-    
-    # Exclude those removed prior to or on target date
-    valid_members = membership_history[
-        membership_history['removed_date'].notna() & 
-        (membership_history['removed_date'] > target_date)
-    ]
-    
-    # Combine active additions and members who haven't hit a removal boundary yet
-    active_tickers = set(active['ticker'].dropna().unique())
-    removed_tickers = set(membership_history[
-        membership_history['removed_date'].notna() & 
-        (membership_history['removed_date'] <= target_date)
-    ]['ticker'].dropna().unique())
-    
-    true_active = list(active_tickers - removed_tickers)
-    
+    # Each row is an explicit membership interval; a later re-entry is valid.
+    added = pd.to_datetime(membership_history["added_date"], errors="raise")
+    removed = pd.to_datetime(membership_history["removed_date"], errors="raise")
+    mask = added.notna() & (added <= target_date) & (removed.isna() | (removed > target_date))
+    true_active = membership_history.loc[mask, "ticker"].dropna().unique().tolist()
+
     logger.debug(f"Computed active universe for {target_date.date()}: {len(true_active)} active entities.")
     return sorted(true_active)
 

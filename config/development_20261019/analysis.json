@@ -1,0 +1,1 @@
+{"version":1,"diagnostic_thresholds":[0.02,0.05,0.1],"size_edges_usd":[100000000,400000000,2000000000],"policy":"Development-only error analysis. Diagnostic thresholds are not deployment thresholds. No final rows or predictions are loaded."}

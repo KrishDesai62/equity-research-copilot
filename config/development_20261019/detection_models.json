@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "seed": "sec-disclosed-issuer-v1-20261018",
+  "calibration_folds": 3,
+  "calibration_regularization": 0.1,
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "models": ["native_design", "native_sqrt", "native_balanced", "native_company_balanced", "native_recent_balanced", "native_regularized_sqrt", "xgb_native_sqrt", "extra_trees_balanced", "frozen_current_reference", "native_vote", "diverse_vote"],
+  "ensembles": {"native_vote": ["native_sqrt", "native_balanced", "frozen_current_reference"], "diverse_vote": ["extra_trees_balanced", "xgb_native_sqrt", "frozen_current_reference"]},
+  "selection": "Prefer converged candidates meeting both unchanged development thresholds, then minimize design-weighted company-cross-fitted log loss, Brier and name. No held-out scores. Compare on exactly the frozen 303 development companies and weights.",
+  "training_weights": "Alternative company normalization and three-year recency half-life affect training loss only. Population inclusion weights and all evaluation labels and weights remain unchanged.",
+  "limits": "Repeated development selection is optimistic. This is a fixed research experiment, not independent validation or production approval."
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "maximum_statement_lag_days": 200,
+  "corrections": ["Recognize dated issuer statements saying filed for liquidation under Chapter 7", "Strip trailing SEC state annotations /DE and /NV from matching names, retaining legal suffixes"],
+  "policy": "Uniform automated source review for all training/calibration/final companies. No new negatives; preserve earlier admission outputs, prove every correction with primary document hashes and offsets. No model predictions used for label decisions.",
+  "review_status": "Automated corroboration, not independent human review"
+}

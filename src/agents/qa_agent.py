@@ -1,26 +1,34 @@
-"""
-MVP agent: single Q&A over the retrieval backbone. This is the whole
-"agent layer" for the MVP — no bull/bear/risk/synthesis debate yet
-(that's agents_full/, Phase 4). The point of building this now is to
-prove retrieve() produces good enough grounded answers before you invest
-in a four-agent architecture on top of it.
-"""
+"""Grounded, extractive filing Q&A: cited passages without invented synthesis."""
+from datetime import date
 from src.rag.retrieval import retrieve
 
 
-def answer_question(question: str, ticker: str) -> dict:
-    """
-    TODO:
-      1. chunks = retrieve(question, ticker=ticker, k=5)
-      2. build a prompt: the question + retrieved chunk texts, each
-         labeled with its section/filing_date so the model can cite them
-      3. call the Anthropic API (see anthropic_api_in_artifacts pattern,
-         or just the SDK directly if running outside artifacts) with that
-         prompt
-      4. return {answer: str, citations: [{section, filing_date}, ...]}
-
-    MVP test: ask "what changed in risk factors this year" for one of
-    your MVP tickers and confirm the answer cites an actual retrieved
-    section, not a hallucinated one.
-    """
-    raise NotImplementedError
+def answer_question(question: str, ticker: str, *, as_of=None, k=3, retriever=None) -> dict:
+    if not question.strip() or not ticker.strip():
+        raise ValueError("Question and ticker are required")
+    if k < 1:
+        raise ValueError("k must be positive")
+    cutoff = date.fromisoformat(as_of) if as_of else date.today()
+    rows = (retriever or retrieve)(question, ticker=ticker.upper(), k=k,
+                                  date_range=("1900-01-01", cutoff.isoformat()))
+    citations, passages = [], []
+    for row in rows:
+        meta = row.get("metadata", {})
+        if row.get("ticker") != ticker.upper() or not row.get("filing_date"):
+            continue
+        if date.fromisoformat(row["filing_date"]) > cutoff:
+            continue
+        if not meta.get("source_url") or not meta.get("accession_number"):
+            continue
+        number = len(citations) + 1
+        excerpt = row["text"]
+        citations.append({"id": number, "source_url": meta["source_url"],
+            "accession_number": meta["accession_number"], "cik": meta.get("cik"),
+            "filing_date": row["filing_date"], "section": row.get("section"),
+            "chunk_id": meta.get("chunk_id"), "excerpt": excerpt})
+        passages.append(f"[{number}] {excerpt}")
+    return {"answer": "Relevant filing evidence:\n\n" + "\n\n".join(passages) if passages else
+            "No cited filing evidence was found for this company by the requested date.",
+            "citations": citations, "status": "evidence_found" if passages else "unavailable",
+            "answer_mode": "extractive", "as_of": cutoff.isoformat(),
+            "limitation": "Passages support research; this mode does not synthesize conclusions or verify numerical reasoning."}

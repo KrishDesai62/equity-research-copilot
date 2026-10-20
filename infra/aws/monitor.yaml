@@ -1,0 +1,212 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Daily SEC filing monitor using an existing private S3 cache bucket
+Parameters:
+  CacheBucketName:
+    Type: String
+    Description: Existing bucket created by cache.yaml (in this account and region)
+  CodeBucketName:
+    Type: String
+    Description: Bucket containing the Lambda ZIP (same region as the function)
+  CodeObjectKey:
+    Type: String
+    Description: Unique object key for the ZIP produced by build_monitor.py
+  EdgarUserAgent:
+    Type: String
+    AllowedPattern: '.+ .+@.+'
+    Description: Application name and real contact email required by SEC
+  CachePrefix:
+    Type: String
+    Default: equity-research
+    AllowedPattern: '[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)*'
+  ScheduleExpression:
+    Type: String
+    Default: cron(0 18 * * ? *)
+    Description: Daily at 6 PM in ScheduleTimezone by default
+  ScheduleTimezone:
+    Type: String
+    Default: America/Chicago
+  ScheduleState:
+    Type: String
+    Default: DISABLED
+    AllowedValues: [ENABLED, DISABLED]
+    Description: Enable after uploading your watchlist and testing the first run
+  AlarmTopicArn:
+    Type: String
+    Default: ''
+    AllowedPattern: '^$|^arn:[a-z-]+:sns:[a-z0-9-]+:[0-9]{12}:[A-Za-z0-9_-]+$'
+    Description: Existing SNS topic with confirmed operator subscriptions; blank disables delivery
+Conditions:
+  HasAlarmTopic: !Not [!Equals [!Ref AlarmTopicArn, '']]
+  ScheduleEnabled: !Equals [!Ref ScheduleState, ENABLED]
+Resources:
+  FailureQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 1209600
+      SqsManagedSseEnabled: true
+  MonitorRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: FilingCacheAndFailures
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [s3:GetObject, s3:PutObject]
+                Resource: !Sub arn:${AWS::Partition}:s3:::${CacheBucketName}/${CachePrefix}/*
+              # Needed for S3 to distinguish absent checkpoints from forbidden objects.
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: !Sub arn:${AWS::Partition}:s3:::${CacheBucketName}
+              - Effect: Allow
+                Action: sqs:SendMessage
+                Resource: !GetAtt FailureQueue.Arn
+  MonitorFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.12
+      Architectures: [x86_64]
+      Handler: src.aws.filing_monitor.handler
+      Role: !GetAtt MonitorRole.Arn
+      Timeout: 900
+      MemorySize: 1024
+      EphemeralStorage:
+        Size: 1024
+      # Serial execution protects checkpoints and keeps SEC request rates bounded.
+      ReservedConcurrentExecutions: 1
+      Code:
+        S3Bucket: !Ref CodeBucketName
+        S3Key: !Ref CodeObjectKey
+      Environment:
+        Variables:
+          AWS_S3_BUCKET: !Ref CacheBucketName
+          AWS_S3_PREFIX: !Ref CachePrefix
+          EDGAR_USER_AGENT: !Ref EdgarUserAgent
+          MONITOR_WATCHLIST_KEY: monitor/watchlist.json
+  MonitorLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${MonitorFunction}
+      RetentionInDays: 14
+  AsyncRetryConfiguration:
+    Type: AWS::Lambda::EventInvokeConfig
+    Properties:
+      FunctionName: !Ref MonitorFunction
+      Qualifier: $LATEST
+      MaximumEventAgeInSeconds: 21600
+      MaximumRetryAttempts: 2
+      DestinationConfig:
+        OnFailure:
+          Destination: !GetAtt FailureQueue.Arn
+  SchedulerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: scheduler.amazonaws.com
+            Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:SourceAccount: !Ref AWS::AccountId
+      Policies:
+        - PolicyName: InvokeFilingMonitor
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource: !GetAtt MonitorFunction.Arn
+              - Effect: Allow
+                Action: sqs:SendMessage
+                Resource: !GetAtt FailureQueue.Arn
+  DailySchedule:
+    Type: AWS::Scheduler::Schedule
+    DependsOn: [AsyncRetryConfiguration, MonitorLogGroup]
+    Properties:
+      State: !Ref ScheduleState
+      ScheduleExpression: !Ref ScheduleExpression
+      ScheduleExpressionTimezone: !Ref ScheduleTimezone
+      FlexibleTimeWindow:
+        Mode: 'OFF'
+      Target:
+        Arn: !GetAtt MonitorFunction.Arn
+        RoleArn: !GetAtt SchedulerRole.Arn
+        Input: '{}'
+        RetryPolicy:
+          MaximumEventAgeInSeconds: 3600
+          MaximumRetryAttempts: 2
+        DeadLetterConfig:
+          Arn: !GetAtt FailureQueue.Arn
+  MonitorErrors:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Filing monitor failed; inspect Lambda logs and the failure queue
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref MonitorFunction
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: !If [HasAlarmTopic, [!Ref AlarmTopicArn], []]
+  MonitorNoInvocations:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Daily monitor was not invoked; inspect scheduler state and permissions
+      ActionsEnabled: !If [ScheduleEnabled, true, false]
+      Namespace: AWS/Lambda
+      MetricName: Invocations
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref MonitorFunction
+      Statistic: Sum
+      Period: 86400
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: LessThanThreshold
+      TreatMissingData: breaching
+      AlarmActions: !If [HasAlarmTopic, [!Ref AlarmTopicArn], []]
+  FailureQueueMessages:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: Filing monitor dead-letter queue contains work requiring recovery
+      Namespace: AWS/SQS
+      MetricName: ApproximateNumberOfMessagesVisible
+      Dimensions:
+        - Name: QueueName
+          Value: !GetAtt FailureQueue.QueueName
+      Statistic: Maximum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+      AlarmActions: !If [HasAlarmTopic, [!Ref AlarmTopicArn], []]
+Outputs:
+  FunctionName:
+    Value: !Ref MonitorFunction
+  ScheduleName:
+    Value: !Ref DailySchedule
+  FailureQueueUrl:
+    Value: !Ref FailureQueue
+  WatchlistLocation:
+    Value: !Sub s3://${CacheBucketName}/${CachePrefix}/monitor/watchlist.json
+  ReportsLocation:
+    Value: !Sub s3://${CacheBucketName}/${CachePrefix}/monitor/reports/

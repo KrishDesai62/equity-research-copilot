@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "start": "2025-01-01",
+  "end": "2026-07-19",
+  "forms": "8-K",
+  "item": "1.03",
+  "page_size": 100,
+  "endpoint": "https://efts.sec.gov/LATEST/search-index",
+  "purpose": "Primary SEC event discovery for a separately reserved complementary cohort; no labels or model predictions are inferred from search hits.",
+  "limits": "Search-index completeness is not court-event completeness. Primary submissions and document review remain required. Root 8-K searches include amendments; response query and returned forms must be verified."
+}

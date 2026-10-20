@@ -1,0 +1,2913 @@
+{
+  "config_sha256": "a82365d9af844673c796b82f7476c7bf1666d81cafd05d07c696ffee6ecf5e40",
+  "registry_sha256": "03a17b10802b26eefce1d30a4dd45e774b3a252a16ad8fae60116185d97dfe70",
+  "baseline_sha256": "98a3f52459f2ced7a4d2371c1871d7c0126846b0bc00908bf9b151012e96d204",
+  "universes": [
+    {
+      "year": 2012,
+      "sha256": "42ed1a5ecac978d4338bd51cd4bc15bf60cc821291eea492f8172fc4e803d5f6"
+    },
+    {
+      "year": 2014,
+      "sha256": "bf55481c6e0088fb45e8efeb2d8de6912a9c3533da918376a24ca5f84144680f"
+    },
+    {
+      "year": 2016,
+      "sha256": "5c89a6badede1b47ab540913c7484795c7fc4c2a4672ac601b34b8c0afe5a698"
+    }
+  ],
+  "companies": [
+    {
+      "cik": "0000002488",
+      "ticker": "CIK0000002488",
+      "company_name": "ADVANCED MICRO DEVICES INC",
+      "entry_date": "2016-02-18"
+    },
+    {
+      "cik": "0000004281",
+      "ticker": "CIK0000004281",
+      "company_name": "ALCOA INC",
+      "entry_date": "2016-02-19"
+    },
+    {
+      "cik": "0000006769",
+      "ticker": "CIK0000006769",
+      "company_name": "APACHE CORP",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0000015511",
+      "ticker": "CIK0000015511",
+      "company_name": "BNSF RAILWAY CO",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0000018255",
+      "ticker": "CIK0000018255",
+      "company_name": "CATO CORP",
+      "entry_date": "2016-03-24"
+    },
+    {
+      "cik": "0000023111",
+      "ticker": "CIK0000023111",
+      "company_name": "COMPUTER TASK GROUP INC",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0000025445",
+      "ticker": "CIK0000025445",
+      "company_name": "CRANE CO /DE/",
+      "entry_date": "2016-02-23"
+    },
+    {
+      "cik": "0000026324",
+      "ticker": "CIK0000026324",
+      "company_name": "CURTISS WRIGHT CORP",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0000029834",
+      "ticker": "CIK0000029834",
+      "company_name": "DOUBLE EAGLE PETROLEUM CO",
+      "entry_date": "2014-03-13"
+    },
+    {
+      "cik": "0000029905",
+      "ticker": "CIK0000029905",
+      "company_name": "DOVER CORP",
+      "entry_date": "2014-02-14"
+    },
+    {
+      "cik": "0000030625",
+      "ticker": "CIK0000030625",
+      "company_name": "FLOWSERVE CORP",
+      "entry_date": "2014-02-18"
+    },
+    {
+      "cik": "0000033488",
+      "ticker": "CIK0000033488",
+      "company_name": "ESCALADE INC",
+      "entry_date": "2016-02-23"
+    },
+    {
+      "cik": "0000042582",
+      "ticker": "CIK0000042582",
+      "company_name": "GOODYEAR TIRE & RUBBER CO /OH/",
+      "entry_date": "2012-02-14"
+    },
+    {
+      "cik": "0000043196",
+      "ticker": "CIK0000043196",
+      "company_name": "GRAY TELEVISION INC",
+      "entry_date": "2012-03-06"
+    },
+    {
+      "cik": "0000048039",
+      "ticker": "CIK0000048039",
+      "company_name": "HOLLYFRONTIER CORP",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0000052795",
+      "ticker": "CIK0000052795",
+      "company_name": "ANIXTER INTERNATIONAL INC",
+      "entry_date": "2016-02-19"
+    },
+    {
+      "cik": "0000054507",
+      "ticker": "CIK0000054507",
+      "company_name": "WESTAR ENERGY INC /KS",
+      "entry_date": "2014-02-26"
+    },
+    {
+      "cik": "0000064040",
+      "ticker": "CIK0000064040",
+      "company_name": "MCGRAW HILL FINANCIAL INC",
+      "entry_date": "2014-02-07"
+    },
+    {
+      "cik": "0000064463",
+      "ticker": "CIK0000064463",
+      "company_name": "MECHANICAL TECHNOLOGY INC",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0000066570",
+      "ticker": "CIK0000066570",
+      "company_name": "MINE SAFETY APPLIANCES CO",
+      "entry_date": "2014-02-24"
+    },
+    {
+      "cik": "0000069499",
+      "ticker": "CIK0000069499",
+      "company_name": "MYLAN INC.",
+      "entry_date": "2012-02-21"
+    },
+    {
+      "cik": "0000071691",
+      "ticker": "CIK0000071691",
+      "company_name": "NEW YORK TIMES CO",
+      "entry_date": "2012-02-23"
+    },
+    {
+      "cik": "0000072903",
+      "ticker": "CIK0000072903",
+      "company_name": "XCEL ENERGY INC",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0000072909",
+      "ticker": "CIK0000072909",
+      "company_name": "NORTHERN STATES POWER CO /WI/",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0000076605",
+      "ticker": "CIK0000076605",
+      "company_name": "PATRICK INDUSTRIES INC",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0000078003",
+      "ticker": "CIK0000078003",
+      "company_name": "PFIZER INC",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0000084748",
+      "ticker": "CIK0000084748",
+      "company_name": "ROGERS CORP",
+      "entry_date": "2014-02-24"
+    },
+    {
+      "cik": "0000085408",
+      "ticker": "CIK0000085408",
+      "company_name": "ROWAN COMPANIES PLC",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0000088941",
+      "ticker": "CIK0000088941",
+      "company_name": "SEMTECH CORP",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0000089800",
+      "ticker": "CIK0000089800",
+      "company_name": "SHERWIN WILLIAMS CO",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0000090185",
+      "ticker": "CIK0000090185",
+      "company_name": "SIGMA ALDRICH CORP",
+      "entry_date": "2014-02-06"
+    },
+    {
+      "cik": "0000092380",
+      "ticker": "CIK0000092380",
+      "company_name": "SOUTHWEST AIRLINES CO",
+      "entry_date": "2012-02-09"
+    },
+    {
+      "cik": "0000092416",
+      "ticker": "CIK0000092416",
+      "company_name": "SOUTHWEST GAS CORP",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0000093859",
+      "ticker": "CIK0000093859",
+      "company_name": "BIGLARI HOLDINGS INC.",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0000096223",
+      "ticker": "CIK0000096223",
+      "company_name": "LEUCADIA NATIONAL CORP",
+      "entry_date": "2012-02-27"
+    },
+    {
+      "cik": "0000100625",
+      "ticker": "CIK0000100625",
+      "company_name": "SIERRA MONITOR CORP /CA/",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0000101295",
+      "ticker": "CIK0000101295",
+      "company_name": "UNITED GUARDIAN INC",
+      "entry_date": "2014-03-24"
+    },
+    {
+      "cik": "0000101984",
+      "ticker": "CIK0000101984",
+      "company_name": "UNIVERSAL ELECTRONICS INC",
+      "entry_date": "2012-03-14"
+    },
+    {
+      "cik": "0000105016",
+      "ticker": "CIK0000105016",
+      "company_name": "WATSCO INC",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000105770",
+      "ticker": "CIK0000105770",
+      "company_name": "WEST PHARMACEUTICAL SERVICES INC",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0000107833",
+      "ticker": "CIK0000107833",
+      "company_name": "WISCONSIN PUBLIC SERVICE CORP",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0000109758",
+      "ticker": "CIK0000109758",
+      "company_name": "ARBITRON INC",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0000203077",
+      "ticker": "CIK0000203077",
+      "company_name": "ST JUDE MEDICAL INC",
+      "entry_date": "2016-02-23"
+    },
+    {
+      "cik": "0000225211",
+      "ticker": "CIK0000225211",
+      "company_name": "ONE HORIZON GROUP, INC.",
+      "entry_date": "2016-03-31"
+    },
+    {
+      "cik": "0000277135",
+      "ticker": "CIK0000277135",
+      "company_name": "GRAINGER W W INC",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0000310764",
+      "ticker": "CIK0000310764",
+      "company_name": "STRYKER CORP",
+      "entry_date": "2016-02-11"
+    },
+    {
+      "cik": "0000313716",
+      "ticker": "CIK0000313716",
+      "company_name": "HARDINGE INC",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0000315213",
+      "ticker": "CIK0000315213",
+      "company_name": "HALF ROBERT INTERNATIONAL INC /DE/",
+      "entry_date": "2016-02-17"
+    },
+    {
+      "cik": "0000315374",
+      "ticker": "CIK0000315374",
+      "company_name": "HURCO COMPANIES INC",
+      "entry_date": "2014-01-10"
+    },
+    {
+      "cik": "0000318346",
+      "ticker": "CIK0000318346",
+      "company_name": "TASA PRODUCTS LTD",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0000320340",
+      "ticker": "CIK0000320340",
+      "company_name": "INTELLIGENT SYSTEMS CORP",
+      "entry_date": "2016-03-16"
+    },
+    {
+      "cik": "0000350563",
+      "ticker": "CIK0000350563",
+      "company_name": "TECO ENERGY INC",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0000350644",
+      "ticker": "CIK0000350644",
+      "company_name": "LATTICE INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0000351789",
+      "ticker": "CIK0000351789",
+      "company_name": "ELECTRO SENSORS INC",
+      "entry_date": "2016-03-14"
+    },
+    {
+      "cik": "0000352825",
+      "ticker": "CIK0000352825",
+      "company_name": "FOSTER L B CO",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0000357001",
+      "ticker": "CIK0000357001",
+      "company_name": "TRIMEDYNE INC",
+      "entry_date": "2012-02-07"
+    },
+    {
+      "cik": "0000357097",
+      "ticker": "CIK0000357097",
+      "company_name": "FIBROCELL SCIENCE, INC.",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0000701374",
+      "ticker": "CIK0000701374",
+      "company_name": "SIX FLAGS ENTERTAINMENT CORP",
+      "entry_date": "2016-02-18"
+    },
+    {
+      "cik": "0000703360",
+      "ticker": "CIK0000703360",
+      "company_name": "LSI CORP",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000706698",
+      "ticker": "CIK0000706698",
+      "company_name": "UTAH MEDICAL PRODUCTS INC",
+      "entry_date": "2012-03-12"
+    },
+    {
+      "cik": "0000709804",
+      "ticker": "CIK0000709804",
+      "company_name": "STEEL EXCEL INC.",
+      "entry_date": "2014-03-12"
+    },
+    {
+      "cik": "0000728385",
+      "ticker": "CIK0000728385",
+      "company_name": "MIDWEST ENERGY EMISSIONS CORP.",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0000741815",
+      "ticker": "CIK0000741815",
+      "company_name": "HOOPER HOLMES INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0000742112",
+      "ticker": "CIK0000742112",
+      "company_name": "INVACARE CORP",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0000742278",
+      "ticker": "CIK0000742278",
+      "company_name": "RPC INC",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000744187",
+      "ticker": "CIK0000744187",
+      "company_name": "REX AMERICAN RESOURCES CORP",
+      "entry_date": "2016-03-25"
+    },
+    {
+      "cik": "0000748015",
+      "ticker": "CIK0000748015",
+      "company_name": "SEALY CORP",
+      "entry_date": "2012-01-18"
+    },
+    {
+      "cik": "0000750813",
+      "ticker": "CIK0000750813",
+      "company_name": "SEITEL INC",
+      "entry_date": "2016-02-19"
+    },
+    {
+      "cik": "0000751652",
+      "ticker": "CIK0000751652",
+      "company_name": "QUESTAR CORP",
+      "entry_date": "2016-02-18"
+    },
+    {
+      "cik": "0000754737",
+      "ticker": "CIK0000754737",
+      "company_name": "SCANA CORP",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000757011",
+      "ticker": "CIK0000757011",
+      "company_name": "USG CORP",
+      "entry_date": "2012-02-14"
+    },
+    {
+      "cik": "0000769520",
+      "ticker": "CIK0000769520",
+      "company_name": "MIDDLEBY CORP",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0000771999",
+      "ticker": "CIK0000771999",
+      "company_name": "DOCUMENT SECURITY SYSTEMS INC",
+      "entry_date": "2012-03-19"
+    },
+    {
+      "cik": "0000776325",
+      "ticker": "CIK0000776325",
+      "company_name": "RES CARE INC /KY/",
+      "entry_date": "2012-02-16"
+    },
+    {
+      "cik": "0000785787",
+      "ticker": "CIK0000785787",
+      "company_name": "AEP INDUSTRIES INC",
+      "entry_date": "2016-01-14"
+    },
+    {
+      "cik": "0000789570",
+      "ticker": "CIK0000789570",
+      "company_name": "MGM RESORTS INTERNATIONAL",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000795266",
+      "ticker": "CIK0000795266",
+      "company_name": "KB HOME",
+      "entry_date": "2012-01-30"
+    },
+    {
+      "cik": "0000799088",
+      "ticker": "CIK0000799088",
+      "company_name": "CARMIKE CINEMAS INC",
+      "entry_date": "2014-03-04"
+    },
+    {
+      "cik": "0000803578",
+      "ticker": "CIK0000803578",
+      "company_name": "INFORMATION ANALYSIS INC",
+      "entry_date": "2016-03-29"
+    },
+    {
+      "cik": "0000805305",
+      "ticker": "CIK0000805305",
+      "company_name": "QUIKSILVER INC",
+      "entry_date": "2016-01-27"
+    },
+    {
+      "cik": "0000805326",
+      "ticker": "CIK0000805326",
+      "company_name": "EMISPHERE TECHNOLOGIES INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0000805729",
+      "ticker": "CIK0000805729",
+      "company_name": "CHINA FORESTRY INC",
+      "entry_date": "2012-03-28"
+    },
+    {
+      "cik": "0000810136",
+      "ticker": "CIK0000810136",
+      "company_name": "PHOTRONICS INC",
+      "entry_date": "2012-01-13"
+    },
+    {
+      "cik": "0000811596",
+      "ticker": "CIK0000811596",
+      "company_name": "KAISER ALUMINUM CORP",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0000814286",
+      "ticker": "CIK0000814286",
+      "company_name": "HALO COMPANIES, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0000819050",
+      "ticker": "CIK0000819050",
+      "company_name": "VICAL INC",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0000820736",
+      "ticker": "CIK0000820736",
+      "company_name": "ORBITAL SCIENCES CORP /DE/",
+      "entry_date": "2014-02-25"
+    },
+    {
+      "cik": "0000822416",
+      "ticker": "CIK0000822416",
+      "company_name": "PULTEGROUP INC/MI/",
+      "entry_date": "2014-02-05"
+    },
+    {
+      "cik": "0000827187",
+      "ticker": "CIK0000827187",
+      "company_name": "SELECT COMFORT CORP",
+      "entry_date": "2014-02-21"
+    },
+    {
+      "cik": "0000827809",
+      "ticker": "CIK0000827809",
+      "company_name": "QLT INC/BC",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0000830616",
+      "ticker": "CIK0000830616",
+      "company_name": "SCI ENGINEERED MATERIALS, INC.",
+      "entry_date": "2016-02-09"
+    },
+    {
+      "cik": "0000831968",
+      "ticker": "CIK0000831968",
+      "company_name": "PROVIDENCE & WORCESTER RAILROAD CO/RI/",
+      "entry_date": "2012-03-23"
+    },
+    {
+      "cik": "0000834365",
+      "ticker": "CIK0000834365",
+      "company_name": "BIOLIFE SOLUTIONS INC",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0000837465",
+      "ticker": "CIK0000837465",
+      "company_name": "CALLAWAY GOLF CO",
+      "entry_date": "2012-03-02"
+    },
+    {
+      "cik": "0000842162",
+      "ticker": "CIK0000842162",
+      "company_name": "LEAR CORP",
+      "entry_date": "2012-02-17"
+    },
+    {
+      "cik": "0000843368",
+      "ticker": "CIK0000843368",
+      "company_name": "NORTHLAND CABLE PROPERTIES EIGHT LIMITED PARTNERSHIP",
+      "entry_date": "2012-03-05"
+    },
+    {
+      "cik": "0000844965",
+      "ticker": "CIK0000844965",
+      "company_name": "TETRA TECHNOLOGIES INC",
+      "entry_date": "2016-03-04"
+    },
+    {
+      "cik": "0000850429",
+      "ticker": "CIK0000850429",
+      "company_name": "TREDEGAR CORP",
+      "entry_date": "2012-03-02"
+    },
+    {
+      "cik": "0000850460",
+      "ticker": "CIK0000850460",
+      "company_name": "ENCORE WIRE CORP",
+      "entry_date": "2012-03-02"
+    },
+    {
+      "cik": "0000861459",
+      "ticker": "CIK0000861459",
+      "company_name": "GRANITE CONSTRUCTION INC",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0000861878",
+      "ticker": "CIK0000861878",
+      "company_name": "STERICYCLE INC",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0000872589",
+      "ticker": "CIK0000872589",
+      "company_name": "REGENERON PHARMACEUTICALS INC",
+      "entry_date": "2016-02-11"
+    },
+    {
+      "cik": "0000874238",
+      "ticker": "CIK0000874238",
+      "company_name": "STERLING CONSTRUCTION CO INC",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0000874396",
+      "ticker": "CIK0000874396",
+      "company_name": "LIFETIME BRANDS, INC",
+      "entry_date": "2012-03-09"
+    },
+    {
+      "cik": "0000874761",
+      "ticker": "CIK0000874761",
+      "company_name": "AES CORP",
+      "entry_date": "2014-02-26"
+    },
+    {
+      "cik": "0000875045",
+      "ticker": "CIK0000875045",
+      "company_name": "BIOGEN INC.",
+      "entry_date": "2016-02-03"
+    },
+    {
+      "cik": "0000878526",
+      "ticker": "CIK0000878526",
+      "company_name": "NATUS MEDICAL INC",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0000879703",
+      "ticker": "CIK0000879703",
+      "company_name": "DIRECT INSITE CORP",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0000880285",
+      "ticker": "CIK0000880285",
+      "company_name": "ENBRIDGE ENERGY PARTNERS LP",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0000881464",
+      "ticker": "CIK0000881464",
+      "company_name": "AMYLIN PHARMACEUTICALS INC",
+      "entry_date": "2012-02-22"
+    },
+    {
+      "cik": "0000881524",
+      "ticker": "CIK0000881524",
+      "company_name": "VIVUS INC",
+      "entry_date": "2012-02-28"
+    },
+    {
+      "cik": "0000883980",
+      "ticker": "CIK0000883980",
+      "company_name": "FIRST DATA CORP",
+      "entry_date": "2012-03-05"
+    },
+    {
+      "cik": "0000883984",
+      "ticker": "CIK0000883984",
+      "company_name": "ICU MEDICAL INC/DE",
+      "entry_date": "2014-02-21"
+    },
+    {
+      "cik": "0000884269",
+      "ticker": "CIK0000884269",
+      "company_name": "ALPHA PRO TECH LTD",
+      "entry_date": "2016-03-03"
+    },
+    {
+      "cik": "0000885462",
+      "ticker": "CIK0000885462",
+      "company_name": "GULF RESOURCES, INC.",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0000886171",
+      "ticker": "CIK0000886171",
+      "company_name": "UNIVERSAL HOSPITAL SERVICES INC",
+      "entry_date": "2012-03-22"
+    },
+    {
+      "cik": "0000886346",
+      "ticker": "CIK0000886346",
+      "company_name": "KADANT INC",
+      "entry_date": "2016-03-16"
+    },
+    {
+      "cik": "0000889348",
+      "ticker": "CIK0000889348",
+      "company_name": "CPI AEROSTRUCTURES INC",
+      "entry_date": "2016-03-28"
+    },
+    {
+      "cik": "0000890264",
+      "ticker": "CIK0000890264",
+      "company_name": "EXA CORP",
+      "entry_date": "2016-03-21"
+    },
+    {
+      "cik": "0000890547",
+      "ticker": "CIK0000890547",
+      "company_name": "REVLON CONSUMER PRODUCTS CORP",
+      "entry_date": "2014-03-05"
+    },
+    {
+      "cik": "0000891014",
+      "ticker": "CIK0000891014",
+      "company_name": "MINERALS TECHNOLOGIES INC",
+      "entry_date": "2016-02-19"
+    },
+    {
+      "cik": "0000893538",
+      "ticker": "CIK0000893538",
+      "company_name": "SM ENERGY CO",
+      "entry_date": "2012-02-23"
+    },
+    {
+      "cik": "0000893691",
+      "ticker": "CIK0000893691",
+      "company_name": "MASONITE INTERNATIONAL CORP",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0000896493",
+      "ticker": "CIK0000896493",
+      "company_name": "DIGITAL POWER CORP",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0000897075",
+      "ticker": "CIK0000897075",
+      "company_name": "REPROS THERAPEUTICS INC.",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0000897077",
+      "ticker": "CIK0000897077",
+      "company_name": "ALAMO GROUP INC",
+      "entry_date": "2014-03-11"
+    },
+    {
+      "cik": "0000899394",
+      "ticker": "CIK0000899394",
+      "company_name": "HARBOR BIOSCIENCES, INC.",
+      "entry_date": "2012-01-20"
+    },
+    {
+      "cik": "0000907242",
+      "ticker": "CIK0000907242",
+      "company_name": "MONARCH CASINO & RESORT INC",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0000908255",
+      "ticker": "CIK0000908255",
+      "company_name": "BORGWARNER INC",
+      "entry_date": "2012-02-14"
+    },
+    {
+      "cik": "0000910329",
+      "ticker": "CIK0000910329",
+      "company_name": "MEDIFAST INC",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0000911326",
+      "ticker": "CIK0000911326",
+      "company_name": "SYNAGEVA BIOPHARMA CORP",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0000911649",
+      "ticker": "CIK0000911649",
+      "company_name": "STRATEGIC DIAGNOSTICS INC/DE/",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0000912562",
+      "ticker": "CIK0000912562",
+      "company_name": "GIBRALTAR INDUSTRIES, INC.",
+      "entry_date": "2014-02-20"
+    },
+    {
+      "cik": "0000914577",
+      "ticker": "CIK0000914577",
+      "company_name": "TRANS WORLD CORP",
+      "entry_date": "2012-03-08"
+    },
+    {
+      "cik": "0000916457",
+      "ticker": "CIK0000916457",
+      "company_name": "CALPINE CORP",
+      "entry_date": "2012-02-10"
+    },
+    {
+      "cik": "0000916540",
+      "ticker": "CIK0000916540",
+      "company_name": "DARLING INTERNATIONAL INC",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000918541",
+      "ticker": "CIK0000918541",
+      "company_name": "NN INC",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0000918946",
+      "ticker": "CIK0000918946",
+      "company_name": "BRIGHTPOINT INC",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0000919742",
+      "ticker": "CIK0000919742",
+      "company_name": "WORLD SURVEILLANCE GROUP INC.",
+      "entry_date": "2012-03-28"
+    },
+    {
+      "cik": "0000919956",
+      "ticker": "CIK0000919956",
+      "company_name": "ADVOCAT INC",
+      "entry_date": "2012-03-07"
+    },
+    {
+      "cik": "0000924168",
+      "ticker": "CIK0000924168",
+      "company_name": "ENERGY FOCUS, INC/DE",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0000926844",
+      "ticker": "CIK0000926844",
+      "company_name": "CHINA BOTANIC PHARMACEUTICAL",
+      "entry_date": "2012-01-30"
+    },
+    {
+      "cik": "0000928054",
+      "ticker": "CIK0000928054",
+      "company_name": "FLOTEK INDUSTRIES INC/CN/",
+      "entry_date": "2014-02-10"
+    },
+    {
+      "cik": "0000930835",
+      "ticker": "CIK0000930835",
+      "company_name": "EDISON MISSION ENERGY",
+      "entry_date": "2014-03-12"
+    },
+    {
+      "cik": "0000932696",
+      "ticker": "CIK0000932696",
+      "company_name": "INSIGHT ENTERPRISES INC",
+      "entry_date": "2016-02-19"
+    },
+    {
+      "cik": "0000932699",
+      "ticker": "CIK0000932699",
+      "company_name": "GREENMAN TECHNOLOGIES INC",
+      "entry_date": "2012-01-13"
+    },
+    {
+      "cik": "0000934648",
+      "ticker": "CIK0000934648",
+      "company_name": "SPEEDWAY MOTORSPORTS INC",
+      "entry_date": "2016-03-18"
+    },
+    {
+      "cik": "0000936402",
+      "ticker": "CIK0000936402",
+      "company_name": "SHIRE PLC",
+      "entry_date": "2014-02-24"
+    },
+    {
+      "cik": "0000937556",
+      "ticker": "CIK0000937556",
+      "company_name": "MASIMO CORP",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0000937941",
+      "ticker": "CIK0000937941",
+      "company_name": "PCM, INC.",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0000939767",
+      "ticker": "CIK0000939767",
+      "company_name": "EXELIXIS, INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0000943452",
+      "ticker": "CIK0000943452",
+      "company_name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0000944508",
+      "ticker": "CIK0000944508",
+      "company_name": "INVENTURE FOODS, INC.",
+      "entry_date": "2014-03-13"
+    },
+    {
+      "cik": "0000945841",
+      "ticker": "CIK0000945841",
+      "company_name": "POOL CORP",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0000945983",
+      "ticker": "CIK0000945983",
+      "company_name": "WAYSIDE TECHNOLOGY GROUP, INC.",
+      "entry_date": "2014-02-21"
+    },
+    {
+      "cik": "0000945989",
+      "ticker": "CIK0000945989",
+      "company_name": "ASTEA INTERNATIONAL INC",
+      "entry_date": "2012-03-27"
+    },
+    {
+      "cik": "0000946486",
+      "ticker": "CIK0000946486",
+      "company_name": "DISCOVERY LABORATORIES INC /DE/",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0000946563",
+      "ticker": "CIK0000946563",
+      "company_name": "RETRACTABLE TECHNOLOGIES INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0000949858",
+      "ticker": "CIK0000949858",
+      "company_name": "ONCOGENEX PHARMACEUTICALS, INC.",
+      "entry_date": "2016-03-09"
+    },
+    {
+      "cik": "0001001385",
+      "ticker": "CIK0001001385",
+      "company_name": "NORTHWEST PIPE CO",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001002225",
+      "ticker": "CIK0001002225",
+      "company_name": "ADVENT SOFTWARE INC /DE/",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0001005201",
+      "ticker": "CIK0001005201",
+      "company_name": "DEPOMED INC",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0001010566",
+      "ticker": "CIK0001010566",
+      "company_name": "CHINA LONGYI GROUP INTERNATIONAL HOLDINGS LTD",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001010612",
+      "ticker": "CIK0001010612",
+      "company_name": "SYKES ENTERPRISES INC",
+      "entry_date": "2014-02-20"
+    },
+    {
+      "cik": "0001011006",
+      "ticker": "CIK0001011006",
+      "company_name": "YAHOO INC",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001012100",
+      "ticker": "CIK0001012100",
+      "company_name": "SEALED AIR CORP/DE",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0001012477",
+      "ticker": "CIK0001012477",
+      "company_name": "FLAMEL TECHNOLOGIES SA",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001013462",
+      "ticker": "CIK0001013462",
+      "company_name": "ANSYS INC",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001013706",
+      "ticker": "CIK0001013706",
+      "company_name": "WILHELMINA INTERNATIONAL, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001015155",
+      "ticker": "CIK0001015155",
+      "company_name": "CHARLES & COLVARD LTD",
+      "entry_date": "2016-03-08"
+    },
+    {
+      "cik": "0001019695",
+      "ticker": "CIK0001019695",
+      "company_name": "ARQULE INC",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001020416",
+      "ticker": "CIK0001020416",
+      "company_name": "MONSTER WORLDWIDE, INC.",
+      "entry_date": "2014-02-10"
+    },
+    {
+      "cik": "0001020475",
+      "ticker": "CIK0001020475",
+      "company_name": "GRANDPARENTS.COM, INC.",
+      "entry_date": "2016-03-28"
+    },
+    {
+      "cik": "0001022469",
+      "ticker": "CIK0001022469",
+      "company_name": "DELTIC TIMBER CORP",
+      "entry_date": "2016-03-04"
+    },
+    {
+      "cik": "0001023024",
+      "ticker": "CIK0001023024",
+      "company_name": "BIOSANTE PHARMACEUTICALS INC",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0001023298",
+      "ticker": "CIK0001023298",
+      "company_name": "ALPHA-EN CORP",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0001024075",
+      "ticker": "CIK0001024075",
+      "company_name": "POWER EFFICIENCY CORP",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001026655",
+      "ticker": "CIK0001026655",
+      "company_name": "CORE MOLDING TECHNOLOGIES INC",
+      "entry_date": "2014-03-20"
+    },
+    {
+      "cik": "0001034670",
+      "ticker": "CIK0001034670",
+      "company_name": "AUTOLIV INC",
+      "entry_date": "2012-02-23"
+    },
+    {
+      "cik": "0001037049",
+      "ticker": "CIK0001037049",
+      "company_name": "AURORA GOLD CORP",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001037868",
+      "ticker": "CIK0001037868",
+      "company_name": "AMETEK INC/",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001038133",
+      "ticker": "CIK0001038133",
+      "company_name": "HESKA CORP",
+      "entry_date": "2012-02-28"
+    },
+    {
+      "cik": "0001040482",
+      "ticker": "CIK0001040482",
+      "company_name": "AMERICAN PETRO-HUNTER INC",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001041061",
+      "ticker": "CIK0001041061",
+      "company_name": "YUM BRANDS INC",
+      "entry_date": "2014-02-18"
+    },
+    {
+      "cik": "0001041577",
+      "ticker": "CIK0001041577",
+      "company_name": "ATMI INC",
+      "entry_date": "2014-03-07"
+    },
+    {
+      "cik": "0001042642",
+      "ticker": "CIK0001042642",
+      "company_name": "DISH DBS CORP",
+      "entry_date": "2012-03-19"
+    },
+    {
+      "cik": "0001042773",
+      "ticker": "CIK0001042773",
+      "company_name": "CENTERPOINT ENERGY RESOURCES CORP",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0001043186",
+      "ticker": "CIK0001043186",
+      "company_name": "AMERICAN ELECTRIC TECHNOLOGIES INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001045309",
+      "ticker": "CIK0001045309",
+      "company_name": "W R GRACE & CO",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0001046859",
+      "ticker": "CIK0001046859",
+      "company_name": "REMY INTERNATIONAL, INC.",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0001047127",
+      "ticker": "CIK0001047127",
+      "company_name": "AMKOR TECHNOLOGY, INC.",
+      "entry_date": "2016-02-22"
+    },
+    {
+      "cik": "0001051627",
+      "ticker": "CIK0001051627",
+      "company_name": "AXT INC",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001056903",
+      "ticker": "CIK0001056903",
+      "company_name": "AMERICAN STATES WATER CO",
+      "entry_date": "2012-03-12"
+    },
+    {
+      "cik": "0001059562",
+      "ticker": "CIK0001059562",
+      "company_name": "LMI AEROSPACE INC",
+      "entry_date": "2016-03-11"
+    },
+    {
+      "cik": "0001064728",
+      "ticker": "CIK0001064728",
+      "company_name": "PEABODY ENERGY CORP",
+      "entry_date": "2016-03-16"
+    },
+    {
+      "cik": "0001065049",
+      "ticker": "CIK0001065049",
+      "company_name": "LEAP WIRELESS INTERNATIONAL INC",
+      "entry_date": "2012-02-21"
+    },
+    {
+      "cik": "0001065087",
+      "ticker": "CIK0001065087",
+      "company_name": "ALBANY MOLECULAR RESEARCH INC",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001065280",
+      "ticker": "CIK0001065280",
+      "company_name": "NETFLIX INC",
+      "entry_date": "2012-02-10"
+    },
+    {
+      "cik": "0001066107",
+      "ticker": "CIK0001066107",
+      "company_name": "EL PASO CORP/DE",
+      "entry_date": "2012-02-27"
+    },
+    {
+      "cik": "0001066605",
+      "ticker": "CIK0001066605",
+      "company_name": "HEIDRICK & STRUGGLES INTERNATIONAL INC",
+      "entry_date": "2014-03-13"
+    },
+    {
+      "cik": "0001066684",
+      "ticker": "CIK0001066684",
+      "company_name": "THEGLOBE COM INC",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0001071993",
+      "ticker": "CIK0001071993",
+      "company_name": "CONTANGO OIL & GAS CO",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001074909",
+      "ticker": "CIK0001074909",
+      "company_name": "WIZZARD SOFTWARE CORP /CO",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001075656",
+      "ticker": "CIK0001075656",
+      "company_name": "IGO, INC.",
+      "entry_date": "2014-03-20"
+    },
+    {
+      "cik": "0001076481",
+      "ticker": "CIK0001076481",
+      "company_name": "SEQUENOM INC",
+      "entry_date": "2016-03-03"
+    },
+    {
+      "cik": "0001081316",
+      "ticker": "CIK0001081316",
+      "company_name": "MIDAMERICAN ENERGY HOLDINGS CO /NEW/",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001082038",
+      "ticker": "CIK0001082038",
+      "company_name": "DURECT CORP",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001084817",
+      "ticker": "CIK0001084817",
+      "company_name": "RESPONSYS INC",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001086740",
+      "ticker": "CIK0001086740",
+      "company_name": "DELTATHREE INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001088033",
+      "ticker": "CIK0001088033",
+      "company_name": "QUEST SOFTWARE INC",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0001091171",
+      "ticker": "CIK0001091171",
+      "company_name": "BLUE NILE INC",
+      "entry_date": "2016-03-01"
+    },
+    {
+      "cik": "0001093683",
+      "ticker": "CIK0001093683",
+      "company_name": "BISON INSTRUMENTS INC",
+      "entry_date": "2014-01-27"
+    },
+    {
+      "cik": "0001094032",
+      "ticker": "CIK0001094032",
+      "company_name": "DALE JARRETT RACING ADVENTURE INC",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001095277",
+      "ticker": "CIK0001095277",
+      "company_name": "INTERSECTIONS INC",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0001095981",
+      "ticker": "CIK0001095981",
+      "company_name": "CYTORI THERAPEUTICS, INC.",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001096385",
+      "ticker": "CIK0001096385",
+      "company_name": "VECTREN CORP",
+      "entry_date": "2016-02-23"
+    },
+    {
+      "cik": "0001096481",
+      "ticker": "CIK0001096481",
+      "company_name": "ANGIOTECH PHARMACEUTICALS INC",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001096857",
+      "ticker": "CIK0001096857",
+      "company_name": "DOCUMENT CAPTURE TECHNOLOGIES, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001097864",
+      "ticker": "CIK0001097864",
+      "company_name": "ON SEMICONDUCTOR CORP",
+      "entry_date": "2012-02-22"
+    },
+    {
+      "cik": "0001099132",
+      "ticker": "CIK0001099132",
+      "company_name": "MANHATTAN SCIENTIFICS INC",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001100397",
+      "ticker": "CIK0001100397",
+      "company_name": "ADVAXIS, INC.",
+      "entry_date": "2016-01-08"
+    },
+    {
+      "cik": "0001104358",
+      "ticker": "CIK0001104358",
+      "company_name": "BROADVIEW NETWORKS HOLDINGS INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001104485",
+      "ticker": "CIK0001104485",
+      "company_name": "NORTHERN OIL & GAS, INC.",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001105184",
+      "ticker": "CIK0001105184",
+      "company_name": "NANOSPHERE INC",
+      "entry_date": "2014-02-18"
+    },
+    {
+      "cik": "0001106644",
+      "ticker": "CIK0001106644",
+      "company_name": "CHINA PHARMA HOLDINGS, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001108205",
+      "ticker": "CIK0001108205",
+      "company_name": "CURIS INC",
+      "entry_date": "2014-03-13"
+    },
+    {
+      "cik": "0001109354",
+      "ticker": "CIK0001109354",
+      "company_name": "BRUKER CORP",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0001110607",
+      "ticker": "CIK0001110607",
+      "company_name": "DEEP DOWN, INC.",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001113481",
+      "ticker": "CIK0001113481",
+      "company_name": "MEDICINES CO /DE",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0001115836",
+      "ticker": "CIK0001115836",
+      "company_name": "ORIENT EXPRESS HOTELS LTD",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001120970",
+      "ticker": "CIK0001120970",
+      "company_name": "COMSTOCK MINING INC.",
+      "entry_date": "2016-01-28"
+    },
+    {
+      "cik": "0001123494",
+      "ticker": "CIK0001123494",
+      "company_name": "HARVARD BIOSCIENCE INC",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001124198",
+      "ticker": "CIK0001124198",
+      "company_name": "FLUOR CORP",
+      "entry_date": "2014-02-18"
+    },
+    {
+      "cik": "0001124610",
+      "ticker": "CIK0001124610",
+      "company_name": "VMWARE, INC.",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001124804",
+      "ticker": "CIK0001124804",
+      "company_name": "ALLSCRIPTS HEALTHCARE SOLUTIONS, INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001125376",
+      "ticker": "CIK0001125376",
+      "company_name": "ENSIGN GROUP, INC",
+      "entry_date": "2012-02-16"
+    },
+    {
+      "cik": "0001125920",
+      "ticker": "CIK0001125920",
+      "company_name": "SHUTTERFLY INC",
+      "entry_date": "2012-02-13"
+    },
+    {
+      "cik": "0001129542",
+      "ticker": "CIK0001129542",
+      "company_name": "VECTREN UTILITY HOLDINGS INC",
+      "entry_date": "2014-03-05"
+    },
+    {
+      "cik": "0001130166",
+      "ticker": "CIK0001130166",
+      "company_name": "CYCLACEL PHARMACEUTICALS, INC.",
+      "entry_date": "2014-03-26"
+    },
+    {
+      "cik": "0001135185",
+      "ticker": "CIK0001135185",
+      "company_name": "ATLAS AIR WORLDWIDE HOLDINGS INC",
+      "entry_date": "2016-02-18"
+    },
+    {
+      "cik": "0001138776",
+      "ticker": "CIK0001138776",
+      "company_name": "MEDGENICS, INC.",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0001158449",
+      "ticker": "CIK0001158449",
+      "company_name": "ADVANCE AUTO PARTS INC",
+      "entry_date": "2016-03-01"
+    },
+    {
+      "cik": "0001159281",
+      "ticker": "CIK0001159281",
+      "company_name": "FIVE STAR QUALITY CARE INC",
+      "entry_date": "2016-03-02"
+    },
+    {
+      "cik": "0001160142",
+      "ticker": "CIK0001160142",
+      "company_name": "INTERMETRO COMMUNICATIONS, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001166003",
+      "ticker": "CIK0001166003",
+      "company_name": "XPO LOGISTICS, INC.",
+      "entry_date": "2012-03-01"
+    },
+    {
+      "cik": "0001167178",
+      "ticker": "CIK0001167178",
+      "company_name": "A123 SYSTEMS, INC.",
+      "entry_date": "2012-03-12"
+    },
+    {
+      "cik": "0001168054",
+      "ticker": "CIK0001168054",
+      "company_name": "CIMAREX ENERGY CO",
+      "entry_date": "2012-02-22"
+    },
+    {
+      "cik": "0001168663",
+      "ticker": "CIK0001168663",
+      "company_name": "AMANASU TECHNO HOLDINGS CORP",
+      "entry_date": "2016-03-31"
+    },
+    {
+      "cik": "0001170534",
+      "ticker": "CIK0001170534",
+      "company_name": "MITEL NETWORKS CORP",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001170797",
+      "ticker": "CIK0001170797",
+      "company_name": "MEWBOURNE ENERGY PARTNERS 03-A LP",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001172139",
+      "ticker": "CIK0001172139",
+      "company_name": "BILL BARRETT CORP",
+      "entry_date": "2014-02-21"
+    },
+    {
+      "cik": "0001174922",
+      "ticker": "CIK0001174922",
+      "company_name": "WYNN RESORTS LTD",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001175028",
+      "ticker": "CIK0001175028",
+      "company_name": "ATLAS AMERICA PUBLIC 11-2002 LTD",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001178670",
+      "ticker": "CIK0001178670",
+      "company_name": "ALNYLAM PHARMACEUTICALS, INC.",
+      "entry_date": "2016-02-12"
+    },
+    {
+      "cik": "0001196298",
+      "ticker": "CIK0001196298",
+      "company_name": "NEPHROS INC",
+      "entry_date": "2012-03-22"
+    },
+    {
+      "cik": "0001200375",
+      "ticker": "CIK0001200375",
+      "company_name": "CODEXIS INC",
+      "entry_date": "2016-03-08"
+    },
+    {
+      "cik": "0001201663",
+      "ticker": "CIK0001201663",
+      "company_name": "AUDIENCE INC",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001205727",
+      "ticker": "CIK0001205727",
+      "company_name": "CBEYOND, INC.",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001209821",
+      "ticker": "CIK0001209821",
+      "company_name": "CROSSTEX ENERGY INC",
+      "entry_date": "2012-02-28"
+    },
+    {
+      "cik": "0001210294",
+      "ticker": "CIK0001210294",
+      "company_name": "CRAILAR TECHNOLOGIES INC",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0001211759",
+      "ticker": "CIK0001211759",
+      "company_name": "CONNECTURE INC",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001216596",
+      "ticker": "CIK0001216596",
+      "company_name": "NORTEK INC",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001220754",
+      "ticker": "CIK0001220754",
+      "company_name": "PROVIDENCE SERVICE CORP",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0001227025",
+      "ticker": "CIK0001227025",
+      "company_name": "NEOPHOTONICS CORP",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001228386",
+      "ticker": "CIK0001228386",
+      "company_name": "ACRO INC.",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0001228627",
+      "ticker": "CIK0001228627",
+      "company_name": "REXAHN PHARMACEUTICALS, INC.",
+      "entry_date": "2012-03-16"
+    },
+    {
+      "cik": "0001232241",
+      "ticker": "CIK0001232241",
+      "company_name": "JOURNAL COMMUNICATIONS INC",
+      "entry_date": "2014-03-10"
+    },
+    {
+      "cik": "0001232524",
+      "ticker": "CIK0001232524",
+      "company_name": "JAZZ PHARMACEUTICALS PLC",
+      "entry_date": "2012-02-28"
+    },
+    {
+      "cik": "0001235010",
+      "ticker": "CIK0001235010",
+      "company_name": "MOMENTA PHARMACEUTICALS INC",
+      "entry_date": "2012-02-28"
+    },
+    {
+      "cik": "0001237746",
+      "ticker": "CIK0001237746",
+      "company_name": "ENDURANCE INTERNATIONAL GROUP HOLDINGS, INC.",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001250897",
+      "ticker": "CIK0001250897",
+      "company_name": "ESSENTIAL INNOVATIONS TECHNOLOGY CORP",
+      "entry_date": "2014-02-13"
+    },
+    {
+      "cik": "0001254699",
+      "ticker": "CIK0001254699",
+      "company_name": "QVC INC",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001260828",
+      "ticker": "CIK0001260828",
+      "company_name": "CENTRAL ENERGY PARTNERS LP",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001270200",
+      "ticker": "CIK0001270200",
+      "company_name": "VIASPACE INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001275014",
+      "ticker": "CIK0001275014",
+      "company_name": "ULTRA CLEAN HOLDINGS, INC.",
+      "entry_date": "2016-03-09"
+    },
+    {
+      "cik": "0001276187",
+      "ticker": "CIK0001276187",
+      "company_name": "ENERGY TRANSFER EQUITY, L.P.",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0001276477",
+      "ticker": "CIK0001276477",
+      "company_name": "MORRIS PUBLISHING GROUP LLC",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001278027",
+      "ticker": "CIK0001278027",
+      "company_name": "B&G FOODS, INC.",
+      "entry_date": "2016-03-02"
+    },
+    {
+      "cik": "0001287151",
+      "ticker": "CIK0001287151",
+      "company_name": "XERIUM TECHNOLOGIES INC",
+      "entry_date": "2014-03-04"
+    },
+    {
+      "cik": "0001288403",
+      "ticker": "CIK0001288403",
+      "company_name": "W&T OFFSHORE INC",
+      "entry_date": "2012-02-27"
+    },
+    {
+      "cik": "0001288496",
+      "ticker": "CIK0001288496",
+      "company_name": "EDGEWAVE, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001289496",
+      "ticker": "CIK0001289496",
+      "company_name": "CORD BLOOD AMERICA, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001289945",
+      "ticker": "CIK0001289945",
+      "company_name": "USA MOBILITY, INC",
+      "entry_date": "2014-03-11"
+    },
+    {
+      "cik": "0001290900",
+      "ticker": "CIK0001290900",
+      "company_name": "COMMERCIAL VEHICLE GROUP, INC.",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0001294154",
+      "ticker": "CIK0001294154",
+      "company_name": "LEASE EQUITY APPRECIATION FUND II, L.P.",
+      "entry_date": "2012-03-28"
+    },
+    {
+      "cik": "0001295503",
+      "ticker": "CIK0001295503",
+      "company_name": "MISCOR GROUP, LTD.",
+      "entry_date": "2012-03-01"
+    },
+    {
+      "cik": "0001296205",
+      "ticker": "CIK0001296205",
+      "company_name": "ZAGG INC",
+      "entry_date": "2014-03-12"
+    },
+    {
+      "cik": "0001296435",
+      "ticker": "CIK0001296435",
+      "company_name": "NEENAH PAPER INC",
+      "entry_date": "2012-03-08"
+    },
+    {
+      "cik": "0001299130",
+      "ticker": "CIK0001299130",
+      "company_name": "PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001300867",
+      "ticker": "CIK0001300867",
+      "company_name": "ON4 COMMUNICATIONS INC.",
+      "entry_date": "2012-02-03"
+    },
+    {
+      "cik": "0001302177",
+      "ticker": "CIK0001302177",
+      "company_name": "POKERTEK, INC.",
+      "entry_date": "2014-03-21"
+    },
+    {
+      "cik": "0001302946",
+      "ticker": "CIK0001302946",
+      "company_name": "TWO RIVERS WATER & FARMING CO",
+      "entry_date": "2014-03-19"
+    },
+    {
+      "cik": "0001303313",
+      "ticker": "CIK0001303313",
+      "company_name": "LHC GROUP, INC",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0001308710",
+      "ticker": "CIK0001308710",
+      "company_name": "JAYHAWK ENERGY, INC.",
+      "entry_date": "2014-01-28"
+    },
+    {
+      "cik": "0001309442",
+      "ticker": "CIK0001309442",
+      "company_name": "INSPRO TECHNOLOGIES CORP",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001310114",
+      "ticker": "CIK0001310114",
+      "company_name": "SERVICESOURCE INTERNATIONAL, INC.",
+      "entry_date": "2012-03-06"
+    },
+    {
+      "cik": "0001316898",
+      "ticker": "CIK0001316898",
+      "company_name": "JAMBA, INC.",
+      "entry_date": "2012-03-09"
+    },
+    {
+      "cik": "0001319947",
+      "ticker": "CIK0001319947",
+      "company_name": "DSW INC.",
+      "entry_date": "2012-03-27"
+    },
+    {
+      "cik": "0001323891",
+      "ticker": "CIK0001323891",
+      "company_name": "AMERICAN TIRE DISTRIBUTORS HOLDINGS, INC.",
+      "entry_date": "2012-03-12"
+    },
+    {
+      "cik": "0001324272",
+      "ticker": "CIK0001324272",
+      "company_name": "RUTHS HOSPITALITY GROUP, INC.",
+      "entry_date": "2016-03-04"
+    },
+    {
+      "cik": "0001325955",
+      "ticker": "CIK0001325955",
+      "company_name": "ALON USA ENERGY, INC.",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0001325964",
+      "ticker": "CIK0001325964",
+      "company_name": "LIGHTWAVE LOGIC, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001326160",
+      "ticker": "CIK0001326160",
+      "company_name": "DUKE ENERGY CORP",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001330849",
+      "ticker": "CIK0001330849",
+      "company_name": "HERCULES OFFSHORE, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001331745",
+      "ticker": "CIK0001331745",
+      "company_name": "TAL INTERNATIONAL GROUP, INC.",
+      "entry_date": "2012-02-22"
+    },
+    {
+      "cik": "0001333763",
+      "ticker": "CIK0001333763",
+      "company_name": "CHELSEA THERAPEUTICS INTERNATIONAL, LTD.",
+      "entry_date": "2012-03-07"
+    },
+    {
+      "cik": "0001334126",
+      "ticker": "CIK0001334126",
+      "company_name": "GUITAMMER CO",
+      "entry_date": "2014-03-14"
+    },
+    {
+      "cik": "0001334978",
+      "ticker": "CIK0001334978",
+      "company_name": "CLEAR CHANNEL OUTDOOR HOLDINGS, INC.",
+      "entry_date": "2012-02-21"
+    },
+    {
+      "cik": "0001335105",
+      "ticker": "CIK0001335105",
+      "company_name": "LIXTE BIOTECHNOLOGY HOLDINGS, INC.",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001335982",
+      "ticker": "CIK0001335982",
+      "company_name": "GOODMAN NETWORKS INC",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001339455",
+      "ticker": "CIK0001339455",
+      "company_name": "SOMAXON PHARMACEUTICALS, INC.",
+      "entry_date": "2012-03-09"
+    },
+    {
+      "cik": "0001340122",
+      "ticker": "CIK0001340122",
+      "company_name": "CALUMET SPECIALTY PRODUCTS PARTNERS, L.P.",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001342936",
+      "ticker": "CIK0001342936",
+      "company_name": "ADVANCED VOICE RECOGNITION SYSTEMS, INC",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0001344530",
+      "ticker": "CIK0001344530",
+      "company_name": "REEF GLOBAL ENERGY VII, L.P.",
+      "entry_date": "2014-03-27"
+    },
+    {
+      "cik": "0001348324",
+      "ticker": "CIK0001348324",
+      "company_name": "LDR HOLDING CORP",
+      "entry_date": "2016-02-23"
+    },
+    {
+      "cik": "0001349436",
+      "ticker": "CIK0001349436",
+      "company_name": "SANDRIDGE ENERGY INC",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001349437",
+      "ticker": "CIK0001349437",
+      "company_name": "TOWERSTREAM CORP",
+      "entry_date": "2016-03-18"
+    },
+    {
+      "cik": "0001350381",
+      "ticker": "CIK0001350381",
+      "company_name": "INNERWORKINGS INC",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0001351285",
+      "ticker": "CIK0001351285",
+      "company_name": "ROSETTA STONE INC",
+      "entry_date": "2012-03-14"
+    },
+    {
+      "cik": "0001352190",
+      "ticker": "CIK0001352190",
+      "company_name": "RIDGEWOOD ENERGY S FUND LLC",
+      "entry_date": "2016-03-07"
+    },
+    {
+      "cik": "0001353970",
+      "ticker": "CIK0001353970",
+      "company_name": "CHINA XD PLASTICS CO LTD",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001355096",
+      "ticker": "CIK0001355096",
+      "company_name": "LIBERTY INTERACTIVE CORP",
+      "entry_date": "2012-02-23"
+    },
+    {
+      "cik": "0001357361",
+      "ticker": "CIK0001357361",
+      "company_name": "ATLAS AMERICA PUBLIC #15-2006 (B) L.P.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001361113",
+      "ticker": "CIK0001361113",
+      "company_name": "VARONIS SYSTEMS INC",
+      "entry_date": "2016-02-12"
+    },
+    {
+      "cik": "0001364397",
+      "ticker": "CIK0001364397",
+      "company_name": "RIDGEWOOD ENERGY T FUND LLC",
+      "entry_date": "2012-02-16"
+    },
+    {
+      "cik": "0001364885",
+      "ticker": "CIK0001364885",
+      "company_name": "SPIRIT AEROSYSTEMS HOLDINGS, INC.",
+      "entry_date": "2012-02-23"
+    },
+    {
+      "cik": "0001372299",
+      "ticker": "CIK0001372299",
+      "company_name": "HISTOGENICS CORP",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0001377013",
+      "ticker": "CIK0001377013",
+      "company_name": "TIME WARNER CABLE INC.",
+      "entry_date": "2014-02-18"
+    },
+    {
+      "cik": "0001379714",
+      "ticker": "CIK0001379714",
+      "company_name": "SABINE PASS LNG, L.P.",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0001383650",
+      "ticker": "CIK0001383650",
+      "company_name": "CHENIERE ENERGY PARTNERS, L.P.",
+      "entry_date": "2012-02-24"
+    },
+    {
+      "cik": "0001384195",
+      "ticker": "CIK0001384195",
+      "company_name": "RING ENERGY, INC.",
+      "entry_date": "2012-03-20"
+    },
+    {
+      "cik": "0001385292",
+      "ticker": "CIK0001385292",
+      "company_name": "MONOTYPE IMAGING HOLDINGS INC.",
+      "entry_date": "2014-03-11"
+    },
+    {
+      "cik": "0001385329",
+      "ticker": "CIK0001385329",
+      "company_name": "SILVERSTAR MINING CORP.",
+      "entry_date": "2014-01-13"
+    },
+    {
+      "cik": "0001386355",
+      "ticker": "CIK0001386355",
+      "company_name": "TRAVELPORT LTD",
+      "entry_date": "2014-03-10"
+    },
+    {
+      "cik": "0001390478",
+      "ticker": "CIK0001390478",
+      "company_name": "GALENA BIOPHARMA, INC.",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001390844",
+      "ticker": "CIK0001390844",
+      "company_name": "WABCO HOLDINGS INC.",
+      "entry_date": "2016-02-11"
+    },
+    {
+      "cik": "0001392522",
+      "ticker": "CIK0001392522",
+      "company_name": "FREESCALE SEMICONDUCTOR, LTD.",
+      "entry_date": "2014-02-10"
+    },
+    {
+      "cik": "0001393935",
+      "ticker": "CIK0001393935",
+      "company_name": "THINSPACE TECHNOLOGY, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001394446",
+      "ticker": "CIK0001394446",
+      "company_name": "KABE EXPLORATION INC.",
+      "entry_date": "2012-03-27"
+    },
+    {
+      "cik": "0001397183",
+      "ticker": "CIK0001397183",
+      "company_name": "IVEDA SOLUTIONS, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001397187",
+      "ticker": "CIK0001397187",
+      "company_name": "LULULEMON ATHLETICA INC.",
+      "entry_date": "2014-03-27"
+    },
+    {
+      "cik": "0001398805",
+      "ticker": "CIK0001398805",
+      "company_name": "ENVISION SOLAR INTERNATIONAL, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001399521",
+      "ticker": "CIK0001399521",
+      "company_name": "LIHUA INTERNATIONAL INC.",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001401680",
+      "ticker": "CIK0001401680",
+      "company_name": "CORNERSTONE ONDEMAND INC",
+      "entry_date": "2012-03-06"
+    },
+    {
+      "cik": "0001402829",
+      "ticker": "CIK0001402829",
+      "company_name": "ORION MARINE GROUP INC",
+      "entry_date": "2012-03-06"
+    },
+    {
+      "cik": "0001406796",
+      "ticker": "CIK0001406796",
+      "company_name": "ZYTO CORP",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001408146",
+      "ticker": "CIK0001408146",
+      "company_name": "EMC METALS CORP.",
+      "entry_date": "2014-03-25"
+    },
+    {
+      "cik": "0001408356",
+      "ticker": "CIK0001408356",
+      "company_name": "SOLARCITY CORP",
+      "entry_date": "2016-02-10"
+    },
+    {
+      "cik": "0001411207",
+      "ticker": "CIK0001411207",
+      "company_name": "ALLISON TRANSMISSION HOLDINGS INC",
+      "entry_date": "2014-02-24"
+    },
+    {
+      "cik": "0001412212",
+      "ticker": "CIK0001412212",
+      "company_name": "ITRACKR SYSTEMS INC",
+      "entry_date": "2012-03-19"
+    },
+    {
+      "cik": "0001414078",
+      "ticker": "CIK0001414078",
+      "company_name": "SITEL WORLDWIDE CORP",
+      "entry_date": "2012-02-22"
+    },
+    {
+      "cik": "0001418133",
+      "ticker": "CIK0001418133",
+      "company_name": "BIOSTAR PHARMACEUTICALS, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001419428",
+      "ticker": "CIK0001419428",
+      "company_name": "VANTAGE DRILLING CO",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0001419582",
+      "ticker": "CIK0001419582",
+      "company_name": "BLUE SPHERE CORP.",
+      "entry_date": "2016-01-13"
+    },
+    {
+      "cik": "0001420569",
+      "ticker": "CIK0001420569",
+      "company_name": "PULSE BEVERAGE CORP",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001422059",
+      "ticker": "CIK0001422059",
+      "company_name": "LANS HOLDINGS, INC.",
+      "entry_date": "2014-02-25"
+    },
+    {
+      "cik": "0001422992",
+      "ticker": "CIK0001422992",
+      "company_name": "ELAYAWAY, INC.",
+      "entry_date": "2012-03-19"
+    },
+    {
+      "cik": "0001425292",
+      "ticker": "CIK0001425292",
+      "company_name": "CVR PARTNERS, LP",
+      "entry_date": "2014-02-26"
+    },
+    {
+      "cik": "0001429775",
+      "ticker": "CIK0001429775",
+      "company_name": "LENDER PROCESSING SERVICES, INC.",
+      "entry_date": "2012-02-29"
+    },
+    {
+      "cik": "0001430306",
+      "ticker": "CIK0001430306",
+      "company_name": "TONIX PHARMACEUTICALS HOLDING CORP.",
+      "entry_date": "2016-03-03"
+    },
+    {
+      "cik": "0001431934",
+      "ticker": "CIK0001431934",
+      "company_name": "DYNAMIC APPLICATIONS CORP",
+      "entry_date": "2014-03-21"
+    },
+    {
+      "cik": "0001434729",
+      "ticker": "CIK0001434729",
+      "company_name": "HSN, INC.",
+      "entry_date": "2014-02-20"
+    },
+    {
+      "cik": "0001436942",
+      "ticker": "CIK0001436942",
+      "company_name": "MEWBOURNE ENERGY PARTNERS 08-A LP",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001437557",
+      "ticker": "CIK0001437557",
+      "company_name": "RECOVERY ENERGY, INC.",
+      "entry_date": "2012-03-21"
+    },
+    {
+      "cik": "0001438133",
+      "ticker": "CIK0001438133",
+      "company_name": "TANDEM DIABETES CARE INC",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0001440476",
+      "ticker": "CIK0001440476",
+      "company_name": "ASIA GREEN AGRICULTURE CORP",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001445918",
+      "ticker": "CIK0001445918",
+      "company_name": "ART DIMENSIONS, INC.",
+      "entry_date": "2012-03-27"
+    },
+    {
+      "cik": "0001446806",
+      "ticker": "CIK0001446806",
+      "company_name": "ICON EQUIPMENT & CORPORATE INFRASTRUCTURE FUND FOURTEEN, L.P.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001448597",
+      "ticker": "CIK0001448597",
+      "company_name": "BULLFROG GOLD CORP.",
+      "entry_date": "2014-02-24"
+    },
+    {
+      "cik": "0001451505",
+      "ticker": "CIK0001451505",
+      "company_name": "TRANSOCEAN LTD.",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001453814",
+      "ticker": "CIK0001453814",
+      "company_name": "MEDIDATA SOLUTIONS, INC.",
+      "entry_date": "2012-03-13"
+    },
+    {
+      "cik": "0001457919",
+      "ticker": "CIK0001457919",
+      "company_name": "RIDGEWOOD ENERGY A-1 FUND LLC",
+      "entry_date": "2012-02-16"
+    },
+    {
+      "cik": "0001460602",
+      "ticker": "CIK0001460602",
+      "company_name": "ORGENESIS INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001462506",
+      "ticker": "CIK0001462506",
+      "company_name": "SUNGAME CORP",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001465062",
+      "ticker": "CIK0001465062",
+      "company_name": "VIASPACE GREEN ENERGY INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001465264",
+      "ticker": "CIK0001465264",
+      "company_name": "HD SUPPLY, INC.",
+      "entry_date": "2012-03-23"
+    },
+    {
+      "cik": "0001465509",
+      "ticker": "CIK0001465509",
+      "company_name": "XCELMOBILITY INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001466593",
+      "ticker": "CIK0001466593",
+      "company_name": "OTTER TAIL CORP",
+      "entry_date": "2014-03-03"
+    },
+    {
+      "cik": "0001466815",
+      "ticker": "CIK0001466815",
+      "company_name": "CAMBIUM LEARNING GROUP, INC.",
+      "entry_date": "2016-03-03"
+    },
+    {
+      "cik": "0001469606",
+      "ticker": "CIK0001469606",
+      "company_name": "ANDATEE CHINA MARINE FUEL SERVICES CORP",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001473579",
+      "ticker": "CIK0001473579",
+      "company_name": "BOSTON THERAPEUTICS, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001476278",
+      "ticker": "CIK0001476278",
+      "company_name": "MEDIENT STUDIOS, INC.",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001478725",
+      "ticker": "CIK0001478725",
+      "company_name": "CURRY GOLD CORP",
+      "entry_date": "2012-02-27"
+    },
+    {
+      "cik": "0001482278",
+      "ticker": "CIK0001482278",
+      "company_name": "MASCOT VENTURES, INC.",
+      "entry_date": "2012-01-30"
+    },
+    {
+      "cik": "0001483510",
+      "ticker": "CIK0001483510",
+      "company_name": "EXPRESS, INC.",
+      "entry_date": "2012-03-23"
+    },
+    {
+      "cik": "0001487101",
+      "ticker": "CIK0001487101",
+      "company_name": "KEYW HOLDING CORP",
+      "entry_date": "2014-03-10"
+    },
+    {
+      "cik": "0001487561",
+      "ticker": "CIK0001487561",
+      "company_name": "ATLAS RESOURCES SERIES 28-2010 L.P.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001487685",
+      "ticker": "CIK0001487685",
+      "company_name": "GREEKTOWN SUPERHOLDINGS, INC.",
+      "entry_date": "2012-03-30"
+    },
+    {
+      "cik": "0001489874",
+      "ticker": "CIK0001489874",
+      "company_name": "GOLDEN GROWERS COOPERATIVE",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001491576",
+      "ticker": "CIK0001491576",
+      "company_name": "TESARO, INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001491675",
+      "ticker": "CIK0001491675",
+      "company_name": "COCA-COLA ENTERPRISES, INC.",
+      "entry_date": "2012-02-10"
+    },
+    {
+      "cik": "0001496268",
+      "ticker": "CIK0001496268",
+      "company_name": "REVA MEDICAL, INC.",
+      "entry_date": "2014-03-17"
+    },
+    {
+      "cik": "0001497504",
+      "ticker": "CIK0001497504",
+      "company_name": "DIPEXIUM PHARMACEUTICALS, INC.",
+      "entry_date": "2016-03-22"
+    },
+    {
+      "cik": "0001499268",
+      "ticker": "CIK0001499268",
+      "company_name": "AFFINITY GAMING",
+      "entry_date": "2016-03-23"
+    },
+    {
+      "cik": "0001499832",
+      "ticker": "CIK0001499832",
+      "company_name": "TOWNSQUARE MEDIA, INC.",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0001502519",
+      "ticker": "CIK0001502519",
+      "company_name": "ICON ECI FUND FIFTEEN, L.P.",
+      "entry_date": "2016-03-25"
+    },
+    {
+      "cik": "0001504937",
+      "ticker": "CIK0001504937",
+      "company_name": "FELAFEL CORP",
+      "entry_date": "2012-02-03"
+    },
+    {
+      "cik": "0001505124",
+      "ticker": "CIK0001505124",
+      "company_name": "BERKSHIRE HOMES, INC.",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001509273",
+      "ticker": "CIK0001509273",
+      "company_name": "C&J ENERGY SERVICES, INC.",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0001512762",
+      "ticker": "CIK0001512762",
+      "company_name": "COHERUS BIOSCIENCES, INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001513965",
+      "ticker": "CIK0001513965",
+      "company_name": "AMERICAN MIDSTREAM PARTNERS, LP",
+      "entry_date": "2016-03-07"
+    },
+    {
+      "cik": "0001515353",
+      "ticker": "CIK0001515353",
+      "company_name": "SAASMAX, INC.",
+      "entry_date": "2012-03-29"
+    },
+    {
+      "cik": "0001515740",
+      "ticker": "CIK0001515740",
+      "company_name": "PREMIER BIOMEDICAL INC",
+      "entry_date": "2014-03-31"
+    },
+    {
+      "cik": "0001516479",
+      "ticker": "CIK0001516479",
+      "company_name": "INSYS THERAPEUTICS, INC.",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001518832",
+      "ticker": "CIK0001518832",
+      "company_name": "WPX ENERGY, INC.",
+      "entry_date": "2014-02-27"
+    },
+    {
+      "cik": "0001520744",
+      "ticker": "CIK0001520744",
+      "company_name": "LUMOS NETWORKS CORP.",
+      "entry_date": "2016-03-10"
+    },
+    {
+      "cik": "0001525040",
+      "ticker": "CIK0001525040",
+      "company_name": "AMERICAN RENAL ASSOCIATES HOLDINGS, INC.",
+      "entry_date": "2012-03-15"
+    },
+    {
+      "cik": "0001532961",
+      "ticker": "CIK0001532961",
+      "company_name": "NV5 HOLDINGS, INC.",
+      "entry_date": "2014-03-28"
+    },
+    {
+      "cik": "0001535031",
+      "ticker": "CIK0001535031",
+      "company_name": "TUMI HOLDINGS, INC.",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001545447",
+      "ticker": "CIK0001545447",
+      "company_name": "VALMIE RESOURCES, INC.",
+      "entry_date": "2016-03-07"
+    },
+    {
+      "cik": "0001546296",
+      "ticker": "CIK0001546296",
+      "company_name": "PROFESSIONAL DIVERSITY NETWORK, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001546417",
+      "ticker": "CIK0001546417",
+      "company_name": "BLOOMIN' BRANDS, INC.",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0001551182",
+      "ticker": "CIK0001551182",
+      "company_name": "EATON CORP PLC",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0001558009",
+      "ticker": "CIK0001558009",
+      "company_name": "EPIC STORES CORP.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001561660",
+      "ticker": "CIK0001561660",
+      "company_name": "PATTERN ENERGY GROUP INC.",
+      "entry_date": "2014-02-28"
+    },
+    {
+      "cik": "0001562151",
+      "ticker": "CIK0001562151",
+      "company_name": "CRIMSON WINE GROUP, LTD",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001562733",
+      "ticker": "CIK0001562733",
+      "company_name": "SYNERGY CHC CORP.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001568319",
+      "ticker": "CIK0001568319",
+      "company_name": "VOLTARI CORP",
+      "entry_date": "2016-03-16"
+    },
+    {
+      "cik": "0001570774",
+      "ticker": "CIK0001570774",
+      "company_name": "TRAC INTERMODAL LLC",
+      "entry_date": "2016-03-04"
+    },
+    {
+      "cik": "0001575574",
+      "ticker": "CIK0001575574",
+      "company_name": "SHENGDATECH LIQUIDATING TRUST",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001576197",
+      "ticker": "CIK0001576197",
+      "company_name": "STRATEGIC ENVIRONMENTAL & ENERGY RESOURCES, INC.",
+      "entry_date": "2014-03-27"
+    },
+    {
+      "cik": "0001578932",
+      "ticker": "CIK0001578932",
+      "company_name": "OCI PARTNERS LP",
+      "entry_date": "2016-03-24"
+    },
+    {
+      "cik": "0001583103",
+      "ticker": "CIK0001583103",
+      "company_name": "VALERO ENERGY PARTNERS LP",
+      "entry_date": "2016-02-26"
+    },
+    {
+      "cik": "0001593034",
+      "ticker": "CIK0001593034",
+      "company_name": "ENDO INTERNATIONAL PLC",
+      "entry_date": "2016-02-29"
+    },
+    {
+      "cik": "0001597131",
+      "ticker": "CIK0001597131",
+      "company_name": "GLORI ENERGY INC.",
+      "entry_date": "2016-03-23"
+    },
+    {
+      "cik": "0001599222",
+      "ticker": "CIK0001599222",
+      "company_name": "MEMORIAL RESOURCE DEVELOPMENT CORP.",
+      "entry_date": "2016-02-24"
+    },
+    {
+      "cik": "0001610532",
+      "ticker": "CIK0001610532",
+      "company_name": "HORTONWORKS, INC.",
+      "entry_date": "2016-03-15"
+    },
+    {
+      "cik": "0001610950",
+      "ticker": "CIK0001610950",
+      "company_name": "INC RESEARCH HOLDINGS, INC.",
+      "entry_date": "2016-02-25"
+    },
+    {
+      "cik": "0001611647",
+      "ticker": "CIK0001611647",
+      "company_name": "FRESHPET, INC.",
+      "entry_date": "2016-03-14"
+    },
+    {
+      "cik": "0001620546",
+      "ticker": "CIK0001620546",
+      "company_name": "BAXALTA INC",
+      "entry_date": "2016-03-03"
+    },
+    {
+      "cik": "0001627487",
+      "ticker": "CIK0001627487",
+      "company_name": "FOGO DE CHAO, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001634912",
+      "ticker": "CIK0001634912",
+      "company_name": "INTELLIGENT CLOUD RESOURCES INC.",
+      "entry_date": "2016-03-22"
+    },
+    {
+      "cik": "0001639068",
+      "ticker": "CIK0001639068",
+      "company_name": "HUBILU VENTURE CORP",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001647705",
+      "ticker": "CIK0001647705",
+      "company_name": "GLOBAL BOATWORKS HOLDINGS, INC.",
+      "entry_date": "2016-03-30"
+    },
+    {
+      "cik": "0001651958",
+      "ticker": "CIK0001651958",
+      "company_name": "EOS INC.",
+      "entry_date": "2016-03-23"
+    }
+  ],
+  "excluded_companies": [
+    "0000003116",
+    "0000004904",
+    "0000007623",
+    "0000014195",
+    "0000018172",
+    "0000018230",
+    "0000019411",
+    "0000020520",
+    "0000021344",
+    "0000024491",
+    "0000027419",
+    "0000029534",
+    "0000034088",
+    "0000040533",
+    "0000046080",
+    "0000049728",
+    "0000054480",
+    "0000056047",
+    "0000056873",
+    "0000060667",
+    "0000061398",
+    "0000063754",
+    "0000064803",
+    "0000067887",
+    "0000072331",
+    "0000073756",
+    "0000075252",
+    "0000077281",
+    "0000077476",
+    "0000080424",
+    "0000084129",
+    "0000093389",
+    "0000096289",
+    "0000098362",
+    "0000104169",
+    "0000109198",
+    "0000200406",
+    "0000205402",
+    "0000278130",
+    "0000314808",
+    "0000315189",
+    "0000316253",
+    "0000320017",
+    "0000320187",
+    "0000320193",
+    "0000320575",
+    "0000350403",
+    "0000354950",
+    "0000355811",
+    "0000708781",
+    "0000708819",
+    "0000712034",
+    "0000719209",
+    "0000745732",
+    "0000746838",
+    "0000764401",
+    "0000764478",
+    "0000768710",
+    "0000768835",
+    "0000773840",
+    "0000775057",
+    "0000778164",
+    "0000785786",
+    "0000786110",
+    "0000789019",
+    "0000794367",
+    "0000798949",
+    "0000813920",
+    "0000821130",
+    "0000821189",
+    "0000822663",
+    "0000836690",
+    "0000844143",
+    "0000858655",
+    "0000862692",
+    "0000866706",
+    "0000866787",
+    "0000868780",
+    "0000874499",
+    "0000878726",
+    "0000878927",
+    "0000884217",
+    "0000884940",
+    "0000885639",
+    "0000886158",
+    "0000886835",
+    "0000887921",
+    "0000891293",
+    "0000894627",
+    "0000895126",
+    "0000895456",
+    "0000895665",
+    "0000897723",
+    "0000902274",
+    "0000909724",
+    "0000909832",
+    "0000910612",
+    "0000920465",
+    "0000922358",
+    "0000924717",
+    "0000926282",
+    "0000931336",
+    "0000935703",
+    "0000936395",
+    "0000939930",
+    "0000945764",
+    "0000949039",
+    "0001005414",
+    "0001011570",
+    "0001016125",
+    "0001018724",
+    "0001022671",
+    "0001024725",
+    "0001029831",
+    "0001038357",
+    "0001040719",
+    "0001042418",
+    "0001045810",
+    "0001048911",
+    "0001051251",
+    "0001051514",
+    "0001056087",
+    "0001056386",
+    "0001061069",
+    "0001074828",
+    "0001083301",
+    "0001087294",
+    "0001090012",
+    "0001090727",
+    "0001092699",
+    "0001096752",
+    "0001103833",
+    "0001107843",
+    "0001121783",
+    "0001124140",
+    "0001126294",
+    "0001127475",
+    "0001131227",
+    "0001133869",
+    "0001136352",
+    "0001140859",
+    "0001159167",
+    "0001161728",
+    "0001162112",
+    "0001166126",
+    "0001168213",
+    "0001171486",
+    "0001173489",
+    "0001179060",
+    "0001211351",
+    "0001235468",
+    "0001236275",
+    "0001255474",
+    "0001265107",
+    "0001266806",
+    "0001274792",
+    "0001281774",
+    "0001282266",
+    "0001285819",
+    "0001297667",
+    "0001297720",
+    "0001301063",
+    "0001304421",
+    "0001310067",
+    "0001311241",
+    "0001313275",
+    "0001315255",
+    "0001320414",
+    "0001325879",
+    "0001326089",
+    "0001326801",
+    "0001336545",
+    "0001341726",
+    "0001346980",
+    "0001350653",
+    "0001358403",
+    "0001358651",
+    "0001366527",
+    "0001378125",
+    "0001385799",
+    "0001392449",
+    "0001396838",
+    "0001401257",
+    "0001403161",
+    "0001404079",
+    "0001405073",
+    "0001409197",
+    "0001419554",
+    "0001434728",
+    "0001434842",
+    "0001436229",
+    "0001441567",
+    "0001441683",
+    "0001441849",
+    "0001458891",
+    "0001467373",
+    "0001468666",
+    "0001473654",
+    "0001477009",
+    "0001482541",
+    "0001486159",
+    "0001493212",
+    "0001498301",
+    "0001498710",
+    "0001500198",
+    "0001501585",
+    "0001501989",
+    "0001502034",
+    "0001502152",
+    "0001509589",
+    "0001512077",
+    "0001517342",
+    "0001522690",
+    "0001525773",
+    "0001528849",
+    "0001529463",
+    "0001535635",
+    "0001535955",
+    "0001539029",
+    "0001540729",
+    "0001545061",
+    "0001547638",
+    "0001549848",
+    "0001551887",
+    "0001560241",
+    "0001567892",
+    "0001576873",
+    "0001579252",
+    "0001580185",
+    "0001583077",
+    "0001592058",
+    "0001594686",
+    "0001603345",
+    "0001603923",
+    "0001604627",
+    "0001604821",
+    "0001606180",
+    "0001609253",
+    "0001617351",
+    "0001631650",
+    "0001637207",
+    "0001637459",
+    "0001637761",
+    "0001638381",
+    "0001644378",
+    "0001645666",
+    "0001647088",
+    "0001648428",
+    "0001650445",
+    "0001652044",
+    "0001652130",
+    "0001653247",
+    "0001653710",
+    "0001655008",
+    "0001655020",
+    "0001656328",
+    "0001657853",
+    "0001659122",
+    "0001659617",
+    "0001661920",
+    "0001661998",
+    "0001669812",
+    "0001680048",
+    "0001681622",
+    "0001685237",
+    "0001702744",
+    "0001705843",
+    "0001708055",
+    "0001708301",
+    "0001714899",
+    "0001715611",
+    "0001722287",
+    "0001725526",
+    "0001727815",
+    "0001731289",
+    "0001731348",
+    "0001749704",
+    "0001750398"
+  ],
+  "selection": "Separate identifier-hash samples of historical nonfinancial annual issuers; no outcome or score-based selection. Only post-entry rows may enter an experiment.",
+  "limits": "Historical nonfinancial annual issuers; no all-market representativeness claim. Prior exposed companies excluded. No resampling to obtain favorable labels. No AWS deployment or automatic model promotion."
+}

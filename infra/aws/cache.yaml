@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Private filing cache for local equity research
+Resources:
+  FilingCache:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+  TLSOnly:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref FilingCache
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Deny
+            Principal: '*'
+            Action: s3:*
+            Resource:
+              - !GetAtt FilingCache.Arn
+              - !Sub '${FilingCache.Arn}/*'
+            Condition:
+              Bool:
+                aws:SecureTransport: false
+Outputs:
+  BucketName:
+    Value: !Ref FilingCache

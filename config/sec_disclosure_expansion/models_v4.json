@@ -1,0 +1,28 @@
+{
+  "version": 4,
+  "seed": "sec-disclosed-issuer-v1-20261018",
+  "models": [
+    "logistic_regularized",
+    "logistic_balanced",
+    "xgb_regularized",
+    "xgb_sqrt_balance",
+    "neural_network",
+    "logistic_c1_balanced",
+    "hist_gradient_balanced",
+    "random_forest_balanced",
+    "previous_frozen_reference"
+  ],
+  "calibration_folds": 3,
+  "calibration_regularization": 0.1,
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "minimum_final_companies": 50,
+  "minimum_final_positive_companies": 20,
+  "selection": "Among converged candidates with a feasible development precision/recall threshold, select minimum cross-fitted weighted log loss, then Brier. If none are feasible, select minimum log loss for research only and do not score final.",
+  "historical_final_retired": true,
+  "recent_final_used_for_selection": false,
+  "limits": "Repeated development model selection is optimistic. This is a separate expanded study, not a rerun of the historical final test or a production approval.",
+  "logistic_max_iter": 10000,
+  "reference": "Old 299-row SEC-target base estimator, unwrapped from its old calibrator and recalibrated in the same development folds. Prior development selection exposure is explicit. Its historical negatives inherit the old BRD scope.",
+  "filing_signals": "Seven point-in-time metadata features; sparse event counts and missingness indicators are not quantile-clipped. Financial preprocessing remains training-only. Fixed candidate list, no final model inputs or scores read."
+}

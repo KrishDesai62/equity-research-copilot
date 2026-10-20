@@ -95,86 +95,56 @@ def match_to_cik(bankruptcy_df: pd.DataFrame, universe_df: pd.DataFrame) -> pd.D
     return df
 
 
-def build_distress_labels(
-    universe_df: pd.DataFrame,
-    bankruptcy_df: pd.DataFrame,
-    horizon_years: list[int] = [1, 3],
-    drop_invalid_rows: bool = True,
-) -> pd.DataFrame:
+def build_distress_labels(universe_df, bankruptcy_df, horizon_years=(1, 3),
+                          drop_invalid_rows=True, *, observation_end=None):
+    """Construct filing-date targets with explicit outcome-coverage requirements.
+
+    Negative labels require reviewed event coverage from coverage_start through
+    observed_through (or observation_end). Missing follow-up remains unlabeled.
+    Rows on/after a known first bankruptcy are excluded from this pre-event model.
     """
-    Produce one row per (cik, fiscal_quarter) with a binary label per
-    horizon: did this company file Chapter 11 within `horizon_years` of
-    this quarter's date?
-
-    Also flags/drops rows that fall after a company's last known active
-    date, so a company that got acquired (stopped filing for reasons
-    unrelated to distress) doesn't get silently labeled "not distressed"
-    for hypothetical future quarters it never actually had.
-
-    Requires universe_df to carry a 'removed_date' column (from
-    point_in_time_universe.py — null/NaT for still-active companies).
-    If that column is missing, this raises rather than guessing, since
-    silently skipping this check reintroduces the exact bug it exists
-    to catch.
-
-    Args:
-        drop_invalid_rows: if True (default), rows past a company's
-            removed_date are dropped entirely. If False, they're kept
-            but flagged via the added 'valid_for_training' column, so
-            you can inspect them before deciding.
-    """
-    if "removed_date" not in universe_df.columns:
-        raise ValueError(
-            "universe_df must have a 'removed_date' column (from "
-            "point_in_time_universe.py) so post-removal quarters can be "
-            "flagged instead of silently labeled 'not distressed'."
-        )
-
+    required = {"cik", "filing_date", "removed_date"}
+    if not required <= set(universe_df):
+        raise ValueError("Universe requires cik, filing_date and removed_date; fiscal period dates are not valid anchors")
+    if not horizon_years or any(not isinstance(years, int) or years <= 0 for years in horizon_years):
+        raise ValueError("Horizons must be positive whole years")
     df = universe_df.copy()
     df["cik"] = df["cik"].astype(str).str.zfill(10)
-
-    bankruptcies = bankruptcy_df.copy()
-    bankruptcies["cik"] = bankruptcies["cik"].astype(str).str.zfill(10)
-
-    if "date" not in df.columns:
-        raise ValueError("universe_df must have a 'date' column (per-quarter row date).")
-    df["date"] = pd.to_datetime(df["date"])
-    df["removed_date"] = pd.to_datetime(df["removed_date"])
-    bankruptcies["filing_date"] = pd.to_datetime(bankruptcies["filing_date"])
-
-    # Flag rows that fall after this company left the universe (acquired,
-    # delisted for non-distress reasons, etc.) — these are not valid
-    # negative-label training rows.
-    df["valid_for_training"] = df["removed_date"].isna() | (df["date"] <= df["removed_date"])
-
-    merged = pd.merge(
-        df,
-        bankruptcies[["cik", "filing_date"]].rename(columns={"filing_date": "bankruptcy_filing_date"}),
-        on="cik",
-        how="left",
-    )
-
+    dates = pd.to_datetime(df["filing_date"], errors="raise")
+    removed = pd.to_datetime(df["removed_date"], errors="raise")
+    if dates.isna().any():
+        raise ValueError("Public filing dates cannot be missing")
+    events = bankruptcy_df.copy()
+    events["cik"] = events["cik"].astype(str).str.zfill(10)
+    events["filing_date"] = pd.to_datetime(events["filing_date"], errors="raise")
+    if events["filing_date"].isna().any():
+        raise ValueError("Bankruptcy event dates cannot be missing")
+    # A citation is required before a known event can become a positive target.
+    if "source_url" not in events or events["source_url"].isna().any() or events["source_url"].astype(str).str.strip().eq("").any():
+        raise ValueError("Bankruptcy events require source_url citations")
+    first_event = events.groupby("cik")["filing_date"].min()
+    event_dates = pd.to_datetime(df["cik"].map(first_event.to_dict()))
+    lifecycle = (removed.isna() | (dates <= removed)) & (event_dates.isna() | (dates < event_dates))
+    if observation_end is not None:
+        observed = pd.Series(pd.Timestamp(observation_end), index=df.index)
+    elif "observed_through" in df:
+        observed = pd.to_datetime(df["observed_through"], errors="raise")
+    else:
+        raise ValueError("Provide observed_through or observation_end; negative outcomes cannot be assumed")
+    coverage_start = pd.to_datetime(df.get("coverage_start", pd.Series(pd.NaT, index=df.index)))
+    reviewed = df.get("event_coverage_reviewed", pd.Series(False, index=df.index)).astype(str).str.lower().isin(["true", "1"])
     for years in horizon_years:
-        horizon_days = years * 365.25
-        target_col = f"target_distressed_{years}yr"
-
-        days_to_bankruptcy = (
-            merged["bankruptcy_filing_date"] - merged["date"]
-        ).dt.total_seconds() / (24 * 3600)
-
-        merged[target_col] = (
-            merged["bankruptcy_filing_date"].notna()
-            & (days_to_bankruptcy >= 0)
-            & (days_to_bankruptcy <= horizon_days)
-        ).astype(int)
-
-    merged = merged.drop(columns=["bankruptcy_filing_date"])
-
-    if drop_invalid_rows:
-        n_before = len(merged)
-        merged = merged[merged["valid_for_training"]].reset_index(drop=True)
-        n_dropped = n_before - len(merged)
-        if n_dropped:
-            print(f"Dropped {n_dropped} rows past a company's removal date.")
-
-    return merged
+        horizon = dates + pd.DateOffset(years=years)
+        positive = lifecycle & event_dates.notna() & (event_dates <= horizon) & (event_dates <= observed)
+        negative = (lifecycle & reviewed & (coverage_start <= dates) & (horizon <= observed)
+                    & (removed.isna() | (horizon <= removed)) & (event_dates.isna() | (event_dates > horizon)))
+        target = f"target_distressed_{years}yr"
+        df[target] = pd.Series(pd.NA, index=df.index, dtype="Int64")
+        df.loc[positive, target] = 1
+        df.loc[negative, target] = 0
+        availability = pd.Series(pd.NaT, index=df.index, dtype="datetime64[ns]")
+        availability.loc[positive] = event_dates[positive]
+        availability.loc[negative] = horizon[negative]
+        df[f"label_available_date_{years}yr"] = availability
+    df["valid_for_training"] = lifecycle & df[[f"target_distressed_{years}yr" for years in horizon_years]].notna().all(axis=1)
+    return df.loc[df.valid_for_training].reset_index(drop=True) if drop_invalid_rows else df

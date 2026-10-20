@@ -1,0 +1,90 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Read-only IAM-authenticated filing-monitor status endpoint
+Parameters:
+  CacheBucketName:
+    Type: String
+  CachePrefix:
+    Type: String
+    Default: equity-research
+    AllowedPattern: '[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)*'
+  CodeBucketName:
+    Type: String
+  CodeObjectKey:
+    Type: String
+    Description: Immutable versioned ZIP produced by scripts/build_monitor.py
+  OperatorRoleName:
+    Type: String
+    AllowedPattern: '[A-Za-z0-9+=,.@_-]+'
+    Description: Existing IAM role in this account permitted to read monitor status
+Resources:
+  StatusRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - !Sub arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ReadMonitorHealth
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: s3:GetObject
+                Resource: !Sub arn:${AWS::Partition}:s3:::${CacheBucketName}/${CachePrefix}/monitor/health.json
+  StatusFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.12
+      Handler: src.operations.status.handler
+      Role: !GetAtt StatusRole.Arn
+      Timeout: 10
+      MemorySize: 256
+      ReservedConcurrentExecutions: 2
+      Code:
+        S3Bucket: !Ref CodeBucketName
+        S3Key: !Ref CodeObjectKey
+      Environment:
+        Variables:
+          AWS_S3_BUCKET: !Ref CacheBucketName
+          AWS_S3_PREFIX: !Ref CachePrefix
+  StatusLogs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub /aws/lambda/${StatusFunction}
+      RetentionInDays: 14
+  StatusUrl:
+    Type: AWS::Lambda::Url
+    Properties:
+      TargetFunctionArn: !Ref StatusFunction
+      AuthType: AWS_IAM
+  OperatorAccess:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyName: !Sub ${AWS::StackName}-status-read
+      Roles: [!Ref OperatorRoleName]
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action: lambda:InvokeFunctionUrl
+            Resource: !GetAtt StatusFunction.Arn
+            Condition:
+              StringEquals:
+                lambda:FunctionUrlAuthType: AWS_IAM
+          - Effect: Allow
+            Action: lambda:InvokeFunction
+            Resource: !GetAtt StatusFunction.Arn
+            Condition:
+              Bool:
+                lambda:InvokedViaFunctionUrl: 'true'
+Outputs:
+  StatusUrl:
+    Value: !GetAtt StatusUrl.FunctionUrl
+  StatusFunctionName:
+    Value: !Ref StatusFunction

@@ -1,0 +1,156 @@
+{
+  "seed": "new-holdout-20261017",
+  "created_on": "2026-10-17",
+  "train_labels_available_before": "2020-01-01",
+  "test_filing_start": "2020-01-01",
+  "test_filing_end": "2021-12-31",
+  "observation_end": "2022-12-31",
+  "companies": [
+    {
+      "cik": "0001056087",
+      "ticker": "CIK0001056087",
+      "company_name": "McClatchy Company",
+      "event_date": "2020-02-13",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0001655020",
+      "ticker": "CIK0001655020",
+      "company_name": "Extraction Oil & Gas, Inc.",
+      "event_date": "2020-06-14",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0000320575",
+      "ticker": "CIK0000320575",
+      "company_name": "Pioneer Energy Services Corp.",
+      "event_date": "2020-03-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0001522690",
+      "ticker": "CIK0001522690",
+      "company_name": "GWG Holdings, Inc.",
+      "event_date": "2022-04-20",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0001725526",
+      "ticker": "CIK0001725526",
+      "company_name": "HighPoint Resources Corporation",
+      "event_date": "2021-03-14",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0000902274",
+      "ticker": "CIK0000902274",
+      "company_name": "Libbey Inc.",
+      "event_date": "2020-06-01",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0000922358",
+      "ticker": "CIK0000922358",
+      "company_name": "Ferrellgas Partners, L.P. (Ferrellgas Partners Finance Corp.)",
+      "event_date": "2021-01-11",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "cik": "0000708819",
+      "ticker": "CIK0000708819",
+      "company_name": "McDermott International, Inc.",
+      "event_date": "2020-01-21",
+      "event_source": "https://lopucki.law.ufl.edu/download_cases_table.php"
+    },
+    {
+      "ticker": "NKE",
+      "cik": "0000320187",
+      "event_date": null
+    },
+    {
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "event_date": null
+    },
+    {
+      "ticker": "KO",
+      "cik": "0000021344",
+      "event_date": null
+    },
+    {
+      "ticker": "PG",
+      "cik": "0000080424",
+      "event_date": null
+    },
+    {
+      "ticker": "CVS",
+      "cik": "0000064803",
+      "event_date": null
+    },
+    {
+      "ticker": "UPS",
+      "cik": "0001090727",
+      "event_date": null
+    },
+    {
+      "ticker": "FDX",
+      "cik": "0001048911",
+      "event_date": null
+    },
+    {
+      "ticker": "CAT",
+      "cik": "0000018230",
+      "event_date": null
+    }
+  ],
+  "excluded_development_companies": [
+    "0000020520",
+    "0000027419",
+    "0000029534",
+    "0000034088",
+    "0000056873",
+    "0000060667",
+    "0000084129",
+    "0000096289",
+    "0000104169",
+    "0000109198",
+    "0000200406",
+    "0000278130",
+    "0000320193",
+    "0000354950",
+    "0000745732",
+    "0000764478",
+    "0000768835",
+    "0000789019",
+    "0000794367",
+    "0000878726",
+    "0000884940",
+    "0000885639",
+    "0000886158",
+    "0000887921",
+    "0000895126",
+    "0000909832",
+    "0000935703",
+    "0000949039",
+    "0001005414",
+    "0001018724",
+    "0001045810",
+    "0001166126",
+    "0001168213",
+    "0001255474",
+    "0001282266",
+    "0001310067",
+    "0001326801",
+    "0001498301",
+    "0001498710",
+    "0001502034",
+    "0001592058",
+    "0001609253",
+    "0001637459",
+    "0001652044",
+    "0001657853",
+    "0001731289"
+  ],
+  "sampling": "Prespecified case-control benchmark: 8 first BRD Chapter 11 cases selected by seeded CIK hash, 8 named public-company controls. Not market-prevalence representative.",
+  "policy": "Never replace unavailable or ineligible firms based on scores/classes. Test features never enter fitting, preprocessing, model selection or threshold choice."
+}

@@ -1,9 +1,11 @@
+from src.ml.evaluate import company_walk_forward_splits, evaluate_classifier, compare_to_naive_baseline
+from src.ml.neural_network import train_neural_network, validate_training_data
+from sklearn.preprocessing import StandardScaler
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 import logging
-import xgboost as xgb
 import numpy as np
 import urllib.request
 import io
@@ -22,13 +24,13 @@ def train_logistic_baseline(train_df: pd.DataFrame, feature_cols: list[str], lab
         raise ValueError("Training dataframe is empty or feature/label columns are missing.")
 
     # 1. Extract feature matrix (X) and target vector (y)
-    X = train_df[feature_cols]
-    y = train_df[label_col]
+    X, y = validate_training_data(train_df, feature_cols, label_col)
 
     # 2. Build a robust pipeline with median imputation and logistic regression
     # Median imputation handles missing XBRL/sentiment values before they hit the solver
     pipeline = Pipeline([
-        ('imputer', SimpleImputer(strategy='median')),
+        ('imputer', SimpleImputer(strategy='median', keep_empty_features=True)),
+        ('scaler', StandardScaler()),
         ('classifier', LogisticRegression(
             class_weight='balanced', 
             max_iter=1000, 
@@ -58,8 +60,12 @@ def train_xgboost(train_df: pd.DataFrame, feature_cols: list[str], label_col: st
         raise ValueError("Training dataframe is empty or feature/label columns are missing.")
 
     # 1. Extract feature matrix (X) and target vector (y)
-    X = train_df[feature_cols]
-    y = train_df[label_col]
+    try:
+        import xgboost as xgb
+    except (ImportError, OSError) as exc:
+        raise RuntimeError("XGBoost requires its native runtime; on macOS install libomp") from exc
+
+    X, y = validate_training_data(train_df, feature_cols, label_col)
 
     # 2. Compute dynamic class imbalance ratio for scale_pos_weight
     # scale_pos_weight = count(negative classes) / count(positive classes)
@@ -77,7 +83,7 @@ def train_xgboost(train_df: pd.DataFrame, feature_cols: list[str], label_col: st
     # Note: XGBoost natively handles NaNs, but passing an explicit SimpleImputer 
     # guarantees consistent feature matrix shapes during inference and testing.
     pipeline = Pipeline([
-        ('imputer', SimpleImputer(strategy='median')),
+        ('imputer', SimpleImputer(strategy='median', keep_empty_features=True)),
         ('classifier', xgb.XGBClassifier(
             scale_pos_weight=scale_pos_weight_val,
             n_estimators=100,
@@ -105,74 +111,52 @@ def train_xgboost(train_df: pd.DataFrame, feature_cols: list[str], label_col: st
 
 logger = logging.getLogger(__name__)
 
-def run_walk_forward_evaluation(df: pd.DataFrame, feature_cols: list[str], label_col: str) -> dict:
-    """
-    Executes a production-grade walk-forward evaluation across temporal folds.
-    Applies train_logistic_baseline or train_xgboost sequentially over rolling windows,
-    evaluates performance using PR-AUC, and benchmarks against a naive prior baseline
-    to fulfill MVP 'done' criterion #3.
-    """
-    if df.empty or "filing_date" not in df.columns:
-        raise ValueError("Evaluation dataframe is empty or missing 'filing_date' index column.")
-
-    # Ensure chronological order for strict time-series integrity
-    df = df.sort_values("filing_date").reset_index(drop=True)
-
-    # 1. Generate rolling walk-forward splits 
-    # (Assuming walk_forward_splits yields train/test index tuples or boolean masks)
-    splits = walk_forward_splits(df["filing_date"])
-    
-    fold_results = []
-
-    for fold_idx, (train_idx, test_idx) in enumerate(splits):
-        train_subset = df.iloc[train_idx]
-        test_subset = df.iloc[test_idx]
-
-        if train_subset.empty or test_subset.empty:
+def run_walk_forward_evaluation(df, feature_cols, label_col, *, trainer=None, company_col="cik",
+                                min_train_periods=4, label_available_col=None,
+                                n_company_folds=3, test_companies=None, period_freq="Q"):
+    """Evaluate recurring company panels with disjoint company/time holdouts."""
+    if df.empty or label_available_col is None:
+        raise ValueError("Nonempty data and label_available_col are required")
+    validate_training_data(df, feature_cols, label_col)
+    trainer = trainer or train_logistic_baseline
+    splits = company_walk_forward_splits(df, company_col=company_col,
+        label_available_col=label_available_col, min_train_periods=min_train_periods,
+        n_company_folds=n_company_folds, test_companies=test_companies, period_freq=period_freq)
+    details, skipped, predictions = [], [], []
+    for fold, (cohort, train_idx, test_idx) in enumerate(splits):
+        train, test = df.iloc[train_idx], df.iloc[test_idx]
+        metadata = {"fold": fold, "company_cohort": cohort, "train_samples": len(train),
+                    "test_samples": len(test), "train_companies": train[company_col].nunique(),
+                    "test_companies": test[company_col].nunique(),
+                    "test_positives": int(test[label_col].sum()),
+                    "test_start": str(pd.to_datetime(test["filing_date"]).min().date())}
+        if train[label_col].nunique() < 2:
+            skipped.append({**metadata, "reason": "Training has fewer than two classes"})
             continue
-
-        # 2. Train model on historical rolling window
-        # For MVP baseline, we use the logistic regression function
-        model = train_logistic_baseline(train_subset, feature_cols, label_col)
-
-        # 3. Generate out-of-sample probability predictions
-        X_test = test_subset[feature_cols]
-        y_test = test_subset[label_col]
-        
-        if len(y_test.unique()) < 2:
-            logger.warning(f"Fold {fold_idx} test set contains only one class label. Skipping PR-AUC calculation.")
+        model = trainer(train, feature_cols, label_col)
+        test_features = test[feature_cols].astype(float).replace([np.inf, -np.inf], np.nan)
+        probs = model.predict_proba(test_features)[:, 1]
+        predictions.extend({"row_position": int(pos), "target": int(target), "score": float(score)}
+                           for pos, target, score in zip(test_idx, test[label_col], probs))
+        if test[label_col].nunique() < 2:
+            skipped.append({**metadata, "reason": "Single-class test fold; included in pooled predictions"})
             continue
-
-        preds_proba = model.predict_proba(X_test)[:, 1]
-
-        # 4. Evaluate classifier using strict metrics (PR-AUC)
-        fold_metrics = evaluate_classifier(y_test, preds_proba)
-
-        # 5. Compare performance directly against a naive baseline
-        naive_comparison = compare_to_naive_baseline(y_test, preds_proba)
-
-        fold_results.append({
-            "fold": fold_idx,
-            "pr_auc": fold_metrics.get("pr_auc"),
-            "beats_naive": naive_comparison.get("beats_naive"),
-            "test_samples": len(test_subset)
-        })
-
-    if not fold_results:
-        logger.error("Walk-forward evaluation completed with zero valid evaluation folds.")
-        return {}
-
-    # Aggregate fold performance summary
-    metrics_df = pd.DataFrame(fold_results)
-    summary = {
-        "mean_pr_auc": float(metrics_df["pr_auc"].mean()),
-        "success_rate_vs_naive": float(metrics_df["beats_naive"].mean()),
-        "total_folds_evaluated": len(metrics_df),
-        "fold_details": fold_results
-    }
-
-    logger.info(f"Walk-forward evaluation complete. Mean PR-AUC: {summary['mean_pr_auc']:.4f}")
-    return summary
+        metrics = evaluate_classifier(test[label_col], probs)
+        naive = compare_to_naive_baseline(test[label_col], probs)
+        details.append({**metadata, **metrics, "naive_pr_auc": naive["naive_pr_auc"],
+                        "beats_naive": naive["beats_naive"]})
+    if not predictions or len({p["target"] for p in predictions}) < 2:
+        raise ValueError("No usable out-of-sample evaluation with both classes; inspect dates, cohorts and label availability")
+    if len({p["row_position"] for p in predictions}) != len(predictions):
+        raise ValueError("Evaluation generated duplicate out-of-sample rows")
+    y, scores = [p["target"] for p in predictions], [p["score"] for p in predictions]
+    pooled = {**evaluate_classifier(y, scores), **compare_to_naive_baseline(y, scores)}
+    return {"mean_pr_auc": float(np.mean([fold["pr_auc"] for fold in details])) if details else None,
+            "validation_status": "evaluated" if details else "inconclusive_single_class_folds",
+            "success_rate_vs_naive": float(np.mean([fold["beats_naive"] for fold in details])) if details else None,
+            "total_folds_evaluated": len(details), "fold_details": details,
+            "skipped_folds": skipped, "pooled_metrics": pooled, "predictions": predictions,
+            "note": "Repeated quarterly positives may describe the same bankruptcy event; this is not an independent event count."}
 
 
 def sanity_check_against_published_benchmark():
@@ -180,13 +164,31 @@ def sanity_check_against_published_benchmark():
     
     logger.info("Downloading UCI Polish Bankruptcy benchmark dataset...")
     try:
-        response = urllib.request.urlopen(url)
+        response = urllib.request.urlopen(url, timeout=60)
         with zipfile.ZipFile(io.BytesIO(response.read())) as z:
             file_list = z.namelist()
-            target_file = [f for f in file_list if f.endswith('.arff') or f.endswith('.csv')][0]
+            target_file = next(f for f in file_list if f.endswith('5year.arff'))
             with z.open(target_file) as f:
                 df = pd.read_csv(f) if target_file.endswith('.csv') else parse_arff_to_dataframe(f)
                 return df
     except Exception as e:
         logger.error(f"Failed to load benchmark dataset: {e}")
         raise e
+
+
+def parse_arff_to_dataframe(file):
+    from scipy.io import arff
+    import io
+    data, _ = arff.loadarff(io.StringIO(file.read().decode("utf-8")))
+    frame = pd.DataFrame(data)
+    for col in frame.select_dtypes(include="object"):
+        frame[col] = frame[col].map(lambda value: value.decode() if isinstance(value, bytes) else value)
+    return frame.apply(pd.to_numeric, errors="raise")
+
+
+def compare_models(df, feature_cols, label_col, **evaluation_options):
+    return {name: run_walk_forward_evaluation(df, feature_cols, label_col, trainer=trainer,
+                                             **evaluation_options)
+            for name, trainer in {"logistic": train_logistic_baseline,
+                                  "xgboost": train_xgboost,
+                                  "neural_network": train_neural_network}.items()}

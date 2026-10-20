@@ -5,6 +5,7 @@ plus an optional RAG-derived sentiment score from Risk Factors text.
 MVP scope: this file. Track A is the only track in the MVP.
 """
 import pandas as pd
+import math
 
 
 def compute_altman_components(xbrl_row: dict) -> dict:
@@ -17,7 +18,9 @@ def compute_altman_components(xbrl_row: dict) -> dict:
         for k in keys:
             if k in xbrl_row and xbrl_row[k] is not None:
                 try:
-                    return float(xbrl_row[k])
+                    value = float(xbrl_row[k])
+                    if math.isfinite(value):
+                        return value
                 except (ValueError, TypeError):
                     continue
         return float('nan')
@@ -29,7 +32,9 @@ def compute_altman_components(xbrl_row: dict) -> dict:
     total_liabilities = get_val(["Liabilities", "us-gaap:Liabilities"])
     retained_earnings = get_val(["RetainedEarningsAccumulatedDeficit", "us-gaap:RetainedEarningsAccumulatedDeficit"])
     ebit = get_val(["OperatingIncomeLoss", "IncomeLossFromContinuingOperationsBeforeIncomeTaxes", "us-gaap:OperatingIncomeLoss"])
-    sales = get_val(["Revenues", "SalesRevenueNet", "us-gaap:SalesRevenueNet"])
+    sales = get_val(["RevenueFromContractWithCustomerExcludingAssessedTax",
+                     "RevenueFromContractWithCustomerIncludingAssessedTax",
+                     "Revenues", "SalesRevenueNet", "us-gaap:SalesRevenueNet"])
     market_value_equity = get_val(["MarketValueOfEquity", "MarketValueEquity", "market_cap"])
 
     # Compute the 5 Altman components safely with zero/NaN guards
@@ -81,7 +86,8 @@ def add_rag_sentiment_feature(row: dict, retrieve_fn: Optional[Callable] = None)
         retrieved_docs = retrieve_fn(
             query=query_text,
             ticker=ticker,
-            section="Item 1A",
+            section_title="Item 1A Risk Factors",
+            date_range=("1900-01-01", str(pd.Timestamp(filing_date).date())),
             k=5
         )
     except Exception as e:
@@ -96,9 +102,9 @@ def add_rag_sentiment_feature(row: dict, retrieve_fn: Optional[Callable] = None)
     valid_texts = []
     for doc in retrieved_docs:
         meta = doc.get("metadata", {})
-        doc_filing_date = meta.get("filing_date")
+        doc_filing_date = doc.get("filing_date", meta.get("filing_date"))
         
-        if doc_filing_date and doc_filing_date <= filing_date:
+        if doc_filing_date and pd.Timestamp(doc_filing_date) <= pd.Timestamp(filing_date):
             text_content = doc.get("text", "")
             if text_content:
                 valid_texts.append(text_content)
@@ -133,7 +139,8 @@ def compute_loughran_mcdonald_score(text: str) -> float:
     }
 
     # Normalize and tokenize text
-    words = text.lower().split()
+    import re
+    words = re.findall(r"[a-z]+", text.lower())
     total_words = len(words)
     
     if total_words == 0:
@@ -167,6 +174,8 @@ def build_feature_table(xbrl_df: pd.DataFrame, labels_df: pd.DataFrame, retrieve
         row_dict = xbrl_row.to_dict()
         cik = row_dict.get("cik")
         fiscal_quarter = row_dict.get("fiscal_quarter")
+        if fiscal_quarter is None and row_dict.get("fiscal_period_end") is not None:
+            fiscal_quarter = str(pd.Timestamp(row_dict["fiscal_period_end"]).to_period("Q"))
         filing_date = row_dict.get("filing_date")
 
         if not cik or not fiscal_quarter:
@@ -181,6 +190,7 @@ def build_feature_table(xbrl_df: pd.DataFrame, labels_df: pd.DataFrame, retrieve
         # 4. Merge all feature sets into a unified feature dictionary
         combined_row = {
             "cik": cik,
+            "ticker": row_dict.get("ticker"),
             "fiscal_quarter": fiscal_quarter,
             "filing_date": filing_date,
             **altman_features,
@@ -200,6 +210,7 @@ def build_feature_table(xbrl_df: pd.DataFrame, labels_df: pd.DataFrame, retrieve
         features_df,
         labels_df,
         on=["cik", "fiscal_quarter"],
+        validate="many_to_one",
         how="inner",
         suffixes=('', '_label')
     )

@@ -1,0 +1,482 @@
+{
+  "description": "Known-outcome candidate evidence inspected during public-source review. Labels remain unverified; companies must not be described as blind final examples.",
+  "source_queue_sha256": "72cf0bf67ef14cb2154ec91a5424b94276a74f83990501c16022817c6db2c31b",
+  "companies": [
+    {
+      "cik": "0000057725",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000084129",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000716006",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000719274",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000727207",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000730255",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000742112",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000748790",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000768835",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000811240",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000814549",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000837852",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000844887",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000846475",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000867773",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000870826",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000874292",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000874710",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000886158",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000887247",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000890447",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000895419",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000895665",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0000933738",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001008654",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001008848",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001009759",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001017491",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001044378",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001067837",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001076682",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001078207",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001098880",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001099132",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001101396",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001101680",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001108967",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001113148",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001121702",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001127993",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001136294",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001159167",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001162461",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001168081",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001169987",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001172631",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001183765",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001220754",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001223389",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001292519",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001300699",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001305253",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001333835",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001347652",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001350073",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001353538",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001365916",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001368148",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001377630",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001389002",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001391127",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001396033",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001401708",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001402479",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001411688",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001415684",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001418100",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001431959",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001444307",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001446687",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001455684",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001456772",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001459417",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001467154",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001478069",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001483510",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001497504",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001498710",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001501134",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001504167",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001537028",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001537561",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001539029",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001551693",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001551986",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001559998",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001584754",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001592057",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001592058",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001595585",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001596946",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001597313",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001617669",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001634447",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001643988",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001651944",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001653247",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001656634",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001675634",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001698113",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001704760",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001711291",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001713832",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001720990",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001721741",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001723580",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001731289",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001736865",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001739426",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001741231",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001750153",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001758057",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001759546",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001760173",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001762322",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001772695",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001775625",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001777946",
+      "role": "development_evidence_only"
+    },
+    {
+      "cik": "0001790665",
+      "role": "development_evidence_only"
+    }
+  ]
+}

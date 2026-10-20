@@ -1,0 +1,2 @@
+-r requirements-local.lock
+pyarrow==26.0.0

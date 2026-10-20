@@ -1,0 +1,1233 @@
+{
+  "cohort_id": "fresh-april-2025-20261019",
+  "source_plan_sha256": "baa27e71072b921f420580494031be9b40ca8057dc9fbbbf48351585ac949308",
+  "forecast_date": "2025-04-01",
+  "evidence_cutoff": "2026-10-18",
+  "companies": [
+    {
+      "cik": "0000015615",
+      "ticker": "CIK0000015615",
+      "company_name": "MASTEC INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000072205",
+      "ticker": "CIK0000072205",
+      "company_name": "NOBILITY HOMES INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000077360",
+      "ticker": "CIK0000077360",
+      "company_name": "PENTAIR PLC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000077543",
+      "ticker": "CIK0000077543",
+      "company_name": "TUTOR PERINI CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000091767",
+      "ticker": "CIK0000091767",
+      "company_name": "SONOCO PRODUCTS CO",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000315131",
+      "ticker": "CIK0000315131",
+      "company_name": "PHX MINERALS INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000315958",
+      "ticker": "CIK0000315958",
+      "company_name": "CREDITRISKMONITOR COM INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000352955",
+      "ticker": "CIK0000352955",
+      "company_name": "CKX LANDS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000813828",
+      "ticker": "CIK0000813828",
+      "company_name": "PARAMOUNT GLOBAL",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000843006",
+      "ticker": "CIK0000843006",
+      "company_name": "ACCESS NEWSWIRE INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000885978",
+      "ticker": "CIK0000885978",
+      "company_name": "U S PHYSICAL THERAPY INC /NV",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000888981",
+      "ticker": "CIK0000888981",
+      "company_name": "NOCOPI TECHNOLOGIES INC/MD/",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000903651",
+      "ticker": "CIK0000903651",
+      "company_name": "INNODATA INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000921299",
+      "ticker": "CIK0000921299",
+      "company_name": "FIBROGEN INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000925741",
+      "ticker": "CIK0000925741",
+      "company_name": "BIOCARDIA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0000936340",
+      "ticker": "CIK0000936340",
+      "company_name": "DTE ENERGY CO",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001001838",
+      "ticker": "CIK0001001838",
+      "company_name": "SOUTHERN COPPER CORP/",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001005284",
+      "ticker": "CIK0001005284",
+      "company_name": "UNIVERSAL DISPLAY CORP PA",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001020214",
+      "ticker": "CIK0001020214",
+      "company_name": "CERUS CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001035983",
+      "ticker": "CIK0001035983",
+      "company_name": "COMFORT SYSTEMS USA INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001036262",
+      "ticker": "CIK0001036262",
+      "company_name": "INTEST CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001058307",
+      "ticker": "CIK0001058307",
+      "company_name": "NEXTPLAT CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001062231",
+      "ticker": "CIK0001062231",
+      "company_name": "AMERICAN AXLE & MANUFACTURING HOLDINGS INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001069530",
+      "ticker": "CIK0001069530",
+      "company_name": "CASSAVA SCIENCES INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001070412",
+      "ticker": "CIK0001070412",
+      "company_name": "CNX RESOURCES CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001071255",
+      "ticker": "CIK0001071255",
+      "company_name": "GOLDEN ENTERTAINMENT, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001089872",
+      "ticker": "CIK0001089872",
+      "company_name": "GAIA, INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001104657",
+      "ticker": "CIK0001104657",
+      "company_name": "MATERION CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001123360",
+      "ticker": "CIK0001123360",
+      "company_name": "GLOBAL PAYMENTS INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001124105",
+      "ticker": "CIK0001124105",
+      "company_name": "GYRE THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001141197",
+      "ticker": "CIK0001141197",
+      "company_name": "PEDEVCO CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001288469",
+      "ticker": "CIK0001288469",
+      "company_name": "MAXLINEAR, INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001304161",
+      "ticker": "CIK0001304161",
+      "company_name": "PHARMA-BIO SERV, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001321517",
+      "ticker": "CIK0001321517",
+      "company_name": "STRATOS RENEWABLES CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001336047",
+      "ticker": "CIK0001336047",
+      "company_name": "BOARDWALK PIPELINE PARTNERS, LP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001362516",
+      "ticker": "CIK0001362516",
+      "company_name": "CLEARTRONIC, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001374690",
+      "ticker": "CIK0001374690",
+      "company_name": "LARIMAR THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001376339",
+      "ticker": "CIK0001376339",
+      "company_name": "MIMEDX GROUP, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001377121",
+      "ticker": "CIK0001377121",
+      "company_name": "PROTAGONIST THERAPEUTICS, INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001382101",
+      "ticker": "CIK0001382101",
+      "company_name": "SUTRO BIOPHARMA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001388320",
+      "ticker": "CIK0001388320",
+      "company_name": "ACTINIUM PHARMACEUTICALS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001397795",
+      "ticker": "CIK0001397795",
+      "company_name": "BORN, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001398733",
+      "ticker": "CIK0001398733",
+      "company_name": "AQUESTIVE THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001413891",
+      "ticker": "CIK0001413891",
+      "company_name": "HIGH WIRE NETWORKS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001415404",
+      "ticker": "CIK0001415404",
+      "company_name": "ECHOSTAR CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 1.0,
+      "design_weight": 1.0
+    },
+    {
+      "cik": "0001419612",
+      "ticker": "CIK0001419612",
+      "company_name": "SOLAREDGE TECHNOLOGIES, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001422143",
+      "ticker": "CIK0001422143",
+      "company_name": "KURA ONCOLOGY, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001434588",
+      "ticker": "CIK0001434588",
+      "company_name": "GRAND CANYON EDUCATION, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001447669",
+      "ticker": "CIK0001447669",
+      "company_name": "TWILIO INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001487712",
+      "ticker": "CIK0001487712",
+      "company_name": "AIR LEASE CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001493137",
+      "ticker": "CIK0001493137",
+      "company_name": "LIFELOC TECHNOLOGIES, INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001498372",
+      "ticker": "CIK0001498372",
+      "company_name": "IWALLET CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001498382",
+      "ticker": "CIK0001498382",
+      "company_name": "TUHURA BIOSCIENCES, INC./NV",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001513525",
+      "ticker": "CIK0001513525",
+      "company_name": "ADIAL PHARMACEUTICALS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001514183",
+      "ticker": "CIK0001514183",
+      "company_name": "SILO PHARMA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001515317",
+      "ticker": "CIK0001515317",
+      "company_name": "MAGELLAN COPPER & GOLD CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001522860",
+      "ticker": "CIK0001522860",
+      "company_name": "ACUTUS MEDICAL, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001524472",
+      "ticker": "CIK0001524472",
+      "company_name": "XYLEM INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001528356",
+      "ticker": "CIK0001528356",
+      "company_name": "GENIE ENERGY LTD.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001530804",
+      "ticker": "CIK0001530804",
+      "company_name": "TRONOX HOLDINGS PLC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001560143",
+      "ticker": "CIK0001560143",
+      "company_name": "WYTEC INTERNATIONAL INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001560385",
+      "ticker": "CIK0001560385",
+      "company_name": "LIBERTY MEDIA CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001563577",
+      "ticker": "CIK0001563577",
+      "company_name": "GALERA THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001575858",
+      "ticker": "CIK0001575858",
+      "company_name": "PUREBASE CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001579214",
+      "ticker": "CIK0001579214",
+      "company_name": "EMERALD HOLDING, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001583107",
+      "ticker": "CIK0001583107",
+      "company_name": "THERAVANCE BIOPHARMA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001583648",
+      "ticker": "CIK0001583648",
+      "company_name": "PALVELLA THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001601485",
+      "ticker": "CIK0001601485",
+      "company_name": "ELICIO THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001604868",
+      "ticker": "CIK0001604868",
+      "company_name": "GROWGENERATION CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001614556",
+      "ticker": "CIK0001614556",
+      "company_name": "STAR ALLIANCE INTERNATIONAL CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001619856",
+      "ticker": "CIK0001619856",
+      "company_name": "CARIBOU BIOSCIENCES, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001621672",
+      "ticker": "CIK0001621672",
+      "company_name": "SUPER LEAGUE ENTERPRISE, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001622536",
+      "ticker": "CIK0001622536",
+      "company_name": "TALEN ENERGY CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001634293",
+      "ticker": "CIK0001634293",
+      "company_name": "EXCEED WORLD, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001640266",
+      "ticker": "CIK0001640266",
+      "company_name": "VOYAGER THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001650648",
+      "ticker": "CIK0001650648",
+      "company_name": "4D MOLECULAR THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001653558",
+      "ticker": "CIK0001653558",
+      "company_name": "PRIORITY TECHNOLOGY HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001660134",
+      "ticker": "CIK0001660134",
+      "company_name": "OKTA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001662991",
+      "ticker": "CIK0001662991",
+      "company_name": "SEZZLE INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001671941",
+      "ticker": "CIK0001671941",
+      "company_name": "ANGEL STUDIOS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001676238",
+      "ticker": "CIK0001676238",
+      "company_name": "BRAZE, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001684144",
+      "ticker": "CIK0001684144",
+      "company_name": "ZOMEDICA CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001688757",
+      "ticker": "CIK0001688757",
+      "company_name": "ESTABLISHMENT LABS HOLDINGS INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001697851",
+      "ticker": "CIK0001697851",
+      "company_name": "REKOR SYSTEMS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001705873",
+      "ticker": "CIK0001705873",
+      "company_name": "BERRY CORP (BRY)",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001709682",
+      "ticker": "CIK0001709682",
+      "company_name": "CUSTOM TRUCK ONE SOURCE, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001722556",
+      "ticker": "CIK0001722556",
+      "company_name": "BESTGOFER INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001733443",
+      "ticker": "CIK0001733443",
+      "company_name": "5&2 STUDIOS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001736243",
+      "ticker": "CIK0001736243",
+      "company_name": "ACURX PHARMACEUTICALS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001736297",
+      "ticker": "CIK0001736297",
+      "company_name": "ASTERA LABS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001737706",
+      "ticker": "CIK0001737706",
+      "company_name": "SEADRILL LTD",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001743745",
+      "ticker": "CIK0001743745",
+      "company_name": "GREENLANE HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 1.0,
+      "design_weight": 1.0
+    },
+    {
+      "cik": "0001753373",
+      "ticker": "CIK0001753373",
+      "company_name": "M2I GLOBAL, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001779474",
+      "ticker": "CIK0001779474",
+      "company_name": "WM TECHNOLOGY, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001789192",
+      "ticker": "CIK0001789192",
+      "company_name": "N2OFF, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001789940",
+      "ticker": "CIK0001789940",
+      "company_name": "FIRST WATCH RESTAURANT GROUP, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001790340",
+      "ticker": "CIK0001790340",
+      "company_name": "IMMUNEERING CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001794515",
+      "ticker": "CIK0001794515",
+      "company_name": "ZOOMINFO TECHNOLOGIES INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001802255",
+      "ticker": "CIK0001802255",
+      "company_name": "GUARDIAN PHARMACY SERVICES, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001803696",
+      "ticker": "CIK0001803696",
+      "company_name": "ADEIA INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001809519",
+      "ticker": "CIK0001809519",
+      "company_name": "GOODRX HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001818383",
+      "ticker": "CIK0001818383",
+      "company_name": "MEDIAALPHA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001819994",
+      "ticker": "CIK0001819994",
+      "company_name": "ROCKET LAB USA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001828016",
+      "ticker": "CIK0001828016",
+      "company_name": "PLAYTIKA HOLDING CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001829247",
+      "ticker": "CIK0001829247",
+      "company_name": "BULLFROG AI HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001831915",
+      "ticker": "CIK0001831915",
+      "company_name": "CYTEK BIOSCIENCES, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001837686",
+      "ticker": "CIK0001837686",
+      "company_name": "VIMEO, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001839285",
+      "ticker": "CIK0001839285",
+      "company_name": "HEALTHCARE TRIANGLE, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001840102",
+      "ticker": "CIK0001840102",
+      "company_name": "SPECIFICITY, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001841925",
+      "ticker": "CIK0001841925",
+      "company_name": "INDIE SEMICONDUCTOR, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001842279",
+      "ticker": "CIK0001842279",
+      "company_name": "OPAL FUELS INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001844505",
+      "ticker": "CIK0001844505",
+      "company_name": "QT IMAGING HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001847064",
+      "ticker": "CIK0001847064",
+      "company_name": "PSQ HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001849056",
+      "ticker": "CIK0001849056",
+      "company_name": "OKLO INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001852244",
+      "ticker": "CIK0001852244",
+      "company_name": "GXO LOGISTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001857816",
+      "ticker": "CIK0001857816",
+      "company_name": "GIGACLOUD TECHNOLOGY INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001860657",
+      "ticker": "CIK0001860657",
+      "company_name": "ALLARITY THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001870600",
+      "ticker": "CIK0001870600",
+      "company_name": "SOLO BRANDS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001873722",
+      "ticker": "CIK0001873722",
+      "company_name": "BUBBLR INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 1.0,
+      "design_weight": 1.0
+    },
+    {
+      "cik": "0001875558",
+      "ticker": "CIK0001875558",
+      "company_name": "NUVECTIS PHARMA, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001881487",
+      "ticker": "CIK0001881487",
+      "company_name": "PROFRAC HOLDING CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001910975",
+      "ticker": "CIK0001910975",
+      "company_name": "RAPID LINE INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001932393",
+      "ticker": "CIK0001932393",
+      "company_name": "GE HEALTHCARE TECHNOLOGIES INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001933567",
+      "ticker": "CIK0001933567",
+      "company_name": "NEURAXIS, INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001944013",
+      "ticker": "CIK0001944013",
+      "company_name": "CRANE CO",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001966494",
+      "ticker": "CIK0001966494",
+      "company_name": "CARGO THERAPEUTICS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0001990354",
+      "ticker": "CIK0001990354",
+      "company_name": "WAYSTAR HOLDING CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002009312",
+      "ticker": "CIK0002009312",
+      "company_name": "AUREUS GREENWAY HOLDINGS INC",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002009684",
+      "ticker": "CIK0002009684",
+      "company_name": "SEAPORT ENTERTAINMENT GROUP INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002010653",
+      "ticker": "CIK0002010653",
+      "company_name": "FUTURE VISION II ACQUISITION CORP.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002011954",
+      "ticker": "CIK0002011954",
+      "company_name": "TWIN HOSPITALITY GROUP INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 1.0,
+      "design_weight": 1.0
+    },
+    {
+      "cik": "0002015845",
+      "ticker": "CIK0002015845",
+      "company_name": "EVERUS CONSTRUCTION GROUP, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002022416",
+      "ticker": "CIK0002022416",
+      "company_name": "SILEXION THERAPEUTICS CORP",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002023658",
+      "ticker": "CIK0002023658",
+      "company_name": "BICARA THERAPEUTICS INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002028336",
+      "ticker": "CIK0002028336",
+      "company_name": "NEW ERA HELIUM INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    },
+    {
+      "cik": "0002030954",
+      "ticker": "CIK0002030954",
+      "company_name": "TEN HOLDINGS, INC.",
+      "role": "reserved_fresh",
+      "frame_member": true,
+      "inclusion_probability": 0.1,
+      "design_weight": 10.0
+    }
+  ],
+  "policy": "Exclude every listed company from future training or development. No scoring or approval is granted by this reservation manifest."
+}

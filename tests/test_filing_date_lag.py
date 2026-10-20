@@ -1,28 +1,18 @@
-"""
-Run this before trusting any ML feature table. Catches the most common
-leakage bug: joining on fiscal_period_end instead of filing_date.
-"""
-import pytest
+import pandas as pd
+from src.ml.features_distress import build_feature_table, add_rag_sentiment_feature
 
 
 def test_feature_table_uses_filing_date_not_period_end():
-    """
-    TODO: build a small synthetic xbrl_df with a known filing_date
-    later than fiscal_period_end (this is realistic -- filings lag
-    period end by 40-90 days). Run it through
-    ml.features_distress.build_feature_table and assert that any join
-    to labels or retrieved text used filing_date, not period_end -- e.g.
-    by checking no chunk with a filing_date after the row's filing_date
-    was retrieved for it.
-    """
-    raise NotImplementedError
+    xbrl = pd.DataFrame([dict(cik="1", ticker="A", fiscal_quarter="2020Q1",
+                             filing_date="2020-05-01", Assets=100)])
+    labels = pd.DataFrame([dict(cik="1", fiscal_quarter="2020Q1", event_date="2020-04-01")])
+    assert build_feature_table(xbrl, labels).empty
 
 
 def test_no_future_filing_leaks_into_past_quarter_feature():
-    """
-    TODO: end-to-end check -- for a given (cik, fiscal_quarter) row,
-    confirm every piece of data used to build its features (XBRL values,
-    RAG-retrieved sentiment, insider trading aggregates) has a
-    filing_date <= that quarter's filing_date.
-    """
-    raise NotImplementedError
+    def retrieve(**kwargs):
+        assert kwargs["date_range"][1] == "2020-05-01"
+        return [{"filing_date": "2020-05-02", "text": "bankruptcy"},
+                {"filing_date": "2020-04-01", "text": "steady growth"}]
+    row = add_rag_sentiment_feature(dict(ticker="A", filing_date="2020-05-01"), retrieve)
+    assert row["risk_sentiment_score"] == 0

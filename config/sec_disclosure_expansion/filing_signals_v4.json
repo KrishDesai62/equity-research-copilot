@@ -1,0 +1,9 @@
+{
+  "version": 4,
+  "lookbacks_days": [90, 365],
+  "features": ["late_report_notices_365d", "material_default_items_365d", "material_default_items_90d", "nonreliance_items_365d", "executive_change_items_90d", "current_reports_90d", "days_since_annual_report"],
+  "inputs": "Hashed SEC submission column arrays already acquired for each company; only filing dates strictly before prediction.",
+  "unknown_items": "If any 8-K in a window has unknown item indexing, its item-based counts are missing, never zero. Exact form counts remain observable.",
+  "feature_clipping": "Quantile-clip original financial features only. Preserve sparse filing-event counts and missingness indicators rather than clipping rare signals to zero.",
+  "partitions": "Enrich training and calibration only; do not read final feature rows or make final predictions."
+}

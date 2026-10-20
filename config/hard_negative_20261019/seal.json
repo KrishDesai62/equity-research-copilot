@@ -1,0 +1,5 @@
+{
+  "config/hard_negative_20261019/models.json": "6528bf08246e7cddc874af7edf9a6aa4ba0d6c39be3b26b67208957ecc8c26c0",
+  "src/ml/hard_negative_model.py": "01062f9c0b13e991efb5dc3ed8bd2e0a602f975c6116161357ed59f3b8bd43b4",
+  "src/validation/hard_negative_development.py": "27a95ad270baed5beb0f94aa0982aefe8ac0a3460a4d82a0c505a6ac7df4d166"
+}

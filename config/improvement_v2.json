@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "seed": "natural-development-v2-20261017",
+  "vintages": [2012, 2014, 2016],
+  "quarter": 1,
+  "issuers_per_vintage": 150,
+  "training_filing_before": "2015-01-01",
+  "training_outcomes_before": "2016-01-01",
+  "calibration_year": 2016,
+  "selection_year": 2018,
+  "final_year": 2020,
+  "observation_end": "2022-12-31",
+  "models": ["logistic_regularized", "logistic_balanced", "xgb_regularized", "xgb_sqrt_balance", "neural_network"],
+  "calibration_methods": ["none", "intercept"],
+  "selection_objective": "Minimum natural-sample selection log loss; Brier loss breaks ties. Not proof of useful bankruptcy recall.",
+  "threshold_min_precision": 0.5,
+  "threshold_min_recall": 0.5,
+  "intercept_pseudocount_per_class": 1.0,
+  "company_roles": "SHA256(seed:CIK) modulo 4: 0 additional training, 1 natural calibration, 2 model/threshold selection, 3 untouched final comparison",
+  "limits": "Historical nonfinancial annual issuers; no all-market representativeness claim. Prior exposed companies excluded. No resampling to obtain favorable labels. No AWS deployment or automatic model promotion."
+}

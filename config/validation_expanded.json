@@ -1,0 +1,214 @@
+{
+  "description": "Expanded purposive US development sample. Outcome coverage remains provisional; not a representative historical index universe.",
+  "observation_end": "2024-12-31",
+  "companies": [
+    {
+      "ticker": "AAPL",
+      "cik": "0000320193",
+      "event_date": null
+    },
+    {
+      "ticker": "MSFT",
+      "cik": "0000789019",
+      "event_date": null
+    },
+    {
+      "ticker": "COST",
+      "cik": "0000909832",
+      "event_date": null
+    },
+    {
+      "ticker": "WMT",
+      "cik": "0000104169",
+      "event_date": null
+    },
+    {
+      "ticker": "TGT",
+      "cik": "0000027419",
+      "event_date": null
+    },
+    {
+      "ticker": "BBBY",
+      "cik": "0000886158",
+      "event_date": "2023-04-23",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/886158/000119312523111754/d465247dex991.htm"
+    },
+    {
+      "ticker": "JCP",
+      "cik": "0001166126",
+      "event_date": "2020-05-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1166126/000119312520144411/d813078dex41.htm"
+    },
+    {
+      "ticker": "PRTY",
+      "cik": "0001592058",
+      "event_date": "2023-01-17",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1592058/000119312523009847/d643228dex992.htm"
+    },
+    {
+      "ticker": "HTZ",
+      "cik": "0001657853",
+      "event_date": "2020-05-22",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/47129/000110465920065674/tm2020858d1_ex99-1.htm"
+    },
+    {
+      "ticker": "RAD",
+      "cik": "0000084129",
+      "event_date": "2023-10-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/84129/000110465923109236/tm2328505d1_8k.htm"
+    },
+    {
+      "ticker": "RSH",
+      "cik": "0000096289",
+      "event_date": "2015-02-05",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/96289/000119312515219004/d940629d8k.htm"
+    },
+    {
+      "ticker": "TOYS",
+      "cik": "0001005414",
+      "event_date": "2017-09-18",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1005414/000119312517287834/d451484d8k.htm"
+    },
+    {
+      "ticker": "SHLD",
+      "cik": "0001310067",
+      "event_date": "2018-10-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1310067/000119312519016016/d689966d8k.htm"
+    },
+    {
+      "ticker": "ARO",
+      "cik": "0001168213",
+      "event_date": "2016-05-04",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1168213/000116821316000119/R27.htm"
+    },
+    {
+      "ticker": "CHK",
+      "cik": "0000895126",
+      "event_date": "2020-06-28",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/895126/000089512621000022/chk-20210202.htm"
+    },
+    {
+      "ticker": "FTR",
+      "cik": "0000020520",
+      "event_date": "2020-04-14",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/20520/000156276221000097/R32.htm"
+    },
+    {
+      "ticker": "WIN",
+      "cik": "0001282266",
+      "event_date": "2019-02-25",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1282266/000114036119005126/form8k.htm"
+    },
+    {
+      "ticker": "ASNA",
+      "cik": "0001498301",
+      "event_date": "2020-07-23",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1498301/000149830121000008/asna-20201031.htm"
+    },
+    {
+      "ticker": "WLL",
+      "cik": "0001255474",
+      "event_date": "2020-04-01",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1255474/000125547420000014/R22.htm"
+    },
+    {
+      "ticker": "CRC",
+      "cik": "0001609253",
+      "event_date": "2020-07-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1609253/000160925320000114/a20200715form8k.htm"
+    },
+    {
+      "ticker": "REV",
+      "cik": "0000887921",
+      "event_date": "2022-06-15",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/887921/000114036122025405/brhc10039435_8k.htm"
+    },
+    {
+      "ticker": "PIR",
+      "cik": "0000278130",
+      "event_date": "2020-02-17",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/278130/000119312520039375/d844889dex991.htm"
+    },
+    {
+      "ticker": "SMRT",
+      "cik": "0000884940",
+      "event_date": "2020-08-12",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/884940/000088494020000026/smrtannouncesfilingcha.htm"
+    },
+    {
+      "ticker": "TUES",
+      "cik": "0000878726",
+      "event_date": "2020-05-27",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/878726/000110465920068027/tm2021366d1_ex4-1.htm"
+    },
+    {
+      "ticker": "GNC",
+      "cik": "0001502034",
+      "event_date": "2020-06-23",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/1502034/000162828020012374/gnc-20200630.htm"
+    },
+    {
+      "ticker": "DO",
+      "cik": "0000949039",
+      "event_date": "2020-04-26",
+      "event_source": "https://www.sec.gov/Archives/edgar/data/949039/000119312520121777/d911875d8k.htm"
+    },
+    {
+      "ticker": "HD",
+      "cik": "0000354950",
+      "event_date": null
+    },
+    {
+      "ticker": "LOW",
+      "cik": "0000060667",
+      "event_date": null
+    },
+    {
+      "ticker": "TJX",
+      "cik": "0000109198",
+      "event_date": null
+    },
+    {
+      "ticker": "ROST",
+      "cik": "0000745732",
+      "event_date": null
+    },
+    {
+      "ticker": "KR",
+      "cik": "0000056873",
+      "event_date": null
+    },
+    {
+      "ticker": "DG",
+      "cik": "0000029534",
+      "event_date": null
+    },
+    {
+      "ticker": "DLTR",
+      "cik": "0000935703",
+      "event_date": null
+    },
+    {
+      "ticker": "KSS",
+      "cik": "0000885639",
+      "event_date": null
+    },
+    {
+      "ticker": "BBY",
+      "cik": "0000764478",
+      "event_date": null
+    },
+    {
+      "ticker": "M",
+      "cik": "0000794367",
+      "event_date": null
+    }
+  ],
+  "holdout_policy": {
+    "seed": 20261016,
+    "fraction": 0.25,
+    "test_start": "2020-01-01",
+    "development_cutoff": "2020-01-01",
+    "selection": "SHA256 of CIK and seed, without labels or feature values"
+  }
+}

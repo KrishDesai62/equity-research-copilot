@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "seed": "recent-matured-sec-20261019-v1",
+  "training_anchors": ["2014-12-31", "2015-12-31", "2016-12-31", "2017-12-31", "2018-12-31", "2019-12-31", "2020-12-31", "2021-05-31"],
+  "new_training_anchor": "2021-05-31",
+  "calibration_anchor": "2023-05-31",
+  "reserved_final_anchor": "2024-12-31",
+  "reporting_grace_days": 200,
+  "max_feature_age_days": 180,
+  "max_feature_missing_fraction": 0.25,
+  "training_extension_background_probability": 0.05,
+  "calibration_background_probability": 0.1,
+  "target": "target_sec_disclosed_petition_1yr",
+  "target_definition": "Issuer Chapter 7/11 petition explicitly disclosed in primary SEC filings during the next calendar year, observed through the additional 200-day reporting window. Not exhaustive court coverage.",
+  "minimum_precision": 0.5,
+  "minimum_recall": 0.5,
+  "scope": "Newer DEVELOPMENT study. Existing development companies may recur at a later date; this is not a fresh independent final cohort. All selected historical training IDs and reserved final IDs remain separated. Sampling is frozen before acquisition; missing sources/outcomes never become negatives.",
+  "evaluation": "Compare frozen historical classifiers against a fixed set of classifiers refitted on expanded history using the same new cohort. Never compare a change of cohort to the earlier 303-company result as a clean model improvement. No final scoring or automatic production promotion."
+}
