@@ -9,8 +9,10 @@ def answer_question(question: str, ticker: str, *, as_of=None, k=3, retriever=No
     if k < 1:
         raise ValueError("k must be positive")
     cutoff = date.fromisoformat(as_of) if as_of else date.today()
-    rows = (retriever or retrieve)(question, ticker=ticker.upper(), k=k,
+    from src.rag.query_relevance import expanded_query, rank_evidence
+    rows = (retriever or retrieve)(expanded_query(question), ticker=ticker.upper(), k=max(20,k),
                                   date_range=("1900-01-01", cutoff.isoformat()))
+    rows = rank_evidence(rows, question)
     citations, passages = [], []
     for row in rows:
         meta = row.get("metadata", {})
@@ -20,6 +22,7 @@ def answer_question(question: str, ticker: str, *, as_of=None, k=3, retriever=No
             continue
         if not meta.get("source_url") or not meta.get("accession_number"):
             continue
+        if len(citations) >= k: break
         number = len(citations) + 1
         excerpt = row["text"]
         citations.append({"id": number, "source_url": meta["source_url"],

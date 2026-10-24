@@ -15,9 +15,9 @@ def finite_number(value):
     return value if math.isfinite(value) else None
 
 
-def filing_evidence(query, ticker, cik, k, as_of_date=None):
+def filing_evidence(query, ticker, cik, k, as_of_date=None, *, retriever=None):
     cutoff = date.fromisoformat(as_of_date) if as_of_date else datetime.now(timezone.utc).date()
-    chunks = retrieve(query, ticker=ticker, filing_type="10-K", k=k,
+    chunks = (retriever or retrieve)(query, ticker=ticker, filing_type=None, k=k,
                       date_range=("1900-01-01", cutoff.isoformat()))
     evidence = []
     for chunk in chunks:

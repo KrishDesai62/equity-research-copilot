@@ -1,0 +1,5 @@
+[Unit]
+Description=Ledger process health check
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /home/ubuntu/equity-research-copilot/infra/web/healthcheck.sh

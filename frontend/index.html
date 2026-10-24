@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A filing-first equity research workspace. Explore company fundamentals, read SEC evidence, and keep your research in one place.">
+  <meta name="theme-color" content="#11243b"><title>Ledger — Company research</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261024c">
+  <script src="./accounts.js?v=20261024c" defer></script>
+  <script src="./app.js?v=20261024c" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to research</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#company/AAPL" aria-label="Ledger home"><span class="brand-mark">l<span></span></span>ledger<span class="brand-period">.</span></a>
+    <div class="workspace-label">RESEARCH WORKSPACE</div>
+    <nav aria-label="Workspace">
+      <button class="nav-item active" data-view="company"><span class="nav-icon">▦</span>Company research</button>
+      <button class="nav-item" data-view="watchlist"><span class="nav-icon">☆</span>Watchlist<span class="nav-count" id="watch-count"></span></button>
+      <button class="nav-item" data-view="notes"><span class="nav-icon">▤</span>Research notes</button>
+      <button class="nav-item" data-view="methodology"><span class="nav-icon">◫</span>About the data</button>
+      <button class="nav-item" data-view="notifications"><span class="nav-icon">◷</span>Filing alerts</button>
+      <button class="nav-item" data-view="account"><span class="nav-icon">⚙</span>Account</button>
+    </nav>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-section"><span>FOLLOWING</span><button id="add-company" aria-label="Find a company">+</button></div>
+    <div id="following" class="following"></div>
+    <div class="sidebar-bottom"><span class="snapshot-dot"></span><div>SEC research snapshot<small id="snapshot-label">Loading dataset…</small></div></div>
+    <div class="profile"><div class="avatar">L</div><div>Research workspace<small>SEC filings & financials</small></div><span class="profile-dots">···</span></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><button class="mobile-menu icon-button" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Company research</strong></div><button class="global-search" id="global-search"><span>⌕</span> Find / import company <kbd>/</kbd></button><a class="github-link" href="https://github.com/KrishDesai62/equity-research-copilot" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a></header>
+    <main id="main" tabindex="-1"><div class="loading"><span class="loader"></span>Opening your research desk…</div></main>
+    <footer><span>LEDGER <span class="footer-dot">/</span> Company filings & financials</span><span>Public SEC data. Research only.</span></footer>
+  </div>
+  <dialog id="company-dialog" aria-labelledby="search-title"><div class="dialog-header"><h2 id="search-title">Find or import a company</h2><button id="close-dialog" class="icon-button" aria-label="Close company search">×</button></div><label class="search-field"><span>⌕</span><input id="company-search" type="search" placeholder="Company name or ticker" autocomplete="off"></label><div class="search-meta" id="search-meta"></div><div id="company-results" class="company-results"></div><div class="dialog-footer">Search saved companies or enter a new ticker <kbd>esc</kbd> to close</div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body></html>

@@ -45,7 +45,8 @@ class LocalIndex:
                  section_title=None, has_table=None, k=5):
         if k < 1:
             raise ValueError("k must be positive")
-        terms = list(dict.fromkeys(re.findall(r"\w+", query, flags=re.UNICODE)))[:64]
+        from src.rag.query_relevance import terms as query_terms
+        terms = query_terms(query)
         if not terms:
             return []
         clauses, values = ["passages MATCH ?"], [" OR ".join('"' + t + '"' for t in terms)]

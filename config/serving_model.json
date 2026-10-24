@@ -1,0 +1,20 @@
+{
+  "artifact": "data/processed/validation/recent_study_models_20261019/research_candidate.joblib",
+  "artifact_sha256": "ffb16107ae512a222d2e70c3f2c0573c6f4ffe72195a9571cf0509a7d5d3ba9b",
+  "release": "data/processed/validation/recent_study_models_20261019/research_candidate.release.json",
+  "target": "target_sec_disclosed_petition_1yr",
+  "protected_evaluation_dates": [
+    "2024-12-31",
+    "2025-04-01"
+  ],
+  "max_feature_age_days": 180,
+  "max_missing_fraction": 0.25,
+  "feature_kernel_sha256": {
+    "src/ml/financial_history.py": "203032dbb971f5f65291bcc782840ad313eb8bcbbd4bfba24c10dea1a52e5514",
+    "src/validation/sec_disclosure_data.py": "e4e064df8ff0aa4d94176b715d1210da44d85ab5bc097546ea77cbc5ebce74fc",
+    "src/validation/sec_filing_signals.py": "045ecce9c3882f24613849a819890bfb08350f25c7fff5bb923a2c695452bcc7",
+    "src/validation/filing_text_signals.py": "eb689c5272739e2d2f4e0831af4a1170eda03035ac9fd8f247c261a9e1989493",
+    "src/validation/contextual_filing_signals.py": "df799474609d2f77a7f28883db12efaea82036d6b52aa0f0c4f66ab626aae323",
+    "src/validation/market_filing_signals.py": "90972b7878be2620c5318f3f4e9217089f4e74bac60adc8154e36d6f541b3040"
+  }
+}

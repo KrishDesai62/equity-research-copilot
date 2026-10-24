@@ -1,3 +1,52 @@
+# Faster review option: sampled quality control
+
+## Current status: supplemental coverage completed October 23
+
+The 60 sampled negatives have two agreeing human assessments limited to the original primary-report-body packet. All 20 proposed positives now have at least one human source assessment; 19 still need a second review under the original formal protocol.
+
+The SEC master-index reconciliation found 45 omitted amended reports. The supplemental run includes all 1,373 reports and 7,828 exhibits, with no download errors or unreadable exhibits remaining. The 45 added primary bodies had no keyword matches. Open [the supplemental exhibit review](../data/processed/validation/coverage_completion_20261023/exhibit_review.html): 467 flagged exhibits, with all 2,434 excerpts shown, await interpretation. These exhibits were outside the completed human reviews’ scope.
+
+See [the completion report](coverage_completion_20261023.md) and [the draft evaluation manifest](../data/processed/validation/evaluation_preparation_20261023/manifest.json). The final evaluation gate remains closed; no model predictions have been created.
+
+Preserve the original reviewed packet and its hashes. To resume or regenerate the supplemental acquisition, use `python -m src.validation.coverage_completion --download`, followed by `python -m src.validation.coverage_completion_review`, with the repository virtual environment. The original packet generation commands below describe the earlier workflow and would overwrite its reviewed evidence if rerun.
+
+## Automated coverage packet for the 60 sampled negatives
+
+Open [the coverage report](../data/processed/validation/sampled_negative_coverage_v1/review.html) after the run completes. It lists every inventoried primary report, download/screen status, coverage gaps and flagged excerpts. Expand a company to inspect its reports. Review the complete source for each flagged passage; identify the issuer, actual petition date, chapter and whether the passage is only a hypothetical warning or another entity's case. Up to 12 excerpts per document are displayed; counts can exceed displayed excerpts.
+
+Rebuild the inventory from saved evidence without network access:
+
+```bash
+.venv/bin/python -m src.validation.sampled_negative_coverage
+```
+
+Download missing report bodies and screen them (resumable):
+
+```bash
+.venv/bin/python -m src.validation.sampled_negative_coverage --download
+```
+
+The scope includes current, annual and quarterly primary reports and amendments, plus foreign issuer report forms where present, after December 31, 2024 through July 19, 2026. Submission history is checked against the saved checkpoint's declared overlapping history files. This is an audit of the saved submission inventory, not an independent reconciliation against every SEC index. Exhibits and court records are not screened. Neither a completed automated screen nor zero keyword matches establishes a human-approved negative. All generated labels remain uncertain pending coverage assessment. No frozen outcomes or model predictions are changed.
+
+
+The new [review table](../data/processed/validation/rapid_review_v1/review.html) contains **80 initial cases: all 20 proposed bankruptcies plus a reproducible sample of 60 of the 315 proposed negatives**. Open the HTML file in a browser. It includes primary-source links, automated excerpts, petition assertions, and known coverage gaps. Excerpts are navigation aids, not human findings. The JSONL queue includes all 335 units for traceability.
+
+For each positive, compare the named issuer, Chapter 7/11 petition and petition date against the source. One genuine source reviewer is sufficient for this advisory workflow; use a second reviewer for uncertainty or disagreements. Existing completed reviews can be reused with their evidence hashes; do not claim fresh review work.
+
+For sampled negatives, review the entire prediction window and disclosure follow-up; both reviewers should independently assess these quality-control cases. A missing Item 1.03 match or continued reporting does not establish a negative. Record uncertainty if coverage is incomplete. Known gap links are examples, not an exhaustive review checklist.
+
+Any error or uncertain sample result triggers investigation and expanded review before trusting negative labels. Keep the seed and sample fixed; do not reroll to avoid difficult cases. Sampling evaluates label quality at population level; it does not verify each of the other 255 negatives. This initial sample size is a workload choice, not a production acceptance threshold or a guarantee of label accuracy.
+
+Regenerate locally with:
+
+```bash
+.venv/bin/python -m src.validation.rapid_review
+```
+
+This is a revised **advisory review workflow**. It does not replace the frozen cohort's two-reviewer validator, approve labels, or authorize final scoring. Responses continue to use the evidence-bound format described below; the original validator still reports its original policy. Adopting sampled acceptance for a future evaluation requires a new versioned protocol with documented uncertainty, rather than silently weakening the existing gate. The model and frozen final cohort are unchanged.
+
+---
+
 # Start here: human source review
 
 You may perform one source review yourself. As the project author, do not describe your own review as external independent validation. Ask a second person who did not generate the labels or tune the model to reach a separate conclusion from primary sources. An accounting/finance student, researcher or analyst who understands issuer identity and financial filings can help; this project does not require a paid certification.

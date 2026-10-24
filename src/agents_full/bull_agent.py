@@ -6,15 +6,16 @@ logger = logging.getLogger(__name__)
 
 
 class BullAgent:
-    def __init__(self, k_results=5):
+    def __init__(self, k_results=5, *, retriever=None):
         self.k_results = k_results
+        self.retriever = retriever
 
     def analyze_bull_case(self, ticker, cik, ml_distress_probability=None, altman_z=None, *, as_of_date=None):
         status = "available"
         try:
             evidence = filing_evidence(
                 f"{ticker} growth expansion revenue drivers profitability", ticker, cik,
-                self.k_results, as_of_date)
+                self.k_results, as_of_date, retriever=self.retriever)
             if not evidence:
                 status = "no_cited_evidence"
         except Exception:

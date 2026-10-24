@@ -1,0 +1,10 @@
+[Unit]
+Description=Encrypted Ledger account backup and isolated recovery check
+After=network-online.target
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/equity-research-copilot
+EnvironmentFile=/home/ubuntu/equity-research-copilot/.env
+ExecStart=/home/ubuntu/equity-research-copilot/.venv/bin/python -m src.web.backups --drill
+UMask=0077

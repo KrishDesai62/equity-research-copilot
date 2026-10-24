@@ -6,8 +6,9 @@ logger = logging.getLogger(__name__)
 
 
 class BearAgent:
-    def __init__(self, k_results=5):
+    def __init__(self, k_results=5, *, retriever=None):
         self.k_results = k_results
+        self.retriever = retriever
 
     def analyze_bear_case(self, ticker, cik, ml_distress_probability=None, altman_z=None,
                           beneish_m=None, *, as_of_date=None):
@@ -15,7 +16,7 @@ class BearAgent:
         try:
             evidence = filing_evidence(
                 f"{ticker} material risks liquidity regulatory bankruptcy", ticker, cik,
-                self.k_results, as_of_date)
+                self.k_results, as_of_date, retriever=self.retriever)
             if not evidence:
                 status = "no_cited_evidence"
         except Exception:
