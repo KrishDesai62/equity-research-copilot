@@ -161,6 +161,9 @@ class Handler(SimpleHTTPRequestHandler):
     def handle_get(self):
         path = urlparse(self.path).path
         imports = self.server.imports
+        if path == '/architecture.json':
+            from src.web.architecture import describe
+            return self.json_response(200,describe(self.server.research))
         if path == '/config.json':
             return self.json_response(200, {'apiBase': '', 'imports': True, 'research': True, 'capabilities': __import__('src.web.providers',fromlist=['capabilities']).capabilities()})
         if path == '/api/capabilities':

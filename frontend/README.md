@@ -114,3 +114,16 @@ Endpoints (same origin):
 - `POST /api/imports`: `{ "ticker": "NFLX", "refresh": true }`; versioned manual refresh.
 
 Current frozen research-model validation remains incomplete. Backend integration is not a new independent evaluation or a promotion of the model. No AWS deployment is needed to run these features locally.
+
+### Interactive system overview
+
+`#architecture` opens **How Ledger works**: a clickable diagram of the public SEC
+source, retrieval, research-agent, financial-feature and model paths joining the
+combined report. Neural-network and original ChromaDB implementations are labeled
+as research comparisons rather than live serving components.
+
+The non-sensitive `/architecture.json` endpoint reports server configuration and
+model release status without inference or provider calls. Standalone static mode
+shows unverified statuses rather than pretending services are connected. Each
+layer explains its input, output, example and limits; native buttons expose the
+selected state to keyboard and assistive-technology users.

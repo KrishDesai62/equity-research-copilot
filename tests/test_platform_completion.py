@@ -102,3 +102,17 @@ def test_market_quote_can_survive_unavailable_news_or_history(monkeypatch):
     assert result['status']=='available' and result['quote']['c']==100
     assert not result['history'] and not result['metrics'] and len(result['warnings'])==3
     _market.cache_clear()
+
+
+def test_ai_valid_draft_keeps_source_ids_and_gated_context(monkeypatch):
+    monkeypatch.setenv('ANTHROPIC_API_KEY','test');monkeypatch.setenv('ANTHROPIC_MODEL','test-model')
+    captured={}
+    quote='Cash increased over the reported period.'
+    class Response:
+        def raise_for_status(self):pass
+        def json(self):return {'content':[{'type':'text','text':json.dumps({'statements':[{'text':'The filing reports increased cash.','source_ids':[1],'quote':quote}]})}]}
+    def post(*args,**kwargs):captured.update(kwargs['json']);return Response()
+    monkeypatch.setattr('src.web.providers.requests.post',post)
+    result=synthesize('Explain cash',[{'id':1,'excerpt':quote}],model_context={'status':'withheld','score':None})
+    assert result['status']=='draft' and result['statements'][0]['source_ids']==[1]
+    assert json.loads(captured['messages'][0]['content'])['model_context']['score'] is None
