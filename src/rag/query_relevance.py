@@ -10,8 +10,9 @@ GROUPS = {
     'revenue': {'revenue','revenues','sales'},
 }
 
-def terms(query):
-    return list(dict.fromkeys(t for t in re.findall(r'[a-z0-9]+',query.lower()) if t not in STOP))[:64]
+def terms(query, *, limit=64):
+    words=list(dict.fromkeys(t for t in re.findall(r'[a-z0-9]+',query.lower()) if t not in STOP))
+    return words[:limit] if limit is not None else words
 
 def expanded_query(query):
     words=terms(query)
@@ -29,7 +30,7 @@ def rank_evidence(rows, question):
     ranked=[]
     seen=set()
     for index,row in enumerate(rows):
-        text=row.get('text',''); tokens=set(terms(text))
+        text=row.get('text',''); tokens=set(terms(text,limit=None))
         section=str(row.get('section','')).lower()
         risk_section=section in {'risk_factors','risk factors','item_1a'}
         matched=sum(bool(({word}|next((g for g in GROUPS.values() if word in g),set())) & tokens) for word in words)

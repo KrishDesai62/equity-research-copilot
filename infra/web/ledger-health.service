@@ -1,4 +1,5 @@
 [Unit]
+OnFailure=ledger-alert@ledger-health.service
 Description=Ledger process health check
 [Service]
 Type=oneshot

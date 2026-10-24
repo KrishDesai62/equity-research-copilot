@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "label_status": "assistant_authored_source_checked_development_seed",
+  "limitation": "Not independently human-labeled or held out. Expected passage IDs are relevant examples, not an exhaustive relevance judgment.",
+  "cases": [
+    {"id":"apple-outsourcing","ticker":"AAPL","as_of":"2025-01-01","question":"Where are Apple's outsourcing partners for manufacturing located?","relevant_ids":["f583129610e4854fc102e42941271a1cb21bbb07d7181b49418c76f3f556eaba"]},
+    {"id":"apple-price-competition","ticker":"AAPL","as_of":"2025-01-01","question":"How does aggressive price competition affect Apple's gross margins?","relevant_ids":["37e104454ee6f5be17eec00c285b98925618f66a17b394b0a8b01da313bb88af"]},
+    {"id":"apple-repatriation","ticker":"AAPL","as_of":"2025-01-01","question":"What foreign exchange controls and cash repatriation restrictions does Apple discuss?","relevant_ids":["cc82b48cf56512d2d75ba556e337f0fe7e9a652b4fdd5c8ced4dd3aa6e680f36"]},
+    {"id":"microsoft-cybersecurity","ticker":"MSFT","as_of":"2025-08-01","question":"How can cybersecurity incidents damage Microsoft's reputation?","relevant_ids":["400bd24bc76b822a705fd1b7d5231f9eae0e65a6752ced9426e4294119715be5"]},
+    {"id":"microsoft-cloud-expenses","ticker":"MSFT","as_of":"2025-08-01","question":"What expenses does Microsoft describe for cloud services and datacenter operations?","relevant_ids":["8f6d616c4b26e2b43fdfea5e0fa93cc58bfeca90759c9457c0472cb1d5ba5c21"]},
+    {"id":"amazon-competition","ticker":"AMZN","as_of":"2025-03-01","question":"What does Amazon disclose about intense competition and competitors with greater resources?","relevant_ids":["407650970b10f9b9076ffb6a1aceab71a5cd878216d7ea2d47911fc96e834723"]},
+    {"id":"amazon-receivables","ticker":"AMZN","as_of":"2025-03-01","question":"How do shorter payable and longer receivable cycles affect Amazon's international operations?","relevant_ids":["2966c50d225274a873600baa1c98ee1fb9cf6db170784441cba2a4354b9cde08"]},
+    {"id":"unknown-issuer","ticker":"ZZZZUNKNOWN","as_of":"2026-10-24","question":"What liquidity risks are disclosed?","expect_abstain":true},
+    {"id":"apple-before-corpus","ticker":"AAPL","as_of":"2000-01-01","question":"What competition risks are disclosed?","expect_abstain":true},
+    {"id":"unrelated-topic","ticker":"AAPL","as_of":"2025-01-01","question":"Describe lunar titanium mining concessions.","expect_abstain":true}
+  ]
+}

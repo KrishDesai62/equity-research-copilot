@@ -11,7 +11,7 @@ import requests
 def capabilities():
     return dict(ai_synthesis=bool(os.getenv('ANTHROPIC_API_KEY') and os.getenv('ANTHROPIC_MODEL')),
                 market_data=bool(os.getenv('FINNHUB_API_KEY')),
-                retrieval='hybrid_fts5_lsa',alerts='hourly_in_app')
+                retrieval='hybrid_fts5_lsa',alerts='hourly_in_app',full_identity_deletion=os.getenv('LEDGER_COGNITO_DELETE_ENABLED','false').lower()=='true')
 
 
 def synthesize(question,citations,*,model_context=None):

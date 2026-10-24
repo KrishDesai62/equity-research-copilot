@@ -1,0 +1,9 @@
+[Unit]
+Description=Notify configured Ledger operations destination for %i
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/equity-research-copilot
+EnvironmentFile=/home/ubuntu/equity-research-copilot/.env
+ExecStart=/home/ubuntu/equity-research-copilot/.venv/bin/python -m src.web.operations %i
+UMask=0077

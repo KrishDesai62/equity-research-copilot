@@ -1,4 +1,5 @@
 [Unit]
+OnFailure=ledger-alert@ledger-backup.service
 Description=Encrypted Ledger account backup and isolated recovery check
 After=network-online.target
 [Service]

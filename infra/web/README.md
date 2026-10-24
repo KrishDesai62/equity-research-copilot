@@ -123,3 +123,34 @@ role. Losing both the key and server prevents decryption. Keep the recovery key 
 your password manager. The minute health check now also checks database liveness.
 These systemd checks record failures locally; external email/SNS alarm delivery
 still needs an authorized notification destination and AWS permissions.
+
+## Optional operations stack (prepared, not provisioned)
+
+`operations.yaml` creates a private encrypted/versioned backup bucket, an EC2
+instance profile restricted to that bucket and the specified Cognito user pool,
+and an SNS topic with EC2-status/RDS-storage alarms. Email subscription is optional
+and requires recipient confirmation. CloudFormation needs your account permissions
+and CAPABILITY_IAM acknowledgement; resources can incur S3/CloudWatch/SNS charges.
+Validate with `cfn-lint infra/web/operations.yaml` before creation.
+
+After you create the stack in us-east-2, attach its output InstanceProfile to the
+existing EC2 server in Actions > Security > Modify IAM role. Do not replace a role
+used by another application without merging its required permissions. Set these
+private server environment values from stack outputs:
+
+```
+LEDGER_BACKUP_BUCKET=<BackupBucketName>
+LEDGER_ALERT_TOPIC_ARN=<AlertTopicArn>
+LEDGER_COGNITO_DELETE_ENABLED=true
+```
+
+Copy ledger-alert@.service and the updated health/backup services into
+/etc/systemd/system, run systemctl daemon-reload, restart equity-research and run
+ledger-backup.service. The backup command uploads only the encrypted dump and
+verifies the downloaded bytes. Failure notifications contain the operation name
+and an instruction to inspect logs; each operation has a one-hour cooldown.
+Nothing is sent when the SNS destination is unconfigured. Confirm subscription
+and exercise a controlled alert before claiming external alarm delivery works.
+
+This template does not attach itself to an existing unmanaged EC2 instance or
+create paid AI/market-provider subscriptions. It was statically validated only.

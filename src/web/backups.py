@@ -8,6 +8,8 @@ import json
 import os
 from pathlib import Path
 import secrets
+from hashlib import sha256
+import re
 from cryptography.fernet import Fernet
 from src.web.accounts import Accounts
 
@@ -57,6 +59,19 @@ def restore_drill(accounts, path):
     return {'status':'verified','tables':len(TABLES),'rows_compared':count,'sessions_restored':False}
 
 
+def replicate(path, bucket, *, client=None):
+    if not bucket:return 'not_configured'
+    if not re.fullmatch(r'[a-z0-9][a-z0-9.-]{1,61}[a-z0-9]',bucket):raise ValueError('Invalid backup bucket name')
+    if client is None:
+        import boto3
+        client=boto3.client('s3')
+    path=Path(path);key='ledger/'+path.name;raw=path.read_bytes()
+    client.put_object(Bucket=bucket,Key=key,Body=raw,ServerSideEncryption='AES256')
+    copied=client.get_object(Bucket=bucket,Key=key)['Body'].read()
+    if sha256(copied).digest()!=sha256(raw).digest():raise ValueError('Off-server backup verification failed')
+    return 'verified'
+
+
 def main():
     from dotenv import load_dotenv
     load_dotenv()
@@ -64,6 +79,7 @@ def main():
     args=parser.parse_args();accounts=Accounts();path=backup(accounts,args.folder)
     status={'backup_created':True,'completed_at':datetime.now(timezone.utc).isoformat()}
     if args.drill:status['restore']=restore_drill(accounts,path)
+    status['off_server_copy']=replicate(path,os.getenv('LEDGER_BACKUP_BUCKET',''))
     (Path(args.folder)/'status.json').write_text(json.dumps(status));print(json.dumps(status))
 
 if __name__=='__main__':main()

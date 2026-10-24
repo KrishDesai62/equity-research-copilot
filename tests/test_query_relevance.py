@@ -28,3 +28,9 @@ def test_specific_topic_keeps_relevant_nonrisk_section_and_dates():
 
 def test_stopwords_are_not_search_terms():
     assert terms('What does the company describe about liquidity?')==['liquidity']
+
+
+def test_relevant_text_after_long_preamble_is_not_discarded():
+    preamble=' '.join('preface'+str(i) for i in range(100))
+    result=answer_question('Explain cybersecurity incidents','AAPL',as_of='2026-01-01',retriever=lambda *a,**k:[row(preamble+' Cybersecurity incidents can damage reputation.','risk_factors','late-topic')])
+    assert [c['chunk_id'] for c in result['citations']]==['late-topic']
